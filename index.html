@@ -1,12 +1,55 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人网站</title>
+    <title>Academic Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <h1>你好，世界！</h1>
-    <p>欢迎来到我的第一个个人网站。这里是使用 GitHub Pages 搭建的。</p>
+<body class="bg-zinc-50 text-zinc-900 font-sans antialiased selection:bg-zinc-200">
+    <div class="max-w-3xl mx-auto px-6 py-12 md:py-20">
+        
+        <header class="flex flex-col-reverse md:flex-row gap-8 items-start justify-between mb-16">
+            <div class="flex-1">
+                <h1 class="text-3xl font-semibold tracking-tight text-zinc-900" id="profile-name"></h1>
+                <h2 class="text-lg text-zinc-500 mt-2 font-medium" id="profile-title"></h2>
+                <p class="text-base text-zinc-600 mt-4 leading-relaxed" id="profile-bio"></p>
+                <div class="flex gap-4 mt-6" id="social-links"></div>
+            </div>
+            <div class="w-32 h-32 md:w-40 md:h-40 shrink-0 rounded-2xl overflow-hidden bg-zinc-200 border border-zinc-200/50 shadow-sm">
+                <img id="profile-image" src="" alt="Profile" class="w-full h-full object-cover">
+            </div>
+        </header>
+
+        <section class="mb-16">
+            <h3 class="text-xl font-semibold text-zinc-900 mb-6 flex items-center gap-2">
+                <i data-lucide="radio" class="w-5 h-5 text-zinc-400"></i> News
+            </h3>
+            <ul class="space-y-4 text-sm" id="news-list"></ul>
+        </section>
+
+        <section class="mb-16">
+            <h3 class="text-xl font-semibold text-zinc-900 mb-6 flex items-center gap-2">
+                <i data-lucide="book-open" class="w-5 h-5 text-zinc-400"></i> Publications
+            </h3>
+            <div class="space-y-8" id="publications-list"></div>
+        </section>
+
+        <section class="mb-16">
+            <h3 class="text-xl font-semibold text-zinc-900 mb-6 flex items-center gap-2">
+                <i data-lucide="graduation-cap" class="w-5 h-5 text-zinc-400"></i> Education
+            </h3>
+            <div class="space-y-6" id="education-list"></div>
+        </section>
+
+        <footer class="pt-8 border-t border-zinc-200 mt-20 text-sm text-zinc-500 flex justify-between items-center">
+            <span id="footer-text"></span>
+            <a href="#" class="hover:text-zinc-900 transition-colors">Back to top</a>
+        </footer>
+    </div>
+
+    <script type="module" src="app.js"></script>
 </body>
 </html>
