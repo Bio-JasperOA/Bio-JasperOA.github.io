@@ -1,9 +1,39 @@
 title: Jie (J. Song) Personal Site
 email: jie@example.com
+description: >-
+  Bioinformatician and Data Scientist specializing in genomics, transcriptomics,
+  and machine learning applications in biomedical research.
 baseurl: ""
 url: ""
+author: Jie (J. Song)
+
+# Collections
 collections:
   posts:
     output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+# Jekyll settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+
 plugins: []
+
+# Exclude from processing
+exclude:
+  - .gitignore
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+
+# Include in processing
+include:
+  - .htaccess
