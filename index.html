@@ -11,94 +11,135 @@ layout: default
   <meta name="description" content="Jie — Biography, Research Interest, Publications, Awards, Skills.">
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-inner container">
-      <img class="avatar" src="/assets/avatar-placeholder.png" alt="Jie 头像">
-      <div class="intro">
-        <h1>Jie (J. Song)</h1>
-        <p class="tagline">生物信息学 · 研究与开发 · 开源贡献者</p>
-        <p class="cta">
-          <!-- To add a downloadable CV: place a PDF at /assets/CV.pdf and it will be linked here -->
-          <a class="btn outline" href="#research">研究兴趣</a>
-          <a class="btn" href="/blog/">博客</a>
-        </p>
+  <div class="page-wrapper">
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-content">
+        <div class="profile-section">
+          <img class="profile-image" src="/assets/avatar-placeholder.png" alt="Jie 头像">
+          <h1 class="profile-name">Jie (J. Song)</h1>
+          <p class="profile-title">生物信息学 · 研究与开发 · 开源贡献者</p>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>📍 联系方式</h3>
+          <ul class="contact-list">
+            <li><a href="mailto:jie@example.com">jie@example.com</a></li>
+            <li><a href="https://github.com/Bio-JasperOA" target="_blank">GitHub</a></li>
+            <li><a href="https://orcid.org/" target="_blank">ORCID</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>📚 快速导航</h3>
+          <ul class="nav-list">
+            <li><a href="#about">关于我</a></li>
+            <li><a href="#research">研究兴趣</a></li>
+            <li><a href="#publications">发表论文</a></li>
+            <li><a href="#awards">奖项荣誉</a></li>
+            <li><a href="#skills">技能专长</a></li>
+            <li><a href="/blog/">博客文章</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>🛠️ 主要技能</h3>
+          <div class="skills-sidebar">
+            {% for s in site.data.skills %}
+              <span class="skill-tag">{{ s }}</span>
+            {% else %}
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">R</span>
+              <span class="skill-tag">Nextflow</span>
+              <span class="skill-tag">Snakemake</span>
+              <span class="skill-tag">ML</span>
+            {% endfor %}
+          </div>
+        </div>
       </div>
-    </div>
-  </header>
+    </aside>
 
-  <main class="container">
-    <section id="about" class="card">
-      <h2>Biography</h2>
-      <p>（已参考你提供的 CV；此处为可编辑简介，建议在仓库根目录编辑 <code>index.html</code> 或在 <code>_data/</code> 添加相关文件以便后续维护。）</p>
-      <p>Jie 是一位专注于生物信息学的数据科学家与研究人员，具有基因组学与转录组学分析、工具开发与多组学整合经验。更多详情见简历（可选上传至 <code>/assets/CV.pdf</code> 并在此处链接）。</p>
-    </section>
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- About Section -->
+      <section id="about" class="content-card">
+        <h2 class="section-title">关于我</h2>
+        <p>Jie 是一位专注于生物信息学的数据科学家与研究人员，具有基因组学与转录组学分析、工具开发与多组学整合经验。致力于开发高效的生物信息学流程与工具，推进科学研究与临床应用。</p>
+        <p>主要研究方向包括：基因组学、转录组学、多组学数据整合、机器学习在生物医学中的应用。</p>
+      </section>
 
-    <section id="research" class="card">
-      <h2>Research Interest</h2>
-      <ul>
-        <li>基因组学与转录组学数据分析</li>
-        <li>生物信息学算法与工具开发（Nextflow / Snakemake）</li>
-        <li>多组学数据整合与机器学习应用</li>
-      </ul>
-    </section>
+      <!-- Research Interests Section -->
+      <section id="research" class="content-card">
+        <h2 class="section-title">研究兴趣</h2>
+        <ul class="interest-list">
+          <li><strong>基因组学与转录组学</strong> - 大规模测序数据分析与处理</li>
+          <li><strong>生物信息学工具开发</strong> - Nextflow / Snakemake 工作流设计</li>
+          <li><strong>多组学数据整合</strong> - 蛋白质组、代谢组、表观遗传学整合分析</li>
+          <li><strong>机器学习应用</strong> - 深度学习在生物信息学中的应用</li>
+          <li><strong>开源软件贡献</strong> - 参与和维护开源生物信息学项目</li>
+        </ul>
+      </section>
 
-    <section id="publications" class="card">
-      <h2>Publications</h2>
-      <p>条目由 <code>_data/publications.yml</code> 管理；编辑该文件可方便批量更新与排序。</p>
-      <ul>
-        {% for pub in site.data.publications %}
-          <li>{{ pub.authors }} ({{ pub.year }}). <strong>{{ pub.title }}</strong>. <em>{{ pub.journal }}</em>. {% if pub.link %}<a href="{{ pub.link }}">链接</a>{% endif %}</li>
-        {% else %}
-          <li>暂无发布 — 在 <code>_data/publications.yml</code> 添加第一条记录。</li>
-        {% endfor %}
-      </ul>
-    </section>
+      <!-- Publications Section -->
+      <section id="publications" class="content-card">
+        <h2 class="section-title">发表论文</h2>
+        <div class="publications-list">
+          {% for pub in site.data.publications %}
+            <div class="publication-item">
+              <div class="pub-year">{{ pub.year }}</div>
+              <div class="pub-content">
+                <p class="pub-authors">{{ pub.authors }}</p>
+                <p class="pub-title">{{ pub.title }}</p>
+                <p class="pub-journal"><em>{{ pub.journal }}</em>
+                  {% if pub.link %}<a href="{{ pub.link }}" class="pub-link" target="_blank">📄 查看</a>{% endif %}
+                </p>
+              </div>
+            </div>
+          {% else %}
+            <p class="placeholder">暂无发布 — 在 <code>_data/publications.yml</code> 添加第一条记录。</p>
+          {% endfor %}
+        </div>
+      </section>
 
-    <section id="awards" class="card">
-      <h2>Awards</h2>
-      <ul>
-        {% for award in site.data.awards %}
-          <li>{{ award.year }} — {{ award.title }}{% if award.by %}（{{ award.by }}）{% endif %}</li>
-        {% else %}
-          <li>暂无奖项记录 — 在 <code>_data/awards.yml</code> 中添加。</li>
-        {% endfor %}
-      </ul>
-    </section>
+      <!-- Awards Section -->
+      <section id="awards" class="content-card">
+        <h2 class="section-title">奖项荣誉</h2>
+        <div class="awards-list">
+          {% for award in site.data.awards %}
+            <div class="award-item">
+              <div class="award-year">{{ award.year }}</div>
+              <div class="award-content">
+                <p class="award-title">{{ award.title }}</p>
+                {% if award.by %}<p class="award-by">{{ award.by }}</p>{% endif %}
+              </div>
+            </div>
+          {% else %}
+            <p class="placeholder">暂无奖项记录 — 在 <code>_data/awards.yml</code> 中添加。</p>
+          {% endfor %}
+        </div>
+      </section>
 
-    <section id="skills" class="card">
-      <h2>Skills</h2>
-      <div class="skills">
-        {% for s in site.data.skills %}
-          <span class="skill">{{ s }}</span>
-        {% else %}
-          <span class="skill">Python</span>
-          <span class="skill">R</span>
-          <span class="skill">Nextflow</span>
-          <span class="skill">Snakemake</span>
-          <span class="skill">Machine Learning</span>
-        {% endfor %}
-      </div>
-    </section>
-
-    <section id="blog-preview" class="card">
-      <h2>Latest blog posts</h2>
-      <ul>
-        {% for post in site.posts limit:5 %}
-          <li><a href="{{ post.url }}">{{ post.title }}</a> <small class="muted">{{ post.date | date: "%Y-%m-%d" }}</small></li>
-        {% else %}
-          <li>尚无文章 — 在 <code>_posts/</code> 添加第一篇文章以启用博客。</li>
-        {% endfor %}
-      </ul>
-    </section>
-
-    <section id="contact" class="card">
-      <h2>Contact</h2>
-      <p>邮箱：<a href="mailto:jie@example.com">jie@example.com</a> · GitHub：<a href="https://github.com/Bio-JasperOA">Bio-JasperOA</a></p>
-    </section>
-  </main>
+      <!-- Blog Preview Section -->
+      <section id="blog-preview" class="content-card">
+        <h2 class="section-title">最新博客</h2>
+        <div class="blog-list">
+          {% for post in site.posts limit:8 %}
+            <div class="blog-item">
+              <a href="{{ post.url }}" class="blog-title">{{ post.title }}</a>
+              <span class="blog-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+            </div>
+          {% else %}
+            <p class="placeholder">尚无文章 — 在 <code>_posts/</code> 添加第一篇文章以启用博客。</p>
+          {% endfor %}
+        </div>
+      </section>
+    </main>
+  </div>
 
   <footer class="site-footer">
-    <div class="container">© Jie · 部署于 GitHub Pages · 更新时间：{{ site.time | date: "%Y-%m-%d" }}</div>
+    <div class="footer-content">
+      <p>© Jie · 部署于 <a href="https://pages.github.com/">GitHub Pages</a> · 更新时间：{{ site.time | date: "%Y-%m-%d" }}</p>
+    </div>
   </footer>
 </body>
 </html>
