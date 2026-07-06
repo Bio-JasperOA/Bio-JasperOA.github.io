@@ -1,39 +1,112 @@
-title: Jie (J. Song) Personal Site
+title: Jie (J. Song) — 个人主页
 email: jie@example.com
 description: >-
   Bioinformatician and Data Scientist specializing in genomics, transcriptomics,
   and machine learning applications in biomedical research.
 baseurl: ""
-url: ""
+url: "https://bio-jasperao.github.io"
 author: Jie (J. Song)
+github_username: Bio-JasperOA
+orcid: ""
+google_scholar: ""
 
-# Collections
-collections:
-  posts:
-    output: true
-    permalink: /blog/:year/:month/:day/:title/
+# Site Author Configuration
+author_profile: true
+author:
+  name: "Jie (J. Song)"
+  avatar: "/assets/avatar.png"
+  bio: "Bioinformatician · Data Scientist · Open Source Contributor"
+  location: "Chengdu, China"
+  email: "jie@example.com"
+  github: "Bio-JasperOA"
+  orcid: ""
+  googlescholar: ""
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:jie@example.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Bio-JasperOA"
+    - label: "ORCID"
+      icon: "fab fa-fw fa-orcid"
+      url: ""
 
-# Jekyll settings
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
+# Navigation
+nav_menu:
+  - url: "#about-me"
+    title: "关于我"
+  - url: "#publications"
+    title: "发表论文"
+  - url: "#awards"
+    title: "奖项荣誉"
+  - url: "#education"
+    title: "教育经历"
+  - url: "#skills"
+    title: "技能专长"
+  - url: "/blog/"
+    title: "博客"
 
-plugins: []
-
-# Exclude from processing
+# Reading Files
+include:
+  - .htaccess
+  - _pages
 exclude:
   - .gitignore
   - README.md
   - Gemfile
   - Gemfile.lock
   - node_modules
+keep_files:
+  - .git
+  - .svn
 
-# Include in processing
-include:
-  - .htaccess
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Outputting
+permalink: /:categories/:title/
+timezone: Asia/Shanghai
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-redirect-from
+
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
