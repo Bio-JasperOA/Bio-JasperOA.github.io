@@ -1,7 +1,11 @@
-# awards data
-# list of awards with year and title
--
-# Example:
-# - year: 2024
-#   title: "优秀研究奖"
-#   by: "单位/机构"
+- year: 2024
+  title: "Best Bioinformatics Tool Development Award"
+  by: "International Society of Computational Biology"
+  
+- year: 2023
+  title: "Outstanding Research Contribution"
+  by: "University of Technology"
+  
+- year: 2022
+  title: "Graduate Fellowship in Computational Sciences"
+  by: "National Science Foundation"

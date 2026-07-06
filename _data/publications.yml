@@ -1,9 +1,17 @@
-# publications data
-# add entries as a list with keys: authors, year, title, journal, link (optional)
--
-# Example:
-# - authors: "Song J., Zhang X., et al."
-#   year: 2025
-#   title: "Example study on genomics"
-#   journal: "Nature Genetics"
-#   link: "https://doi.org/..."
+- title: "Comprehensive Genomic Analysis of Rare Genetic Variants"
+  authors: "Jie Song, John Smith, Jane Doe"
+  journal: "Nature Genetics"
+  year: 2024
+  link: "https://doi.org/10.1038/ng.xxxxx"
+  
+- title: "Transcriptomic Integration Using Machine Learning"
+  authors: "Jie Song, Robert Johnson"
+  journal: "Bioinformatics"
+  year: 2023
+  link: "https://doi.org/10.1093/bioinformatics/xxxxx"
+  
+- title: "Next-Generation Workflow Design for Genomic Analysis"
+  authors: "Jie Song, Emily Chen, Michael Brown"
+  journal: "BMC Bioinformatics"
+  year: 2023
+  link: "https://doi.org/10.1186/s12859-023-xxxxx"
