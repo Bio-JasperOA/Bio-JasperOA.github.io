@@ -1,25 +1,25 @@
 title: Jie (J. Song) — 个人主页
-email: jie@example.com
+email: jasperoa@outlook.com
 description: >-
-  Bioinformatician and Data Scientist specializing in genomics, transcriptomics,
-  and machine learning applications in biomedical research.
+  Jie’s research focuses on utilizing Genome-Wide Association Studies (GWAS) to uncover the interconnections and underlying mechanisms among complex diseases. By elucidating the biological mechanisms that link these diseases, he aims to facilitate disease prevention and early intervention. Furthermore, he aspires to establish and promote a novel research paradigm for studying disease comorbidity.
+
 baseurl: ""
 url: "https://bio-jasperao.github.io"
-author: Jie (J. Song)
+author: Jie
 github_username: Bio-JasperOA
-orcid: ""
+orcid: "0009-0003-0274-2956"
 google_scholar: ""
 
 # Site Author Configuration
 author_profile: true
 author:
-  name: "Jie (J. Song)"
+  name: "Jie"
   avatar: "/assets/avatar.png"
   bio: "Bioinformatician · Data Scientist · Open Source Contributor"
-  location: "Chengdu, China"
-  email: "jie@example.com"
+  location: "Hangzhou, China"
+  email: "jasperoa@outlook.com"
   github: "Bio-JasperOA"
-  orcid: ""
+  orcid: "0009-0003-0274-2956"
   googlescholar: ""
   links:
     - label: "Email"
