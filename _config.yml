@@ -1,0 +1,9 @@
+title: Jie (J. Song) Personal Site
+email: jie@example.com
+baseurl: ""
+url: ""
+collections:
+  posts:
+    output: true
+markdown: kramdown
+plugins: []

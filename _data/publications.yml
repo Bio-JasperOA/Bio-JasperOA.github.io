@@ -1,0 +1,9 @@
+# publications data
+# add entries as a list with keys: authors, year, title, journal, link (optional)
+-
+# Example:
+# - authors: "Song J., Zhang X., et al."
+#   year: 2025
+#   title: "Example study on genomics"
+#   journal: "Nature Genetics"
+#   link: "https://doi.org/..."

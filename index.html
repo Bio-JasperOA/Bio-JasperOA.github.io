@@ -1,1 +1,104 @@
-<!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>octocat/Spoon-Knife: This repo is for demonstration purposes only.</title>    <script src="https://cdn.tailwindcss.com"></script>    <script src="https://unpkg.com/lucide@latest"></script>    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>    <link rel="stylesheet" href="styles.css"></head><body class="bg-white text-[#24292f] antialiased">    <!-- Navbar -->    <header class="bg-[#24292f] text-white py-4 px-6 flex items-center justify-between text-sm">        <div class="flex items-center space-x-4">            <i data-lucide="github" class="w-8 h-8 text-white fill-current"></i>            <div class="relative w-64">                <input type="text" placeholder="Search or jump to..." class="w-full bg-[#24292f] border border-[#57606a] rounded-md py-1 px-3 text-white placeholder-gray-400 focus:outline-none focus:bg-white focus:text-black transition-colors">                <div class="absolute right-2 top-1.5 border border-gray-500 rounded px-1 text-xs text-gray-400">/</div>            </div>            <nav class="hidden md:flex space-x-4 font-semibold">                <a href="#" class="hover:text-gray-300">Pull requests</a>                <a href="#" class="hover:text-gray-300">Issues</a>                <a href="#" class="hover:text-gray-300">Codespaces</a>                <a href="#" class="hover:text-gray-300">Marketplace</a>                <a href="#" class="hover:text-gray-300">Explore</a>            </nav>        </div>        <div class="flex items-center space-x-3">            <button><i data-lucide="bell" class="w-5 h-5 hover:text-gray-300"></i></button>            <button><i data-lucide="plus" class="w-5 h-5 hover:text-gray-300"></i></button>            <img src="https://avatars.githubusercontent.com/u/9919?s=40&v=4" alt="User avatar" class="w-5 h-5 rounded-full border border-gray-600">        </div>    </header>    <!-- Repo Header -->    <div class="bg-[#f6f8fa] pt-4 border-b border-[#d0d7de]">        <div class="max-w-[1280px] mx-auto px-6">            <div class="flex items-center justify-between mb-4">                <div class="flex items-center space-x-2 text-xl">                    <i data-lucide="book-open" class="w-4 h-4 text-[#57606a]"></i>                    <a href="#" class="text-[#0969da] hover:underline">octocat</a>                    <span class="text-[#57606a]">/</span>                    <a href="#" class="text-[#0969da] font-semibold hover:underline">Spoon-Knife</a>                    <span class="border border-[#d0d7de] text-[#57606a] text-xs px-2 py-0.5 rounded-full ml-2">Public</span>                </div>                <div class="flex space-x-2">                    <button class="flex items-center border border-[#d0d7de] bg-white text-[#24292f] rounded-md px-3 py-1 text-sm font-medium hover:bg-[#f3f4f6]">                        <i data-lucide="bell" class="w-4 h-4 mr-1 text-[#57606a]"></i> Notifications                    </button>                    <div class="flex border border-[#d0d7de] rounded-md bg-white">                        <button class="flex items-center px-3 py-1 text-sm font-medium hover:bg-[#f3f4f6] border-r border-[#d0d7de]">                            <i data-lucide="star" class="w-4 h-4 mr-1 text-[#57606a]"></i> Star                        </button>                        <button class="px-3 py-1 text-sm font-semibold hover:bg-[#f3f4f6]">11.4k</button>                    </div>                    <div class="flex border border-[#d0d7de] rounded-md bg-white">                        <button class="flex items-center px-3 py-1 text-sm font-medium hover:bg-[#f3f4f6] border-r border-[#d0d7de]">                            <i data-lucide="git-fork" class="w-4 h-4 mr-1 text-[#57606a]"></i> Fork                        </button>                        <button class="px-3 py-1 text-sm font-semibold hover:bg-[#f3f4f6]">139k</button>                    </div>                </div>            </div>                        <!-- Tabs -->            <nav class="flex space-x-6 text-sm overflow-x-auto">                <a href="#" class="flex items-center py-2 border-b-2 border-[#fd8c73] text-[#24292f] font-semibold pb-2">                    <i data-lucide="code" class="w-4 h-4 mr-2"></i> Code                </a>                <a href="#" class="flex items-center py-2 border-b-2 border-transparent text-[#57606a] hover:bg-gray-100 hover:rounded-t-md px-2">                    <i data-lucide="circle-dot" class="w-4 h-4 mr-2"></i> Issues <span class="ml-1 bg-gray-200 text-gray-700 px-1.5 rounded-full text-xs">4.3k</span>                </a>                <a href="#" class="flex items-center py-2 border-b-2 border-transparent text-[#57606a] hover:bg-gray-100 hover:rounded-t-md px-2">                    <i data-lucide="git-pull-request" class="w-4 h-4 mr-2"></i> Pull requests <span class="ml-1 bg-gray-200 text-gray-700 px-1.5 rounded-full text-xs">8.1k</span>                </a>                <a href="#" class="flex items-center py-2 border-b-2 border-transparent text-[#57606a] hover:bg-gray-100 hover:rounded-t-md px-2">                    <i data-lucide="play-circle" class="w-4 h-4 mr-2"></i> Actions                </a>                <a href="#" class="flex items-center py-2 border-b-2 border-transparent text-[#57606a] hover:bg-gray-100 hover:rounded-t-md px-2">                    <i data-lucide="layout" class="w-4 h-4 mr-2"></i> Projects                </a>                <a href="#" class="flex items-center py-2 border-b-2 border-transparent text-[#57606a] hover:bg-gray-100 hover:rounded-t-md px-2">                    <i data-lucide="shield" class="w-4 h-4 mr-2"></i> Security                </a>                <a href="#" class="flex items-center py-2 border-b-2 border-transparent text-[#57606a] hover:bg-gray-100 hover:rounded-t-md px-2">                    <i data-lucide="bar-chart" class="w-4 h-4 mr-2"></i> Insights                </a>            </nav>        </div>    </div>    <!-- Main Content -->    <main class="max-w-[1280px] mx-auto px-6 py-6 flex flex-col lg:flex-row gap-6">                <!-- Left Column: Code -->        <div class="flex-1 w-full lg:w-3/4">            <!-- Branch/Tags & Code button -->            <div class="flex items-center justify-between mb-4">                <div class="flex items-center space-x-3">                    <button class="flex items-center bg-[#f6f8fa] border border-[#d0d7de] rounded-md px-3 py-1.5 text-sm font-medium hover:bg-gray-200">                        <i data-lucide="git-branch" class="w-4 h-4 mr-2 text-[#57606a]"></i> main <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>                    </button>                    <div class="flex items-center text-sm text-[#57606a] space-x-4">                        <a href="#" class="hover:text-[#0969da] flex items-center"><i data-lucide="git-branch" class="w-4 h-4 mr-1"></i> 2 branches</a>                        <a href="#" class="hover:text-[#0969da] flex items-center"><i data-lucide="tag" class="w-4 h-4 mr-1"></i> 0 tags</a>                    </div>                </div>                <div class="flex items-center space-x-2">                    <button class="bg-[#2da44e] text-white border border-[#2da44e] rounded-md px-3 py-1.5 text-sm font-semibold hover:bg-[#2c974b] flex items-center">                        Code <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>                    </button>                </div>            </div>            <!-- File Explorer -->            <div class="border border-[#d0d7de] rounded-md mb-6">                <div class="bg-[#f6f8fa] border-b border-[#d0d7de] px-4 py-3 flex items-center justify-between text-sm rounded-t-md">                    <div class="flex items-center space-x-2 font-medium">                        <img src="https://avatars.githubusercontent.com/u/9919?s=40&v=4" alt="octocat" class="w-5 h-5 rounded-full">                        <a href="#" class="hover:underline">octocat</a>                        <a href="#" class="text-[#57606a] hover:underline hover:text-[#0969da]">Update README.md with link to guide</a>                    </div>                    <div class="flex items-center space-x-4 text-[#57606a]">                        <a href="#" class="hover:text-[#0969da]">c4b0d02</a>                        <span>·</span>                        <span>last year</span>                        <a href="#" class="flex items-center hover:text-[#0969da]"><i data-lucide="clock" class="w-4 h-4 mr-1"></i> 3 commits</a>                    </div>                </div>                <div id="file-list" class="bg-white rounded-b-md">                    <!-- Files injected by JS -->                </div>            </div>            <!-- README -->            <div class="border border-[#d0d7de] rounded-md">                <div class="bg-[#f6f8fa] border-b border-[#d0d7de] px-4 py-3 flex items-center text-sm font-semibold rounded-t-md">                    <i data-lucide="list" class="w-4 h-4 mr-2"></i> README.md                </div>                <div id="readme-content" class="p-8 prose max-w-none bg-white rounded-b-md">                    <!-- README injected by JS -->                </div>            </div>        </div>        <!-- Right Column: Sidebar -->        <div class="w-full lg:w-1/4">            <div class="pb-6 border-b border-[#d0d7de]">                <h2 class="font-semibold text-base mb-3">About</h2>                <p class="text-[#57606a] text-sm mb-4">This repo is for demonstration purposes only.</p>                <div class="flex items-center text-[#57606a] text-sm mb-4 hover:text-[#0969da] cursor-pointer">                    <i data-lucide="book" class="w-4 h-4 mr-2"></i> Readme                </div>                <div class="flex items-center text-[#57606a] text-sm mb-4">                    <i data-lucide="star" class="w-4 h-4 mr-2"></i> <strong class="text-[#24292f] mr-1">11.4k</strong> stars                </div>                <div class="flex items-center text-[#57606a] text-sm mb-4">                    <i data-lucide="eye" class="w-4 h-4 mr-2"></i> <strong class="text-[#24292f] mr-1">324</strong> watching                </div>                <div class="flex items-center text-[#57606a] text-sm mb-4">                    <i data-lucide="git-fork" class="w-4 h-4 mr-2"></i> <strong class="text-[#24292f] mr-1">139k</strong> forks                </div>            </div>                        <div class="py-6 border-b border-[#d0d7de]">                <h2 class="font-semibold text-base mb-3 hover:text-[#0969da] cursor-pointer">Releases</h2>                <p class="text-[#57606a] text-sm">No releases published</p>            </div>            <div class="py-6 border-b border-[#d0d7de]">                <h2 class="font-semibold text-base mb-3 hover:text-[#0969da] cursor-pointer">Packages</h2>                <p class="text-[#57606a] text-sm">No packages published</p>            </div>            <div class="py-6">                <div class="flex items-center justify-between mb-3">                    <h2 class="font-semibold text-base hover:text-[#0969da] cursor-pointer">Contributors <span class="bg-gray-100 text-gray-600 rounded-full px-2 py-0.5 text-xs font-normal ml-1">2</span></h2>                </div>                <div class="flex -space-x-1">                    <img src="https://avatars.githubusercontent.com/u/9919?s=40&v=4" alt="octocat" class="w-8 h-8 rounded-full border-2 border-white">                    <img src="https://avatars.githubusercontent.com/u/1234?s=40&v=4" alt="contributor" class="w-8 h-8 rounded-full border-2 border-white">                </div>            </div>        </div>    </main>    <footer class="mt-16 py-8 border-t border-[#d0d7de] text-xs text-[#57606a] max-w-[1280px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center">        <div class="flex items-center space-x-2 mb-4 md:mb-0">            <i data-lucide="github" class="w-6 h-6"></i>            <span>&copy; 2026 GitHub, Inc.</span>        </div>        <div class="flex space-x-4 md:space-x-6 flex-wrap justify-center">            <a href="#" class="hover:text-[#0969da] mb-2">Terms</a>            <a href="#" class="hover:text-[#0969da] mb-2">Privacy</a>            <a href="#" class="hover:text-[#0969da] mb-2">Security</a>            <a href="#" class="hover:text-[#0969da] mb-2">Status</a>            <a href="#" class="hover:text-[#0969da] mb-2">Docs
+---
+layout: default
+---
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Jie (J. Song) — 个人主页</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <meta name="description" content="Jie — Biography, Research Interest, Publications, Awards, Skills.">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner container">
+      <img class="avatar" src="/assets/avatar-placeholder.png" alt="Jie 头像">
+      <div class="intro">
+        <h1>Jie (J. Song)</h1>
+        <p class="tagline">生物信息学 · 研究与开发 · 开源贡献者</p>
+        <p class="cta">
+          <!-- To add a downloadable CV: place a PDF at /assets/CV.pdf and it will be linked here -->
+          <a class="btn outline" href="#research">研究兴趣</a>
+          <a class="btn" href="/blog/">博客</a>
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>Biography</h2>
+      <p>（已参考你提供的 CV；此处为可编辑简介，建议在仓库根目录编辑 <code>index.html</code> 或在 <code>_data/</code> 添加相关文件以便后续维护。）</p>
+      <p>Jie 是一位专注于生物信息学的数据科学家与研究人员，具有基因组学与转录组学分析、工具开发与多组学整合经验。更多详情见简历（可选上传至 <code>/assets/CV.pdf</code> 并在此处链接）。</p>
+    </section>
+
+    <section id="research" class="card">
+      <h2>Research Interest</h2>
+      <ul>
+        <li>基因组学与转录组学数据分析</li>
+        <li>生物信息学算法与工具开发（Nextflow / Snakemake）</li>
+        <li>多组学数据整合与机器学习应用</li>
+      </ul>
+    </section>
+
+    <section id="publications" class="card">
+      <h2>Publications</h2>
+      <p>条目由 <code>_data/publications.yml</code> 管理；编辑该文件可方便批量更新与排序。</p>
+      <ul>
+        {% for pub in site.data.publications %}
+          <li>{{ pub.authors }} ({{ pub.year }}). <strong>{{ pub.title }}</strong>. <em>{{ pub.journal }}</em>. {% if pub.link %}<a href="{{ pub.link }}">链接</a>{% endif %}</li>
+        {% else %}
+          <li>暂无发布 — 在 <code>_data/publications.yml</code> 添加第一条记录。</li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section id="awards" class="card">
+      <h2>Awards</h2>
+      <ul>
+        {% for award in site.data.awards %}
+          <li>{{ award.year }} — {{ award.title }}{% if award.by %}（{{ award.by }}）{% endif %}</li>
+        {% else %}
+          <li>暂无奖项记录 — 在 <code>_data/awards.yml</code> 中添加。</li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <div class="skills">
+        {% for s in site.data.skills %}
+          <span class="skill">{{ s }}</span>
+        {% else %}
+          <span class="skill">Python</span>
+          <span class="skill">R</span>
+          <span class="skill">Nextflow</span>
+          <span class="skill">Snakemake</span>
+          <span class="skill">Machine Learning</span>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section id="blog-preview" class="card">
+      <h2>Latest blog posts</h2>
+      <ul>
+        {% for post in site.posts limit:5 %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a> <small class="muted">{{ post.date | date: "%Y-%m-%d" }}</small></li>
+        {% else %}
+          <li>尚无文章 — 在 <code>_posts/</code> 添加第一篇文章以启用博客。</li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>邮箱：<a href="mailto:jie@example.com">jie@example.com</a> · GitHub：<a href="https://github.com/Bio-JasperOA">Bio-JasperOA</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© Jie · 部署于 GitHub Pages · 更新时间：{{ site.time | date: "%Y-%m-%d" }}</div>
+  </footer>
+</body>
+</html>
