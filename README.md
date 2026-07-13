@@ -1,4 +1,4 @@
-# Jasper OA Academic Website
+# Song Jie Academic Website
 
 Source for [bio-jasperoa.github.io](https://bio-jasperoa.github.io/).
 
