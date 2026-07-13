@@ -2,25 +2,18 @@
 
 Source for [bio-jasperoa.github.io](https://bio-jasperoa.github.io/).
 
-## Sections
+## Pages
 
-- About Me
-- Academic Services
-- News
-- Publications
-- Honors and Awards
-- Education
+- Home
+- Blog
+- Tutorial
+- Gallery
 
-## Structure
+## Content files
 
-- `index.html` — content and semantic page structure
-- `styles.css` — visual system and responsive layout
-- `.nojekyll` — serves the static files directly through GitHub Pages
+- `data/blog.json`
+- `data/tutorials.json`
+- `data/gallery.json`
+- `CONTENT_GUIDE.md`
 
-## Design
-
-The site uses a compact, single-column academic CV layout focused on scanability and reading clarity.
-
-## Maintenance
-
-Only verified academic information should be published. Publication, award, institution, date, contact, and profile-link details should be checked before they replace the current placeholders.
+The visual layout is kept separate from routine content updates. See `CONTENT_GUIDE.md` before adding entries.

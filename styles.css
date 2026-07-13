@@ -85,11 +85,20 @@ footer { align-items: center; border-top: 1px solid var(--line); display: flex; 
 footer p, footer a { color: var(--muted); font-size: 11px; margin: 0; }
 footer a { color: var(--blue); font-weight: 620; }
 
+.collection-shell { margin: 0 auto; max-width: 980px; min-height: calc(100vh - 170px); padding: 76px 32px 96px; }
+.back-link { color: var(--blue); display: inline-block; font-size: 12px; font-weight: 620; margin-bottom: 54px; }
+.collection-shell h1 { font-size: clamp(44px, 7vw, 64px); }
+.collection-description { color: var(--muted); font-size: 18px; line-height: 1.65; margin: 24px 0 0; max-width: 680px; }
+.collection-empty { border-top: 1px solid var(--line); margin-top: 64px; padding-top: 24px; }
+.collection-empty p { color: var(--muted); font-size: 13px; line-height: 1.6; margin: 0; }
+.collection-empty .notice-label { color: var(--ink); font-weight: 650; margin-bottom: 5px; }
+
 @media (max-width: 760px) {
   .site-header { height: auto; padding: 18px 22px; position: static; }
   .site-header nav { gap: 10px 18px; justify-content: flex-end; overflow-x: auto; padding-left: 24px; }
   .site-header nav a { white-space: nowrap; }
   .page-shell, footer { padding-left: 22px; padding-right: 22px; }
+  .collection-shell { padding: 56px 22px 72px; }
   .intro { padding: 64px 0 54px; }
   .content-section { gap: 26px; grid-template-columns: 1fr; padding: 48px 0; }
   .content-section > header { display: flex; gap: 12px; }
