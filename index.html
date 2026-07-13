@@ -1,145 +1,149 @@
----
-layout: default
----
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Jie (J. Song) — 个人主页</title>
-  <link rel="stylesheet" href="/assets/styles.css">
-  <meta name="description" content="Jie — Biography, Research Interest, Publications, Awards, Skills.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jasper OA — Pharmaceutical Science and Statistical Genetics">
+  <meta name="theme-color" content="#faf9f6">
+  <title>Jasper OA | Academic Profile</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page-wrapper">
-    <!-- Left Sidebar -->
-    <aside class="sidebar">
-      <div class="sidebar-content">
-        <div class="profile-section">
-          <img class="profile-image" src="/assets/avatar-placeholder.png" alt="Jie 头像">
-          <h1 class="profile-name">Jie (J. Song)</h1>
-          <p class="profile-title">生物信息学 · 研究与开发 · 开源贡献者</p>
-        </div>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Jasper OA — Home">Jasper OA<span>.</span></a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#about">About Me</a>
+      <a href="#services">Academic Services</a>
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#honors">Honors &amp; Awards</a>
+      <a href="#education">Education</a>
+    </nav>
+    <details class="mobile-nav">
+      <summary aria-label="Open navigation">Menu</summary>
+      <nav aria-label="Mobile navigation">
+        <a href="#about">About Me</a>
+        <a href="#services">Academic Services</a>
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#honors">Honors &amp; Awards</a>
+        <a href="#education">Education</a>
+      </nav>
+    </details>
+  </header>
 
-        <div class="sidebar-card">
-          <h3>📍 联系方式</h3>
-          <ul class="contact-list">
-            <li><a href="mailto:jie@example.com">jie@example.com</a></li>
-            <li><a href="https://github.com/Bio-JasperOA" target="_blank">GitHub</a></li>
-            <li><a href="https://orcid.org/" target="_blank">ORCID</a></li>
-          </ul>
-        </div>
-
-        <div class="sidebar-card">
-          <h3>📚 快速导航</h3>
-          <ul class="nav-list">
-            <li><a href="#about">关于我</a></li>
-            <li><a href="#research">研究兴趣</a></li>
-            <li><a href="#publications">发表论文</a></li>
-            <li><a href="#awards">奖项荣誉</a></li>
-            <li><a href="#skills">技能专长</a></li>
-            <li><a href="/blog/">博客文章</a></li>
-          </ul>
-        </div>
-
-        <div class="sidebar-card">
-          <h3>🛠️ 主要技能</h3>
-          <div class="skills-sidebar">
-            {% for s in site.data.skills %}
-              <span class="skill-tag">{{ s }}</span>
-            {% else %}
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">R</span>
-              <span class="skill-tag">Nextflow</span>
-              <span class="skill-tag">Snakemake</span>
-              <span class="skill-tag">ML</span>
-            {% endfor %}
-          </div>
+  <main id="top" class="page-shell">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Pharmaceutical Science · Statistical Genetics</p>
+        <h1 id="hero-title">Researching the genetic architecture of complex disease.</h1>
+        <p class="hero-description">I study shared genetic architecture and causal relationships across complex diseases, with a current focus on cancer and cardiovascular health.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#publications">View research <span>↗</span></a>
+          <a class="button secondary" href="#about">About me <span>→</span></a>
         </div>
       </div>
-    </aside>
+      <div class="signal-graphic" aria-hidden="true">
+        <div class="signal-grid"></div>
+        <div class="signal-line"><i></i><i></i><i></i><i></i><i></i></div>
+        <p>cross-trait signal</p>
+      </div>
+    </section>
 
-    <!-- Main Content -->
-    <main class="main-content">
-      <!-- About Section -->
-      <section id="about" class="content-card">
-        <h2 class="section-title">关于我</h2>
-        <p>Jie 是一位专注于生物信息学的数据科学家与研究人员，具有基因组学与转录组学分析、工具开发与多组学整合经验。致力于开发高效的生物信息学流程与工具，推进科学研究与临床应用。</p>
-        <p>主要研究方向包括：基因组学、转录组学、多组学数据整合、机器学习在生物医学中的应用。</p>
+    <section id="publications" class="publications section-anchor" aria-labelledby="publications-title">
+      <div class="section-heading compact">
+        <div><p class="eyebrow">Selected work</p><h2 id="publications-title">Research &amp; publications</h2></div>
+        <p class="section-note">Verified publication records will be added here.</p>
+      </div>
+      <div class="publication-list">
+        <article class="publication-row">
+          <span class="publication-year">In progress</span>
+          <div>
+            <h3>Genetic architecture and causal relationships between cancer and cardiovascular disease</h3>
+            <p>Statistical genetics · Complex disease</p>
+          </div>
+          <span class="tag">Research</span>
+        </article>
+        <article class="publication-row">
+          <span class="publication-year">In progress</span>
+          <div>
+            <h3>Methods for robust cross-trait analysis using GWAS summary statistics</h3>
+            <p>GWAS · Causal inference</p>
+          </div>
+          <span class="tag">Methods</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about section-anchor split-section" aria-labelledby="about-title">
+      <div>
+        <p class="eyebrow">About me</p>
+        <h2 id="about-title">From pharmaceutical science to the genetics of complex disease.</h2>
+      </div>
+      <div class="prose-block">
+        <p>I am a pharmaceutical science student developing research expertise in statistical genetics and computational biology. My work is motivated by a central question: how can inherited variation help us understand the biological connections between diseases?</p>
+        <p>I currently explore cancer–cardiovascular comorbidity using GWAS summary statistics, genetic correlation, conditional association and causal-inference methods. I value careful interpretation, transparent methods and biologically grounded questions.</p>
+        <div class="focus-line"><span>Current focus</span><strong>Cancer × cardiovascular genetics</strong></div>
+      </div>
+    </section>
+
+    <section id="services" class="section-anchor" aria-labelledby="services-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Academic services</p><h2 id="services-title">Areas of contribution</h2></div>
+        <p>Research-oriented capabilities that support collaborative, evidence-driven projects.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card"><span>01</span><h3>Statistical genetics</h3><p>Cross-trait genetic architecture, GWAS summary statistics, genetic correlation and causal inference.</p></article>
+        <article class="service-card"><span>02</span><h3>Multi-omics analysis</h3><p>Integrative analysis spanning transcriptomics, single-cell data and disease-associated molecular evidence.</p></article>
+        <article class="service-card"><span>03</span><h3>Reproducible research</h3><p>Clear, auditable workflows that connect biological questions with robust computational analysis.</p></article>
+      </div>
+    </section>
+
+    <section id="news" class="section-anchor" aria-labelledby="news-title">
+      <div class="section-heading compact">
+        <div><p class="eyebrow">News</p><h2 id="news-title">Recent updates</h2></div>
+      </div>
+      <div class="news-list">
+        <article>
+          <time>Current</time>
+          <div><h3>Exploring the shared genetics of cancer and cardiovascular disease</h3><p>Research update · Statistical genetics</p></div>
+          <span>↗</span>
+        </article>
+        <article>
+          <time>2026</time>
+          <div><h3>Academic website launched</h3><p>Website · Research profile</p></div>
+          <span>↗</span>
+        </article>
+      </div>
+    </section>
+
+    <div class="two-column-sections">
+      <section id="honors" class="section-anchor info-panel" aria-labelledby="honors-title">
+        <p class="eyebrow">Honors &amp; awards</p>
+        <h2 id="honors-title">Recognition</h2>
+        <div class="empty-state"><span>01</span><p>Honors and awards will be added after the records are verified.</p></div>
       </section>
-
-      <!-- Research Interests Section -->
-      <section id="research" class="content-card">
-        <h2 class="section-title">研究兴趣</h2>
-        <ul class="interest-list">
-          <li><strong>基因组学与转录组学</strong> - 大规模测序数据分析与处理</li>
-          <li><strong>生物信息学工具开发</strong> - Nextflow / Snakemake 工作流设计</li>
-          <li><strong>多组学数据整合</strong> - 蛋白质组、代谢组、表观遗传学整合分析</li>
-          <li><strong>机器学习应用</strong> - 深度学习在生物信息学中的应用</li>
-          <li><strong>开源软件贡献</strong> - 参与和维护开源生物信息学项目</li>
-        </ul>
-      </section>
-
-      <!-- Publications Section -->
-      <section id="publications" class="content-card">
-        <h2 class="section-title">发表论文</h2>
-        <div class="publications-list">
-          {% for pub in site.data.publications %}
-            <div class="publication-item">
-              <div class="pub-year">{{ pub.year }}</div>
-              <div class="pub-content">
-                <p class="pub-authors">{{ pub.authors }}</p>
-                <p class="pub-title">{{ pub.title }}</p>
-                <p class="pub-journal"><em>{{ pub.journal }}</em>
-                  {% if pub.link %}<a href="{{ pub.link }}" class="pub-link" target="_blank">📄 查看</a>{% endif %}
-                </p>
-              </div>
-            </div>
-          {% else %}
-            <p class="placeholder">暂无发布 — 在 <code>_data/publications.yml</code> 添加第一条记录。</p>
-          {% endfor %}
+      <section id="education" class="section-anchor info-panel" aria-labelledby="education-title">
+        <p class="eyebrow">Education</p>
+        <h2 id="education-title">Academic path</h2>
+        <div class="timeline">
+          <article><span>Present</span><div><h3>Visiting Research Student</h3><p>Westlake University · Statistical Genetics</p></div></article>
+          <article><span>Undergraduate</span><div><h3>Pharmaceutical Science</h3><p>Institution and dates to be added</p></div></article>
         </div>
       </section>
-
-      <!-- Awards Section -->
-      <section id="awards" class="content-card">
-        <h2 class="section-title">奖项荣誉</h2>
-        <div class="awards-list">
-          {% for award in site.data.awards %}
-            <div class="award-item">
-              <div class="award-year">{{ award.year }}</div>
-              <div class="award-content">
-                <p class="award-title">{{ award.title }}</p>
-                {% if award.by %}<p class="award-by">{{ award.by }}</p>{% endif %}
-              </div>
-            </div>
-          {% else %}
-            <p class="placeholder">暂无奖项记录 — 在 <code>_data/awards.yml</code> 中添加。</p>
-          {% endfor %}
-        </div>
-      </section>
-
-      <!-- Blog Preview Section -->
-      <section id="blog-preview" class="content-card">
-        <h2 class="section-title">最新博客</h2>
-        <div class="blog-list">
-          {% for post in site.posts limit:8 %}
-            <div class="blog-item">
-              <a href="{{ post.url }}" class="blog-title">{{ post.title }}</a>
-              <span class="blog-date">{{ post.date | date: "%Y-%m-%d" }}</span>
-            </div>
-          {% else %}
-            <p class="placeholder">尚无文章 — 在 <code>_posts/</code> 添加第一篇文章以启用博客。</p>
-          {% endfor %}
-        </div>
-      </section>
-    </main>
-  </div>
-
-  <footer class="site-footer">
-    <div class="footer-content">
-      <p>© Jie · 部署于 <a href="https://pages.github.com/">GitHub Pages</a> · 更新时间：{{ site.time | date: "%Y-%m-%d" }}</p>
     </div>
+  </main>
+
+  <footer>
+    <div>
+      <p class="footer-name">Jasper OA<span>.</span></p>
+      <p>Pharmaceutical Science · Statistical Genetics</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/Bio-JasperOA" target="_blank" rel="noreferrer">GitHub ↗</a>
+      <a href="#top">Back to top ↑</a>
+    </div>
+    <p class="copyright">© 2026 Jasper OA</p>
   </footer>
 </body>
 </html>
