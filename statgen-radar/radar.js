@@ -149,10 +149,11 @@ function tidyBriefMeta(root) {
   if (!title) return;
   let node = title.nextElementSibling;
   while (node && node.tagName === 'P') {
+    const next = node.nextElementSibling;
     const text = node.textContent.trim();
     if (/^(Generated|Window|Raw relevant hits|Included records|Journal articles|Preprints|JIF edition):/i.test(text)) {
       node.remove();
-      node = title.nextElementSibling;
+      node = next;
     } else {
       break;
     }
@@ -175,8 +176,9 @@ async function renderArticle() {
     if (!response.ok) throw new Error(`Brief request failed: ${response.status}`);
     const markdown = await response.text();
     root.innerHTML = window.marked ? marked.parse(markdown) : `<pre>${escapeHtml(markdown)}</pre>`;
-    injectSummaryGrid(root, parseBriefStats(markdown));
+    const stats = parseBriefStats(markdown);
     tidyBriefMeta(root);
+    injectSummaryGrid(root, stats);
     transformInclusionTable(root);
     document.title = `StatGen Radar — ${date} | Song Jie`;
   } catch (error) {
