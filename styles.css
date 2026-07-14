@@ -76,6 +76,8 @@ h2 { font-size: 20px; font-weight: 680; letter-spacing: -.025em; line-height: 1.
 .dated-list article:last-child { border-bottom: 1px solid var(--line); }
 .dated-list time { color: var(--muted); font-size: 11px; text-transform: uppercase; }
 .dated-list p { margin-top: 6px; }
+.education-list article { grid-template-columns: 148px 1fr; }
+.education-list .supervisor { color: var(--ink); font-size: 11px; }
 
 .notice { background: var(--soft); border-left: 2px solid var(--blue); padding: 20px 22px; }
 .notice p { color: var(--muted); font-size: 13px; line-height: 1.6; margin: 0; }
@@ -123,6 +125,7 @@ footer a { color: var(--blue); font-weight: 620; }
   h1 { font-size: 48px; }
   .clean-list article { gap: 7px; grid-template-columns: 1fr; }
   .dated-list article { grid-template-columns: 78px 1fr; }
+  .education-list article { grid-template-columns: 110px 1fr; }
   .facts > div { gap: 8px; grid-template-columns: 1fr; }
   .publication-item { gap: 12px; grid-template-columns: 1fr; }
   .publication-meta { align-items: center; flex-direction: row; }
