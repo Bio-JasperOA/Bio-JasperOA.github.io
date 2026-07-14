@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StatGen Radar — daily statistical genetics literature intelligence by Song Jie">
+  <meta name="theme-color" content="#fbfaf7">
+  <title>StatGen Radar | Song Jie</title>
+  <link rel="stylesheet" href="../styles.css?v=869dd361">
+  <link rel="stylesheet" href="radar.css?v=1">
+</head>
+<body>
+  <main>
+    <header class="site-header">
+      <a class="wordmark" href="/">Song Jie</a>
+      <nav aria-label="Collection navigation">
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tutorial/">Tutorial</a>
+        <a href="/gallery/">Gallery</a>
+        <a href="/statgen-radar/" aria-current="page">StatGen Radar</a>
+      </nav>
+    </header>
+
+    <div class="collection-shell radar-shell">
+      <a class="back-link" href="/">← Home</a>
+      <p class="eyebrow">10 · Literature Intelligence</p>
+      <h1>StatGen Radar</h1>
+      <p class="collection-description">Daily monitoring of statistical genetics, GWAS, causal inference and complex-disease genomics, with particular attention to cancer–cardiovascular comorbidity.</p>
+
+      <section id="latest" class="radar-latest" aria-live="polite">
+        <p class="notice-label">Loading latest brief…</p>
+      </section>
+
+      <section class="radar-archive-section">
+        <div class="radar-section-heading">
+          <p class="eyebrow">Archive</p>
+          <h2>Daily Briefs</h2>
+        </div>
+        <div id="archive" class="radar-archive" aria-live="polite"></div>
+      </section>
+
+      <section class="radar-method-note">
+        <h2>About the ranking</h2>
+        <p>Articles are screened by topic relevance before publication-level scoring. Preprints receive a uniform publication score; journal articles receive a tiered score based on the configured Journal Impact Factor. Journal metrics support prioritisation but do not replace article-level methodological appraisal.</p>
+      </section>
+    </div>
+
+    <footer><p>© 2026 Song Jie</p><a href="/">Return home →</a></footer>
+  </main>
+  <script src="radar.js" defer></script>
+</body>
+</html>
