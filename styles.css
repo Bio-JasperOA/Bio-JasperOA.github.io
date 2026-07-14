@@ -79,6 +79,10 @@ h2 { font-size: 20px; font-weight: 680; letter-spacing: -.025em; line-height: 1.
 .education-list article { grid-template-columns: 148px 1fr; }
 .education-list time { color: var(--blue); font-weight: 650; }
 .education-list .supervisor { color: var(--ink); font-size: 11px; }
+.honors-list time { color: var(--blue); font-weight: 650; }
+.honors-list ul { color: var(--muted); font-size: 12px; line-height: 1.6; list-style: none; margin: 12px 0 0; padding: 0; }
+.honors-list li { padding-left: 15px; position: relative; }
+.honors-list li::before { color: var(--blue); content: "—"; left: 0; position: absolute; }
 
 .notice { background: var(--soft); border-left: 2px solid var(--blue); padding: 20px 22px; }
 .notice p { color: var(--muted); font-size: 13px; line-height: 1.6; margin: 0; }
