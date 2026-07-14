@@ -39,7 +39,7 @@ a { color: inherit; text-decoration: none; }
 .site-header nav a:hover { color: var(--blue); }
 
 .page-shell, footer { margin: 0 auto; max-width: 980px; padding-left: 32px; padding-right: 32px; }
-.intro { border: 0; padding: 88px 0 76px; }
+.intro { border: 0; padding: 88px 0 44px; }
 .eyebrow { color: var(--blue); font-size: 11px; font-weight: 700; letter-spacing: .14em; margin: 0 0 18px; text-transform: uppercase; }
 h1 { font-size: clamp(46px, 7vw, 68px); font-weight: 680; letter-spacing: -.055em; line-height: 1; margin: 0; }
 .lead { color: var(--muted); font-size: clamp(18px, 2.2vw, 22px); line-height: 1.55; margin: 26px 0 0; max-width: 760px; }
@@ -58,9 +58,21 @@ h1 { font-size: clamp(46px, 7vw, 68px); font-weight: 680; letter-spacing: -.055e
 .role-meta strong { color: var(--ink); font-size: 14px; font-weight: 690; }
 .role-meta span { color: var(--blue); font-size: 11px; font-weight: 620; }
 .profile-links { display: grid; gap: 18px 40px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.profile-link { display: grid; gap: 4px; min-width: 0; }
+.profile-link {
+  background: rgba(49, 105, 198, .07);
+  border: 1px solid rgba(49, 105, 198, .14);
+  border-radius: 3px;
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  padding: 12px 14px;
+}
 .profile-label { color: var(--muted); font-size: 9px; font-weight: 680; letter-spacing: .09em; text-transform: uppercase; }
 .profile-value { color: var(--blue); font-size: 11px; font-weight: 620; overflow-wrap: anywhere; }
+.profile-link:hover {
+  background: rgba(49, 105, 198, .11);
+  border-color: rgba(49, 105, 198, .28);
+}
 .profile-link:hover .profile-value { text-decoration: underline; text-underline-offset: 3px; }
 
 .content-section {
@@ -136,7 +148,7 @@ footer a { color: var(--blue); font-weight: 620; }
   .site-header nav a { white-space: nowrap; }
   .page-shell, footer { padding-left: 22px; padding-right: 22px; }
   .collection-shell { padding: 56px 22px 72px; }
-  .intro { padding: 64px 0 54px; }
+  .intro { padding: 64px 0 38px; }
   .content-section { gap: 26px; grid-template-columns: 1fr; padding: 48px 0; }
   .content-section > header { display: flex; gap: 12px; }
   .content-section > header span { margin: 5px 0 0; }
