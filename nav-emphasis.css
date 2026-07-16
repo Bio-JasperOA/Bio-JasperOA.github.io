@@ -1,11 +1,16 @@
 .site-header nav {
+  align-items: center;
   gap: 20px;
 }
 
-.site-header nav a {
+.site-header nav > a {
+  align-items: center;
   color: #000;
+  display: inline-flex;
   font-size: 13px;
   font-weight: 620;
+  line-height: 1;
+  min-height: 36px;
 }
 
 .site-header nav a.nav-blog,
@@ -16,7 +21,7 @@
   border-radius: 0;
   font-size: 13px;
   font-weight: 760;
-  padding: 4px 0;
+  padding: 0;
   transition: color .18s ease, transform .18s ease;
 }
 
@@ -54,7 +59,8 @@
   font-weight: 720;
   gap: 7px;
   margin-left: 4px;
-  padding: 7px 11px 7px 9px;
+  min-height: 36px;
+  padding: 0 11px 0 9px;
   transition: background .18s ease, border-color .18s ease, transform .18s ease;
 }
 
@@ -65,6 +71,7 @@
   background-size: contain;
   content: "";
   display: block;
+  flex: 0 0 auto;
   height: 17px;
   width: 17px;
 }
@@ -79,6 +86,9 @@
 
 .site-header nav a[href="/statgen-radar/"] {
   font-size: 13px;
+  min-height: 36px;
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 @media (max-width: 760px) {
