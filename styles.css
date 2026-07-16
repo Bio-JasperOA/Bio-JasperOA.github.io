@@ -83,6 +83,8 @@ h1 { font-size: clamp(46px, 7vw, 68px); font-weight: 680; letter-spacing: -.055e
 .profile-link:hover .profile-value { text-decoration: underline; text-underline-offset: 3px; }
 
 .content-section { border-top: 1px solid var(--line); display: grid; gap: 52px; grid-template-columns: 190px minmax(0, 1fr); padding: 62px 0; scroll-margin-top: 64px; }
+#services.content-section { padding-bottom: 22px; }
+#news.content-section { padding-top: 22px; }
 .content-section > header { align-self: start; }
 .content-section > header span { color: var(--blue); display: block; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 10px; margin-bottom: 12px; }
 h2 { font-size: 20px; font-weight: 680; letter-spacing: -.025em; line-height: 1.25; margin: 0; }
@@ -144,6 +146,8 @@ footer a { color: var(--blue); font-weight: 620; }
   .collection-shell { padding: 56px 22px 72px; }
   .intro { padding: 64px 0 38px; }
   .content-section { gap: 26px; grid-template-columns: 1fr; padding: 48px 0; }
+  #services.content-section { padding-bottom: 22px; }
+  #news.content-section { padding-top: 22px; }
   .content-section > header { display: flex; gap: 12px; }
   .content-section > header span { margin: 5px 0 0; }
   .profile-links { grid-template-columns: 1fr; }
