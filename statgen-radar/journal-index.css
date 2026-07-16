@@ -61,7 +61,7 @@
 }
 
 .journal-index-table th {
-  color: var(--muted);
+  color: var(--ink);
   font-size: 10px;
   font-weight: 700;
   letter-spacing: .06em;
