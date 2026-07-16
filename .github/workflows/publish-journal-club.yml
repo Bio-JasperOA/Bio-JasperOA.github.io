@@ -1,0 +1,43 @@
+name: Publish Journal Club
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "journal-club/posts/**"
+      - "scripts/build_journal_club.py"
+      - ".github/workflows/publish-journal-club.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install renderer
+        run: pip install markdown PyYAML
+
+      - name: Build Journal Club pages
+        run: python scripts/build_journal_club.py
+
+      - name: Commit generated pages
+        run: |
+          if git diff --quiet -- journal-club/index.html journal-club/articles; then
+            echo "No generated changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add journal-club/index.html journal-club/articles
+          git commit -m "Publish Journal Club posts"
+          git push
