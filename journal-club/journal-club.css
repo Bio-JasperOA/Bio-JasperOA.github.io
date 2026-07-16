@@ -1,0 +1,154 @@
+.jc-list {
+  border-top: 1px solid var(--line);
+  display: grid;
+  margin-top: 58px;
+}
+
+.jc-card {
+  border-bottom: 1px solid var(--line);
+  padding: 26px 0;
+}
+
+.jc-card-meta {
+  align-items: center;
+  color: var(--muted);
+  display: flex;
+  font-size: 11px;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.jc-card-meta time {
+  color: #9a5c20;
+  font-weight: 700;
+}
+
+.jc-card h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.jc-card h2 a:hover {
+  color: #9a5c20;
+}
+
+.jc-card > p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.65;
+  margin: 10px 0 0;
+  max-width: 760px;
+}
+
+.jc-card-footer {
+  align-items: flex-end;
+  color: var(--muted);
+  display: flex;
+  font-size: 11px;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.jc-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.jc-tag {
+  background: rgba(154, 92, 32, .08);
+  border: 1px solid rgba(154, 92, 32, .16);
+  color: #8d541d;
+  font-size: 10px;
+  font-weight: 650;
+  padding: 4px 7px;
+}
+
+.jc-article-shell {
+  margin: 0 auto;
+  max-width: 860px;
+  padding: 72px 32px 100px;
+}
+
+.jc-article-shell h1 {
+  font-size: clamp(38px, 6vw, 58px);
+  line-height: 1.08;
+}
+
+.jc-paper-meta {
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  gap: 9px 18px;
+  margin: 26px 0 16px;
+  padding-bottom: 18px;
+}
+
+.jc-paper-meta a {
+  color: var(--blue);
+  font-weight: 650;
+}
+
+.jc-article-body {
+  color: #30394a;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-top: 48px;
+}
+
+.jc-article-body h2 {
+  border-top: 1px solid var(--line);
+  font-size: 24px;
+  margin: 52px 0 18px;
+  padding-top: 30px;
+}
+
+.jc-article-body h3 {
+  font-size: 18px;
+  margin: 34px 0 12px;
+}
+
+.jc-article-body p,
+.jc-article-body ul,
+.jc-article-body ol {
+  margin: 0 0 20px;
+}
+
+.jc-article-body img {
+  height: auto;
+  margin: 24px 0;
+  max-width: 100%;
+}
+
+.jc-article-body blockquote {
+  border-left: 3px solid #9a5c20;
+  color: var(--muted);
+  margin: 28px 0;
+  padding: 4px 0 4px 20px;
+}
+
+.jc-article-body code {
+  background: var(--soft);
+  font-size: .9em;
+  padding: 2px 5px;
+}
+
+.jc-article-body pre {
+  background: #171b24;
+  color: #f3f5f8;
+  overflow-x: auto;
+  padding: 18px;
+}
+
+.jc-article-body pre code {
+  background: transparent;
+  padding: 0;
+}
+
+@media (max-width: 760px) {
+  .jc-article-shell { padding: 54px 22px 72px; }
+  .jc-card-footer { align-items: flex-start; flex-direction: column; }
+}
