@@ -37,19 +37,15 @@ def parse_post(path: Path) -> tuple[dict, str]:
 
 
 def remove_duplicate_leading_title(body: str, title: str) -> str:
-    """Remove a leading Markdown H1 when it duplicates the front-matter title."""
     match = re.match(r"^#\s+(.+?)\s*(?:\n+|$)", body)
     if not match:
         return body
     heading = re.sub(r"\s+", " ", match.group(1)).strip().casefold()
     expected = re.sub(r"\s+", " ", title).strip().casefold()
-    if heading == expected:
-        return body[match.end():].lstrip()
-    return body
+    return body[match.end():].lstrip() if heading == expected else body
 
 
 def protect_math(text: str) -> tuple[str, dict[str, str]]:
-    """Protect MathJax delimiters and LaTeX commands from Python-Markdown escaping."""
     placeholders: dict[str, str] = {}
 
     def stash(match: re.Match[str], kind: str) -> str:
@@ -72,6 +68,22 @@ def date_text(value: object) -> str:
     if isinstance(value, (date, datetime)):
         return value.strftime("%Y-%m-%d")
     return str(value or "Undated")
+
+
+def full_navigation() -> str:
+    return '''<nav aria-label="Primary navigation">
+        <a href="/#about">About</a>
+        <a href="/#services">Interests</a>
+        <a href="/#news">News</a>
+        <a href="/#publications">Publications</a>
+        <a href="/#honors">Honors</a>
+        <a href="/#education">Education</a>
+        <a class="nav-blog" href="/blog/">Blog</a>
+        <a class="nav-tutorial" href="/tutorial/">Tutorial</a>
+        <a class="nav-gallery" href="/gallery/">Gallery</a>
+        <a class="nav-journal-club" href="/journal-club/" aria-current="page">Journal Club</a>
+        <a href="/statgen-radar/">StatGen Radar</a>
+      </nav>'''
 
 
 def build_article(meta: dict, body: str, slug: str) -> str:
@@ -118,11 +130,7 @@ def build_article(meta: dict, body: str, slug: str) -> str:
   <main>
     <header class="site-header">
       <a class="wordmark" href="/">Song Jie</a>
-      <nav aria-label="Collection navigation">
-        <a href="/">Home</a><a href="/blog/">Blog</a><a href="/tutorial/">Tutorial</a><a href="/gallery/">Gallery</a>
-        <a class="nav-journal-club" href="/journal-club/" aria-current="page">Journal Club</a>
-        <a href="/statgen-radar/">StatGen Radar</a>
-      </nav>
+      {full_navigation()}
     </header>
     <article class="jc-article-shell">
       <a class="back-link" href="/journal-club/">← Journal Club</a>
