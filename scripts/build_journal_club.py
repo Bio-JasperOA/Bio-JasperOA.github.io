@@ -36,6 +36,18 @@ def parse_post(path: Path) -> tuple[dict, str]:
     return metadata, body
 
 
+def remove_duplicate_leading_title(body: str, title: str) -> str:
+    """Remove a leading Markdown H1 when it duplicates the front-matter title."""
+    match = re.match(r"^#\s+(.+?)\s*(?:\n+|$)", body)
+    if not match:
+        return body
+    heading = re.sub(r"\s+", " ", match.group(1)).strip().casefold()
+    expected = re.sub(r"\s+", " ", title).strip().casefold()
+    if heading == expected:
+        return body[match.end():].lstrip()
+    return body
+
+
 def date_text(value: object) -> str:
     if isinstance(value, (date, datetime)):
         return value.strftime("%Y-%m-%d")
@@ -43,7 +55,8 @@ def date_text(value: object) -> str:
 
 
 def build_article(meta: dict, body: str, slug: str) -> str:
-    title = html.escape(str(meta.get("title", slug.replace("-", " ").title())) )
+    raw_title = str(meta.get("title", slug.replace("-", " ").title()))
+    title = html.escape(raw_title)
     short_title = html.escape(str(meta.get("short_title", meta.get("title", title))))
     published = html.escape(date_text(meta.get("date")))
     journal = html.escape(str(meta.get("journal", "")))
@@ -54,6 +67,7 @@ def build_article(meta: dict, body: str, slug: str) -> str:
     if isinstance(topics, str):
         topics = [topics]
 
+    body = remove_duplicate_leading_title(body, raw_title)
     article_html = markdown.markdown(
         body,
         extensions=["extra", "fenced_code", "tables", "toc", "sane_lists"],
@@ -72,7 +86,7 @@ def build_article(meta: dict, body: str, slug: str) -> str:
   <title>{title} | Journal Club</title>
   <link rel="stylesheet" href="../../../styles.css?v=20260716-nav-separate">
   <link rel="stylesheet" href="../../../nav-emphasis.css?v=20260716-nav-grey">
-  <link rel="stylesheet" href="../../journal-club.css?v=20260716-auto-publish">
+  <link rel="stylesheet" href="../../journal-club.css?v=20260716-reading-layout">
   <script>
     window.MathJax = {{tex: {{inlineMath: [['\\\\(', '\\\\)']], displayMath: [['\\\\[', '\\\\]']]}}}};
   </script>
