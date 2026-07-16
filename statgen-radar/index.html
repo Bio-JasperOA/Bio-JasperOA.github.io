@@ -6,7 +6,8 @@
   <meta name="description" content="StatGen Radar — daily statistical genetics literature intelligence by Song Jie">
   <meta name="theme-color" content="#fbfaf7">
   <title>StatGen Radar | Song Jie</title>
-  <link rel="stylesheet" href="../styles.css?v=20260715-news-degree">
+  <link rel="stylesheet" href="../styles.css?v=20260716-nav-separate">
+  <link rel="stylesheet" href="../nav-emphasis.css?v=20260716-nav-grey">
   <link rel="stylesheet" href="radar.css?v=20260715-journal-index">
   <link rel="stylesheet" href="journal-index.css?v=20260716-black-header2">
 </head>
@@ -14,11 +15,17 @@
   <main>
     <header class="site-header">
       <a class="wordmark" href="/">Song Jie</a>
-      <nav aria-label="Collection navigation">
-        <a href="/">Home</a>
-        <a href="/blog/">Blog</a>
-        <a href="/tutorial/">Tutorial</a>
-        <a href="/gallery/">Gallery</a>
+      <nav aria-label="Primary navigation">
+        <a href="/#about">About</a>
+        <a href="/#services">Interests</a>
+        <a href="/#news">News</a>
+        <a href="/#publications">Publications</a>
+        <a href="/#honors">Honors</a>
+        <a href="/#education">Education</a>
+        <a class="nav-blog" href="/blog/">Blog</a>
+        <a class="nav-tutorial" href="/tutorial/">Tutorial</a>
+        <a class="nav-gallery" href="/gallery/">Gallery</a>
+        <a class="nav-journal-club" href="/journal-club/">Journal Club</a>
         <a href="/statgen-radar/" aria-current="page">StatGen Radar</a>
       </nav>
     </header>
@@ -29,66 +36,25 @@
       <h1>StatGen Radar</h1>
       <p class="collection-description">Daily monitoring of statistical genetics, GWAS, causal inference and complex-disease genomics, with particular attention to cancer–cardiovascular comorbidity.</p>
 
-      <section id="latest" class="radar-latest" aria-live="polite">
-        <p class="notice-label">Loading latest brief…</p>
-      </section>
+      <section id="latest" class="radar-latest" aria-live="polite"><p class="notice-label">Loading latest brief…</p></section>
 
       <section class="radar-archive-section">
-        <div class="radar-section-heading">
-          <p class="eyebrow">Archive</p>
-          <h2>Daily Briefs</h2>
-        </div>
+        <div class="radar-section-heading"><p class="eyebrow">Archive</p><h2>Daily Briefs</h2></div>
         <div id="archive" class="radar-archive" aria-live="polite"></div>
       </section>
 
       <section class="radar-journal-section" aria-labelledby="journal-index-title">
         <div class="radar-section-heading journal-heading-row">
-          <div>
-            <p class="eyebrow">Cumulative Index</p>
-            <h2 id="journal-index-title">Index</h2>
-          </div>
-          <label class="journal-page-size">
-            <span>Rows per page</span>
-            <select id="journal-page-size" aria-label="Journal records per page">
-              <option value="10">10</option>
-              <option value="20">20</option>
-              <option value="50">50</option>
-            </select>
-          </label>
+          <div><p class="eyebrow">Cumulative Index</p><h2 id="journal-index-title">Index</h2></div>
+          <label class="journal-page-size"><span>Rows per page</span><select id="journal-page-size" aria-label="Journal records per page"><option value="10">10</option><option value="20">20</option><option value="50">50</option></select></label>
         </div>
-
         <div class="journal-table-wrap">
-          <table class="journal-index-table">
-            <thead>
-              <tr>
-                <th>Included</th>
-                <th>Article</th>
-                <th>Journal</th>
-                <th>DOI</th>
-                <th class="numeric">Score</th>
-                <th class="numeric">JIF</th>
-              </tr>
-            </thead>
-            <tbody id="journal-index-body">
-              <tr><td colspan="6">Loading indexed journal articles…</td></tr>
-            </tbody>
-          </table>
+          <table class="journal-index-table"><thead><tr><th>Included</th><th>Article</th><th>Journal</th><th>DOI</th><th class="numeric">Score</th><th class="numeric">JIF</th></tr></thead><tbody id="journal-index-body"><tr><td colspan="6">Loading indexed journal articles…</td></tr></tbody></table>
         </div>
-
-        <div class="journal-pagination" aria-label="Journal index pagination">
-          <p id="journal-page-summary">Loading…</p>
-          <div class="journal-page-controls">
-            <button id="journal-prev" type="button">← Previous</button>
-            <span id="journal-page-number">Page 1</span>
-            <button id="journal-next" type="button">Next →</button>
-          </div>
-        </div>
+        <div class="journal-pagination" aria-label="Journal index pagination"><p id="journal-page-summary">Loading…</p><div class="journal-page-controls"><button id="journal-prev" type="button">← Previous</button><span id="journal-page-number">Page 1</span><button id="journal-next" type="button">Next →</button></div></div>
       </section>
 
-      <section class="radar-method-note">
-        <h2>About the ranking</h2>
-        <p>Articles are screened by topic relevance before publication-level scoring. Preprints receive a uniform publication score; journal articles receive a tiered score based on the configured Journal Impact Factor. Journal metrics support prioritisation but do not replace article-level methodological appraisal.</p>
-      </section>
+      <section class="radar-method-note"><h2>About the ranking</h2><p>Articles are screened by topic relevance before publication-level scoring. Preprints receive a uniform publication score; journal articles receive a tiered score based on the configured Journal Impact Factor. Journal metrics support prioritisation but do not replace article-level methodological appraisal.</p></section>
     </div>
 
     <footer><p>© 2026 Song Jie</p><a href="/">Return home →</a></footer>
