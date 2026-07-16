@@ -13,8 +13,21 @@ function journalEscape(value) {
 }
 
 function journalDoi(record) {
-  if (!record.doi) return '<span class="journal-doi-missing">Unavailable</span>';
+  if (!record.doi || record.doi === '—' || record.doi === '-') {
+    return '<span class="journal-doi-missing">Unavailable</span>';
+  }
   return `<a href="https://doi.org/${encodeURI(record.doi)}" target="_blank" rel="noreferrer">${journalEscape(record.doi)} ↗</a>`;
+}
+
+function validNumber(value) {
+  if (value === null || value === undefined || value === '') return null;
+  const number = Number(value);
+  return Number.isFinite(number) ? number : null;
+}
+
+function journalJif(record) {
+  const value = validNumber(record.impact_factor);
+  return value === null ? '<span class="journal-jif-missing">NA</span>' : `<strong>${journalEscape(value)}</strong>`;
 }
 
 function renderJournalIndex() {
@@ -41,8 +54,8 @@ function renderJournalIndex() {
         <td><span class="journal-article-title">${journalEscape(record.article)}</span></td>
         <td>${journalEscape(record.journal)}</td>
         <td class="journal-doi">${journalDoi(record)}</td>
-        <td class="numeric"><span class="journal-score">${record.score ?? '—'}</span></td>
-        <td class="numeric"><strong>${record.impact_factor ?? '—'}</strong></td>
+        <td class="numeric"><span class="journal-score">${validNumber(record.score) ?? 'NA'}</span></td>
+        <td class="numeric">${journalJif(record)}</td>
       </tr>`).join('');
   }
 
@@ -61,10 +74,18 @@ async function loadJournalIndex() {
     const rows = await response.json();
     if (!Array.isArray(rows)) throw new Error('Journal index has an invalid format.');
     journalState.rows = rows.sort((a, b) => {
-      const jifDifference = (Number(b.impact_factor) || -1) - (Number(a.impact_factor) || -1);
-      if (jifDifference) return jifDifference;
-      const scoreDifference = (Number(b.score) || -1) - (Number(a.score) || -1);
-      if (scoreDifference) return scoreDifference;
+      const scoreA = validNumber(a.score);
+      const scoreB = validNumber(b.score);
+      if (scoreA === null && scoreB !== null) return 1;
+      if (scoreA !== null && scoreB === null) return -1;
+      if (scoreA !== scoreB) return (scoreB ?? -1) - (scoreA ?? -1);
+
+      const jifA = validNumber(a.impact_factor);
+      const jifB = validNumber(b.impact_factor);
+      if (jifA === null && jifB !== null) return 1;
+      if (jifA !== null && jifB === null) return -1;
+      if (jifA !== jifB) return (jifB ?? -1) - (jifA ?? -1);
+
       return String(a.journal || '').localeCompare(String(b.journal || ''));
     });
     renderJournalIndex();
