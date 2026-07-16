@@ -48,6 +48,26 @@ def remove_duplicate_leading_title(body: str, title: str) -> str:
     return body
 
 
+def protect_math(text: str) -> tuple[str, dict[str, str]]:
+    """Protect MathJax delimiters and LaTeX commands from Python-Markdown escaping."""
+    placeholders: dict[str, str] = {}
+
+    def stash(match: re.Match[str], kind: str) -> str:
+        token = f"MATHPLACEHOLDER{kind}{len(placeholders)}END"
+        placeholders[token] = match.group(0)
+        return token
+
+    text = re.sub(r"\\\[(.+?)\\\]", lambda m: stash(m, "DISPLAY"), text, flags=re.S)
+    text = re.sub(r"\\\((.+?)\\\)", lambda m: stash(m, "INLINE"), text, flags=re.S)
+    return text, placeholders
+
+
+def restore_math(text: str, placeholders: dict[str, str]) -> str:
+    for token, formula in placeholders.items():
+        text = text.replace(token, formula)
+    return text
+
+
 def date_text(value: object) -> str:
     if isinstance(value, (date, datetime)):
         return value.strftime("%Y-%m-%d")
@@ -68,11 +88,13 @@ def build_article(meta: dict, body: str, slug: str) -> str:
         topics = [topics]
 
     body = remove_duplicate_leading_title(body, raw_title)
+    protected_body, math_placeholders = protect_math(body)
     article_html = markdown.markdown(
-        body,
+        protected_body,
         extensions=["extra", "fenced_code", "tables", "toc", "sane_lists"],
         output_format="html5",
     )
+    article_html = restore_math(article_html, math_placeholders)
     topic_html = "".join(f'<span class="jc-tag">{html.escape(str(topic))}</span>' for topic in topics)
     source_link = f'<a href="{paper_url}" target="_blank" rel="noreferrer">Original paper ↗</a>' if paper_url else ""
     doi_line = f'<span>DOI: {doi}</span>' if doi else ""
