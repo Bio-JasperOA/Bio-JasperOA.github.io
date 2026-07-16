@@ -1,9 +1,20 @@
+.site-header nav {
+  gap: 20px;
+}
+
+.site-header nav a {
+  color: #000;
+  font-size: 13px;
+  font-weight: 620;
+}
+
 .site-header nav a.nav-blog,
 .site-header nav a.nav-tutorial,
 .site-header nav a.nav-gallery {
   background: none;
   border: 0;
   border-radius: 0;
+  font-size: 13px;
   font-weight: 760;
   padding: 4px 0;
   transition: color .18s ease, transform .18s ease;
@@ -11,7 +22,7 @@
 
 .site-header nav a.nav-blog {
   color: #2f7d4a;
-  margin-left: 6px;
+  margin-left: 4px;
 }
 
 .site-header nav a.nav-tutorial {
@@ -20,7 +31,7 @@
 
 .site-header nav a.nav-gallery {
   color: #7652a6;
-  margin-right: 4px;
+  margin-right: 2px;
 }
 
 .site-header nav a.nav-blog:hover,
@@ -39,7 +50,8 @@
   border-radius: 999px;
   color: #9a5c20;
   display: inline-flex;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: 720;
   gap: 7px;
   margin-left: 4px;
   padding: 7px 11px 7px 9px;
@@ -65,7 +77,16 @@
   transform: translateY(-1px);
 }
 
+.site-header nav a[href="/statgen-radar/"] {
+  font-size: 13px;
+}
+
 @media (max-width: 760px) {
+  .site-header nav {
+    gap: 10px 16px;
+  }
+
+  .site-header nav a,
   .site-header nav a.nav-blog,
   .site-header nav a.nav-tutorial,
   .site-header nav a.nav-gallery,
