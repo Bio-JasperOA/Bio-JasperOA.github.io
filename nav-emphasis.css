@@ -16,35 +16,40 @@
 .site-header nav a.nav-blog,
 .site-header nav a.nav-tutorial,
 .site-header nav a.nav-gallery {
-  background: none;
+  -webkit-background-clip: text;
+  background: linear-gradient(
+    180deg,
+    #eadfff 0%,
+    #c9adff 18%,
+    #9a6fe3 42%,
+    #62439f 61%,
+    #d9c6ff 79%,
+    #7650bd 100%
+  );
+  background-clip: text;
   border: 0;
   border-radius: 0;
+  color: transparent;
   font-size: 13px;
-  font-weight: 760;
+  font-weight: 780;
+  letter-spacing: .01em;
   padding: 0;
-  transition: color .18s ease, transform .18s ease;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .28);
+  transition: filter .18s ease, opacity .18s ease, transform .18s ease;
 }
 
 .site-header nav a.nav-blog {
-  color: #2f7d4a;
   margin-left: 4px;
 }
 
-.site-header nav a.nav-tutorial {
-  color: #3169c6;
-}
-
 .site-header nav a.nav-gallery {
-  color: #7652a6;
   margin-right: 2px;
 }
 
 .site-header nav a.nav-blog:hover,
 .site-header nav a.nav-tutorial:hover,
 .site-header nav a.nav-gallery:hover {
-  background: none;
-  border: 0;
-  filter: brightness(.8);
+  filter: brightness(1.14) saturate(1.08);
   transform: translateY(-1px);
 }
 
