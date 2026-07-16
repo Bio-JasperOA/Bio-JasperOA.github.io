@@ -5,37 +5,42 @@
 
 .site-header nav > a {
   align-items: center;
-  color: #000;
   display: inline-flex;
   font-size: 13px;
-  font-weight: 620;
+  font-weight: 700;
   line-height: 1;
   min-height: 36px;
+}
+
+.site-header nav > a:not(.nav-journal-club):not([href="/statgen-radar/"]) {
+  background: linear-gradient(
+    180deg,
+    #050505 0%,
+    #4a4a4a 18%,
+    #111111 42%,
+    #777777 55%,
+    #1a1a1a 72%,
+    #000000 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow:
+    0 1px 0 rgba(255,255,255,.24),
+    0 -1px 0 rgba(0,0,0,.28);
+  transition: filter .18s ease, transform .18s ease;
+}
+
+.site-header nav > a:not(.nav-journal-club):not([href="/statgen-radar/"]):hover {
+  filter: brightness(1.25) contrast(1.08);
+  transform: translateY(-1px);
 }
 
 .site-header nav a.nav-blog,
 .site-header nav a.nav-tutorial,
 .site-header nav a.nav-gallery {
-  -webkit-background-clip: text;
-  background: linear-gradient(
-    180deg,
-    #eadfff 0%,
-    #c9adff 18%,
-    #9a6fe3 42%,
-    #62439f 61%,
-    #d9c6ff 79%,
-    #7650bd 100%
-  );
-  background-clip: text;
   border: 0;
-  border-radius: 0;
-  color: transparent;
-  font-size: 13px;
-  font-weight: 780;
-  letter-spacing: .01em;
   padding: 0;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, .28);
-  transition: filter .18s ease, opacity .18s ease, transform .18s ease;
 }
 
 .site-header nav a.nav-blog {
@@ -44,13 +49,6 @@
 
 .site-header nav a.nav-gallery {
   margin-right: 2px;
-}
-
-.site-header nav a.nav-blog:hover,
-.site-header nav a.nav-tutorial:hover,
-.site-header nav a.nav-gallery:hover {
-  filter: brightness(1.14) saturate(1.08);
-  transform: translateY(-1px);
 }
 
 .site-header nav a.nav-journal-club {
