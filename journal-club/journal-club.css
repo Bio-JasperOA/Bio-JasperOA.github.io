@@ -67,13 +67,14 @@
 
 .jc-article-shell {
   margin: 0 auto;
-  max-width: 860px;
-  padding: 72px 32px 100px;
+  max-width: 980px;
+  padding: 72px 32px 108px;
 }
 
-.jc-article-shell h1 {
-  font-size: clamp(38px, 6vw, 58px);
+.jc-article-shell > h1 {
+  font-size: clamp(40px, 5.4vw, 60px);
   line-height: 1.08;
+  max-width: 900px;
 }
 
 .jc-paper-meta {
@@ -81,10 +82,10 @@
   color: var(--muted);
   display: flex;
   flex-wrap: wrap;
-  font-size: 12px;
-  gap: 9px 18px;
+  font-size: 13px;
+  gap: 10px 20px;
   margin: 26px 0 16px;
-  padding-bottom: 18px;
+  padding-bottom: 20px;
 }
 
 .jc-paper-meta a {
@@ -94,40 +95,51 @@
 
 .jc-article-body {
   color: #30394a;
-  font-size: 16px;
-  line-height: 1.8;
-  margin-top: 48px;
+  font-size: 17px;
+  line-height: 1.82;
+  margin-top: 52px;
+  max-width: 780px;
+}
+
+.jc-article-body h1 {
+  display: none;
 }
 
 .jc-article-body h2 {
   border-top: 1px solid var(--line);
-  font-size: 24px;
-  margin: 52px 0 18px;
-  padding-top: 30px;
+  font-size: 26px;
+  line-height: 1.28;
+  margin: 58px 0 20px;
+  padding-top: 32px;
 }
 
 .jc-article-body h3 {
-  font-size: 18px;
-  margin: 34px 0 12px;
+  font-size: 19px;
+  line-height: 1.35;
+  margin: 38px 0 14px;
 }
 
 .jc-article-body p,
 .jc-article-body ul,
 .jc-article-body ol {
-  margin: 0 0 20px;
+  margin: 0 0 22px;
+}
+
+.jc-article-body li + li {
+  margin-top: 7px;
 }
 
 .jc-article-body img {
   height: auto;
-  margin: 24px 0;
+  margin: 28px 0;
   max-width: 100%;
 }
 
 .jc-article-body blockquote {
   border-left: 3px solid #9a5c20;
   color: var(--muted);
-  margin: 28px 0;
-  padding: 4px 0 4px 20px;
+  margin: 30px 0;
+  padding: 6px 0 6px 22px;
 }
 
 .jc-article-body code {
@@ -138,9 +150,10 @@
 
 .jc-article-body pre {
   background: #171b24;
+  border-radius: 4px;
   color: #f3f5f8;
   overflow-x: auto;
-  padding: 18px;
+  padding: 20px;
 }
 
 .jc-article-body pre code {
@@ -148,7 +161,27 @@
   padding: 0;
 }
 
+.jc-article-body table {
+  border-collapse: collapse;
+  display: block;
+  margin: 26px 0;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.jc-article-body th,
+.jc-article-body td {
+  border: 1px solid var(--line);
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.jc-article-body th {
+  background: var(--soft);
+}
+
 @media (max-width: 760px) {
-  .jc-article-shell { padding: 54px 22px 72px; }
+  .jc-article-shell { padding: 54px 22px 76px; }
+  .jc-article-body { font-size: 16px; }
   .jc-card-footer { align-items: flex-start; flex-direction: column; }
 }
