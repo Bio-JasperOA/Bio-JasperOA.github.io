@@ -67,20 +67,20 @@
 <p>A valid statistical framework must distinguish biological variation from healthcare-process variation.</p>
 <h2 id="5-conceptual-bayesian-model">5. Conceptual Bayesian Model</h2>
 <p>A useful conceptual formulation separates the observed EHR data from an underlying latent health trajectory.</p>
-<p>For individual (i) at time (t), let:</p>
+<p>For individual \(i\) at time \(t\), let:</p>
 <ul>
-<li>(Y_{it}) denote the observed EHR measurement;</li>
-<li>(Z_i(t)) denote the latent biological trajectory;</li>
-<li>(G_i) denote genotype or genetic dosage;</li>
-<li>(X_i) denote fixed covariates;</li>
-<li>(T_{it}) denote the observation time.</li>
+<li>\(Y_{it}\) denote the observed EHR measurement;</li>
+<li>\(Z_i(t)\) denote the latent biological trajectory;</li>
+<li>\(G_i\) denote genotype or genetic dosage;</li>
+<li>\(X_i\) denote fixed covariates;</li>
+<li>\(T_{it}\) denote the observation time.</li>
 </ul>
 <p>The observation model can be written as:</p>
-<p>[
+<p>\[
 Y_{it} \sim p\left(Y_{it} \mid Z_i(t), X_i, \theta_Y\right)
-]</p>
+\]</p>
 <p>The latent trajectory may be expressed as:</p>
-<p>[
+<p>\[
 Z_i(t)
 =
 \mu(t)
@@ -90,17 +90,17 @@ G_i\beta_G(t)
 X_i^{\mathsf T}\boldsymbol{\gamma}(t)
 +
 u_i(t)
-]</p>
+\]</p>
 <p>where:</p>
 <ul>
-<li>(\mu(t)) is the population-level mean trajectory;</li>
-<li>(\beta_G(t)) is a time-varying genetic effect;</li>
-<li>(\boldsymbol{\gamma}(t)) represents covariate effects;</li>
-<li>(u_i(t)) captures subject-specific deviation;</li>
-<li>(\theta_Y) contains parameters of the observation model.</li>
+<li>\(\mu(t)\) is the population-level mean trajectory;</li>
+<li>\(\beta_G(t)\) is a time-varying genetic effect;</li>
+<li>\(\boldsymbol{\gamma}(t)\) represents covariate effects;</li>
+<li>\(u_i(t)\) captures subject-specific deviation;</li>
+<li>\(\theta_Y\) contains parameters of the observation model.</li>
 </ul>
 <p>The posterior distribution is then:</p>
-<p>[
+<p>\[
 p\left(
 Z,\beta_G,\boldsymbol{\gamma},\theta
 \mid
@@ -110,27 +110,27 @@ Y,G,X,T
 p(Y\mid Z,\theta_Y)
 p(Z\mid G,X,T,\theta_Z)
 p(\theta)
-]</p>
+\]</p>
 <p>This formulation allows the analysis to estimate latent trajectories and genetic effects jointly while propagating uncertainty from phenotype reconstruction into genetic inference.</p>
 <h2 id="6-possible-longitudinal-genetic-effects">6. Possible Longitudinal Genetic Effects</h2>
 <p>A longitudinal framework can define several genetic estimands that are not available from a conventional GWAS.</p>
 <h3 id="61-baseline-genetic-effect">6.1 Baseline genetic effect</h3>
 <p>A variant may influence the initial level of a biomarker:</p>
-<p>[
+<p>\[
 Z_i(0)=\alpha_0+G_i\beta_0+\varepsilon_i
-]</p>
+\]</p>
 <h3 id="62-genetic-effect-on-progression">6.2 Genetic effect on progression</h3>
 <p>A variant may influence the rate of change:</p>
-<p>[
+<p>\[
 \frac{dZ_i(t)}{dt}
 =
 \alpha_1+G_i\beta_1+\varepsilon_i(t)
-]</p>
+\]</p>
 <h3 id="63-time-varying-genetic-effect">6.3 Time-varying genetic effect</h3>
 <p>A genetic effect may strengthen or weaken with age, disease stage or treatment exposure:</p>
-<p>[
+<p>\[
 \beta_G(t) \neq \beta_G
-]</p>
+\]</p>
 <h3 id="64-genetic-effect-on-variability">6.4 Genetic effect on variability</h3>
 <p>Some variants may affect within-person instability rather than the mean trajectory.</p>
 <h3 id="65-genetic-effect-on-trajectory-class">6.5 Genetic effect on trajectory class</h3>
@@ -194,15 +194,15 @@ Z_i(0)=\alpha_0+G_i\beta_0+\varepsilon_i
 <p>In a conventional EHR-based GWAS, phenotype construction is usually completed before genetic analysis. The phenotype is treated as an observed and error-free variable.</p>
 <p>In the Bayesian longitudinal framework, phenotype construction and genetic discovery become parts of the same inferential problem. The biological phenotype is latent, the EHR is an imperfect observation process, and genetic effects are estimated while accounting for uncertainty in that latent phenotype.</p>
 <p>This changes the workflow from:</p>
-<p>[
+<p>\[
 \text{EHR records}
 \rightarrow
 \text{fixed phenotype}
 \rightarrow
 \text{GWAS}
-]</p>
+\]</p>
 <p>to:</p>
-<p>[
+<p>\[
 \text{EHR records}
 +
 \text{genotypes}
@@ -210,7 +210,7 @@ Z_i(0)=\alpha_0+G_i\beta_0+\varepsilon_i
 \text{joint posterior inference}
 \rightarrow
 \text{trajectory-specific genetic discovery}
-]</p>
+\]</p>
 <h2 id="10-strengths">10. Strengths</h2>
 <ol>
 <li>It makes fuller use of repeated EHR measurements.</li>
@@ -271,7 +271,7 @@ Z_i(0)=\alpha_0+G_i\beta_0+\varepsilon_i
 <p>Instead of defining cancer–cardiovascular comorbidity as the co-occurrence of two diagnoses, one could model the temporal sequence between cancer diagnosis, treatment and cardiovascular events.</p>
 <h3 id="142-genetic-effects-on-disease-transitions">14.2 Genetic effects on disease transitions</h3>
 <p>Variants may influence transitions such as:</p>
-<p>[
+<p>\[
 \text{cancer-free}
 \rightarrow
 \text{cancer}
@@ -279,7 +279,7 @@ Z_i(0)=\alpha_0+G_i\beta_0+\varepsilon_i
 \text{treatment}
 \rightarrow
 \text{cardiovascular complication}
-]</p>
+\]</p>
 <h3 id="143-context-dependent-genetic-effects">14.3 Context-dependent genetic effects</h3>
 <p>Genetic effects may differ before and after chemotherapy, radiotherapy, surgery or major cardiovascular treatment.</p>
 <h3 id="144-resolving-geneticclinical-discrepancies">14.4 Resolving genetic–clinical discrepancies</h3>
