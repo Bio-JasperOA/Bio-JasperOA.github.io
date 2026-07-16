@@ -7,38 +7,25 @@
   align-items: center;
   display: inline-flex;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 620;
   line-height: 1;
   min-height: 36px;
 }
 
 .site-header nav > a:not(.nav-journal-club):not([href="/statgen-radar/"]) {
-  background: linear-gradient(
-    180deg,
-    #050505 0%,
-    #4a4a4a 18%,
-    #111111 42%,
-    #777777 55%,
-    #1a1a1a 72%,
-    #000000 100%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  text-shadow:
-    0 1px 0 rgba(255,255,255,.24),
-    0 -1px 0 rgba(0,0,0,.28);
-  transition: filter .18s ease, transform .18s ease;
+  color: #737b88;
+  transition: color .18s ease, transform .18s ease;
 }
 
 .site-header nav > a:not(.nav-journal-club):not([href="/statgen-radar/"]):hover {
-  filter: brightness(1.25) contrast(1.08);
+  color: #343a44;
   transform: translateY(-1px);
 }
 
 .site-header nav a.nav-blog,
 .site-header nav a.nav-tutorial,
 .site-header nav a.nav-gallery {
+  background: none;
   border: 0;
   padding: 0;
 }
