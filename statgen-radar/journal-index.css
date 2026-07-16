@@ -60,8 +60,8 @@
   vertical-align: top;
 }
 
-.journal-index-table th {
-  color: var(--ink);
+.journal-index-table thead th {
+  color: #000 !important;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: .06em;
