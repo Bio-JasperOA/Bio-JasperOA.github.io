@@ -1,5 +1,16 @@
 [
   {
+    "inclusion_date": "2026-07-21",
+    "article": "Genome-wide association analyses of borderline personality disorder identify 11 loci and highlight shared risk with mental and somatic disorders",
+    "journal": "Nature Genetics",
+    "doi": "10.1038/s41588-026-02654-3",
+    "score": 33.0,
+    "impact_factor": 25.5,
+    "impact_factor_label": "25.5",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
     "inclusion_date": "2026-07-18",
     "article": "Abstract A038: Multi-omics and Mendelian randomization analyses reveal a COLEC11 gene–metabolite–microbiota axis in imatinib-resistant gastrointestinal stromal tumors",
     "journal": "Cancer Research",
@@ -66,6 +77,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-14"
   },
   {
+    "inclusion_date": "2026-07-21",
+    "article": "Multi-omics Mendelian randomization integrating GWAS, eQTL, mQTL and pQTL data prioritizes mitochondrial gene FXN as a hypothesis−generating candidate for nephrolithiasis",
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2026.1876576",
+    "score": 28.0,
+    "impact_factor": 7.0,
+    "impact_factor_label": "7",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
     "inclusion_date": "2026-07-15",
     "article": "Sex-stratified insights into the genetics of brain volumes in late adulthood",
     "journal": "Biology of Sex Differences",
@@ -99,6 +121,28 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-15"
   },
   {
+    "inclusion_date": "2026-07-21",
+    "article": "Unraveling the role of lipid metabolism in ALS risk: a Mendelian randomization analysis using GWAS data",
+    "journal": "Orphanet Journal of Rare Diseases",
+    "doi": "10.1186/s13023-026-04503-2",
+    "score": 22.0,
+    "impact_factor": 3.6,
+    "impact_factor_label": "3.6",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "Assessing the impact of metabolomic markers on gastric cancer risk: a two-sample Mendelian randomization study",
+    "journal": "Korean Journal of Family Medicine",
+    "doi": "10.4082/kjfm.25.0229",
+    "score": 21.0,
+    "impact_factor": 3.4,
+    "impact_factor_label": "3.4",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
     "inclusion_date": "2026-07-16",
     "article": "Mediating effects of body mass index on the association between obstructive sleep apnea and hypertension: a Mendelian randomization study",
     "journal": "American Journal of Hypertension",
@@ -119,6 +163,17 @@
     "impact_factor_label": "7.5",
     "published": "",
     "brief_url": "/statgen-radar/article.html?date=2026-07-14"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "Extending genome-wide association studies to admixed cohorts with high degrees of relatedness",
+    "journal": "Nature Genetics",
+    "doi": "10.1038/s41588-026-02689-6",
+    "score": 18.0,
+    "impact_factor": 25.5,
+    "impact_factor_label": "25.5",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
   },
   {
     "inclusion_date": "2026-07-14",
@@ -165,6 +220,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-18"
   },
   {
+    "inclusion_date": "2026-07-21",
+    "article": "Genetic and Molecular Basis of Cleft Lip and Palate: A Comprehensive Review",
+    "journal": "Diagnostics",
+    "doi": "10.3390/diagnostics16142269",
+    "score": 17.0,
+    "impact_factor": 3.8,
+    "impact_factor_label": "3.8",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
     "inclusion_date": "2026-07-14",
     "article": "Genetic and molecular insights into bipolar disorder: A genome-wide association study and bioinformatics analysis",
     "journal": "Journal of Environmental Biology",
@@ -185,6 +251,17 @@
     "impact_factor_label": "1",
     "published": "",
     "brief_url": "/statgen-radar/article.html?date=2026-07-14"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "Gastrointestinal Bleeding Risk Associated With Pulse Pressure in Patients With Atrial Fibrillation: Retrospective Cohort Study",
+    "journal": "Journal of Medical Internet Research",
+    "doi": "10.2196/93347",
+    "score": 16.0,
+    "impact_factor": 8.2,
+    "impact_factor_label": "8.2",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
   },
   {
     "inclusion_date": "2026-07-15",
@@ -218,6 +295,17 @@
     "impact_factor_label": "3.8",
     "published": "2026-07-15",
     "brief_url": "/statgen-radar/article.html?date=2026-07-16"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "Genome-Wide Association Study Reveals Significant Single-Nucleotide Polymorphism Marker Detected for Fusarium Wilt Disease Resistance in Louisiana Sweetpotato Germplasm",
+    "journal": "Phytopathology®",
+    "doi": "10.1094/phyto-07-25-0233-r",
+    "score": 16.0,
+    "impact_factor": 3.4,
+    "impact_factor_label": "3.4",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
   },
   {
     "inclusion_date": "2026-07-18",
@@ -352,6 +440,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-15"
   },
   {
+    "inclusion_date": "2026-07-21",
+    "article": "Clinical decision support system for child and adolescent mental health services: a formative usability study",
+    "journal": "BMC Medical Informatics and Decision Making",
+    "doi": "10.1186/s12911-026-03720-w",
+    "score": 14.0,
+    "impact_factor": 5.5,
+    "impact_factor_label": "5.5",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
     "inclusion_date": "2026-07-17",
     "article": "Association Between Allostatic Load, Genetic Susceptibility, and Liver Cancer Incidence: A Large‐Scale Prospective Cohort Study",
     "journal": "International Journal of Cancer",
@@ -407,6 +506,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-14"
   },
   {
+    "inclusion_date": "2026-07-21",
+    "article": "Citywide metagenomics reveals microbial community and resistome dynamics in urban wastewater",
+    "journal": "Nature Communications",
+    "doi": "10.1038/s41467-026-75771-6",
+    "score": 13.0,
+    "impact_factor": 18.1,
+    "impact_factor_label": "18.1",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
     "inclusion_date": "2026-07-14",
     "article": "Genetic architecture of lung cancer revealed by common and rare variant analyses across population-scale biobanks",
     "journal": "npj Precision Oncology",
@@ -427,6 +537,17 @@
     "impact_factor_label": "4.6",
     "published": "2026-07-18",
     "brief_url": "/statgen-radar/article.html?date=2026-07-18"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "Multi-omics integration of Fst, GWAS, TWAS and transcriptomics revealed candidate genes and pathways associated with pneumonia lesion scores in pigs",
+    "journal": "BMC Genomics",
+    "doi": "10.1186/s12864-026-13203-x",
+    "score": 13.0,
+    "impact_factor": 3.9,
+    "impact_factor_label": "3.9",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
   },
   {
     "inclusion_date": "2026-07-17",
@@ -451,6 +572,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-18"
   },
   {
+    "inclusion_date": "2026-07-21",
+    "article": "LSD1-GLS2 axis drives subtype-specific chemoresistance in pancreatic cancer through glutaminolysis reprogramming",
+    "journal": "Cell Death & Disease",
+    "doi": "10.1038/s41419-026-09075-4",
+    "score": 12.0,
+    "impact_factor": 12.2,
+    "impact_factor_label": "12.2",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
     "inclusion_date": "2026-07-14",
     "article": "Association of systemic inflammatory indicators with incident valvular heart disease: a prospective analysis of the UK Biobank",
     "journal": "European Journal of Preventive Cardiology",
@@ -473,6 +605,28 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-16"
   },
   {
+    "inclusion_date": "2026-07-21",
+    "article": "Dissecting the genetic basis of yield stability in faba bean by multi-environment analysis",
+    "journal": "Genome Biology",
+    "doi": "10.1186/s13059-026-04181-0",
+    "score": 12.0,
+    "impact_factor": 9.2,
+    "impact_factor_label": "9.2",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "Exploring the use of machine and deep learning in genome-wide association studies: a comprehensive review",
+    "journal": "BioData Mining",
+    "doi": "10.1186/s13040-026-00584-8",
+    "score": 12.0,
+    "impact_factor": 7.9,
+    "impact_factor_label": "7.9",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
     "inclusion_date": "2026-07-15",
     "article": "Parameterizing the genetic architecture under stabilizing selection",
     "journal": "GENETICS",
@@ -482,6 +636,17 @@
     "impact_factor_label": "6.5",
     "published": "2026-07-14",
     "brief_url": "/statgen-radar/article.html?date=2026-07-15"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "Association of Vitamin C Supplementation and Genetic Susceptibility with Multiple Sclerosis Risk: A Prospective Population-Based Cohort Study",
+    "journal": "Nutrients",
+    "doi": "10.3390/nu18142367",
+    "score": 12.0,
+    "impact_factor": 5.8,
+    "impact_factor_label": "5.8",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
   },
   {
     "inclusion_date": "2026-07-17",
@@ -526,6 +691,39 @@
     "impact_factor_label": "NA",
     "published": "2026-07-18",
     "brief_url": "/statgen-radar/article.html?date=2026-07-18"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "Kinetochore-associated protein 1 as a prognostic biomarker in gastric cancer: Integrative bioinformatics and experimental validation",
+    "journal": "World Journal of Gastroenterology",
+    "doi": "10.3748/wjg.118071",
+    "score": 11.0,
+    "impact_factor": 7.7,
+    "impact_factor_label": "7.7",
+    "published": "2026-07-21",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "Pharmacogenomics of Rivaroxaban: Association of CYP3A4, CYP3A5, CYP2J2, ABCB1, and ABCG2 Variants with Bleeding and Thrombotic Outcomes in Real-World Clinical Practice",
+    "journal": "Pharmaceutics",
+    "doi": "10.3390/pharmaceutics18070884",
+    "score": 11.0,
+    "impact_factor": 6.9,
+    "impact_factor_label": "6.9",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "WxS-QC - a quality control pipeline for human germline short-variant Whole-Genome and Whole-Exome cohorts for population-scale analyses",
+    "journal": "Bioinformatics",
+    "doi": "10.1093/bioinformatics/btag527",
+    "score": 11.0,
+    "impact_factor": 5.5,
+    "impact_factor_label": "5.5",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
   },
   {
     "inclusion_date": "2026-07-14",
@@ -581,6 +779,17 @@
     "impact_factor_label": "5.8",
     "published": "",
     "brief_url": "/statgen-radar/article.html?date=2026-07-14"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "UBE2C at the crossroads of cell cycle regulation and DNA damage response in cancer",
+    "journal": "Cell Biology and Toxicology",
+    "doi": "10.1007/s10565-026-10230-y",
+    "score": 10.0,
+    "impact_factor": 5.7,
+    "impact_factor_label": "5.7",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
   },
   {
     "inclusion_date": "2026-07-16",
@@ -660,6 +869,28 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-14"
   },
   {
+    "inclusion_date": "2026-07-21",
+    "article": "Comment on ‘Burden and risk of asthma and rhinitis in people with atopic dermatitis: global estimates from a hierarchical Bayesian model’: reply from authors",
+    "journal": "British Journal of Dermatology",
+    "doi": "10.1093/bjd/ljag299",
+    "score": 9.0,
+    "impact_factor": 8.2,
+    "impact_factor_label": "8.2",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "MicroWorldOmics: All-in-one Desktop Solution for Microbiome Profiling, Virome Analysis, and Unexplored “Dark Matter” Discovery",
+    "journal": "Genomics, Proteomics & Bioinformatics",
+    "doi": "10.1093/gpbjnl/qzag059",
+    "score": 9.0,
+    "impact_factor": 7.2,
+    "impact_factor_label": "7.2",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
     "inclusion_date": "2026-07-14",
     "article": "Haplotype structure – an overlooked key factor shaping the genomic selection response",
     "journal": "GENETICS",
@@ -669,6 +900,28 @@
     "impact_factor_label": "6.5",
     "published": "",
     "brief_url": "/statgen-radar/article.html?date=2026-07-14"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "Multiomics integrative bioinformatics analysis of gene expression characteristics and molecular mechanisms in preeclampsia placental tissue",
+    "journal": "Artificial Cells, Nanomedicine, and Biotechnology",
+    "doi": "10.1080/21691401.2026.2697688",
+    "score": 9.0,
+    "impact_factor": 5.6,
+    "impact_factor_label": "5.6",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "The Manticore Project II: Bayesian digital twins of cosmic structure across the SDSS and BOSS volumes",
+    "journal": "Monthly Notices of the Royal Astronomical Society",
+    "doi": "10.1093/mnras/stag1366",
+    "score": 9.0,
+    "impact_factor": 5.2,
+    "impact_factor_label": "5.2",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
   },
   {
     "inclusion_date": "2026-07-18",
@@ -682,6 +935,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-18"
   },
   {
+    "inclusion_date": "2026-07-21",
+    "article": "From toxicogenomics to predictive toxicology and exposomics: defining the next decade of gene–environment research",
+    "journal": "Frontiers in Genetics",
+    "doi": "10.3389/fgene.2026.1903791",
+    "score": 9.0,
+    "impact_factor": 3.0,
+    "impact_factor_label": "3",
+    "published": "2026-07-21",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
     "inclusion_date": "2026-07-19",
     "article": "NSUN2 regulates PARP9 progression through m5C modification to mediate breast cancer progression",
     "journal": "Cell Division",
@@ -693,6 +957,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-19"
   },
   {
+    "inclusion_date": "2026-07-21",
+    "article": "Unraveling missing variants through target capture-based long-read sequencing in autosomal recessive disorders",
+    "journal": "European Journal of Human Genetics",
+    "doi": "10.1038/s41431-026-02197-5",
+    "score": 8.0,
+    "impact_factor": 4.6,
+    "impact_factor_label": "4.6",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
     "inclusion_date": "2026-07-15",
     "article": "Phylogenetically diverse Mucorales–Mycetohabitans endosymbiotic interactions identified from whole-genome sequencing using a targeted metagenomic assembly pipeline",
     "journal": "Microbial Genomics",
@@ -702,6 +977,17 @@
     "impact_factor_label": "4.5",
     "published": "2026-07-14",
     "brief_url": "/statgen-radar/article.html?date=2026-07-15"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "Refining Salinivibrio pangenome dynamics and biotechnological potential through comparative analysis",
+    "journal": "Microbial Genomics",
+    "doi": "10.1099/mgen.0.001786",
+    "score": 8.0,
+    "impact_factor": 4.5,
+    "impact_factor_label": "4.5",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
   },
   {
     "inclusion_date": "2026-07-17",
@@ -748,6 +1034,28 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-15"
   },
   {
+    "inclusion_date": "2026-07-21",
+    "article": "Sleep Duration and Epilepsy Risk: Mendelian Randomization and Functional Validation of CACNA1A rs2228130-Related Inhibitory Synaptic Dysfunction",
+    "journal": "NeuroMolecular Medicine",
+    "doi": "10.1007/s12017-026-08943-8",
+    "score": 8.0,
+    "impact_factor": 3.8,
+    "impact_factor_label": "3.8",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "Interpretable machine learning for cardiovascular disease risk prediction in cancer survivors: development and internal validation",
+    "journal": "Cardio-Oncology",
+    "doi": "10.1186/s40959-026-00547-2",
+    "score": 8.0,
+    "impact_factor": 3.4,
+    "impact_factor_label": "3.4",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
     "inclusion_date": "2026-07-17",
     "article": "Mapping TriNetX-Based Real-World Evidence Publications by Clinical Domain and Study Purpose, 2018–2025: A Bibliometric Analysis",
     "journal": "Healthcare",
@@ -770,6 +1078,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-17"
   },
   {
+    "inclusion_date": "2026-07-21",
+    "article": "Accelerated biological aging and the risk of incident liver cancer: a prospective cohort study of the UK biobank",
+    "journal": "BMC Gastroenterology",
+    "doi": "10.1186/s12876-026-05103-x",
+    "score": 8.0,
+    "impact_factor": 3.2,
+    "impact_factor_label": "3.2",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
     "inclusion_date": "2026-07-16",
     "article": "Association of plasma homocysteine with the atherogenic index of plasma and modification by body mass index: a cross-sectional study",
     "journal": "Frontiers in Cardiovascular Medicine",
@@ -790,6 +1109,17 @@
     "impact_factor_label": "3",
     "published": "",
     "brief_url": "/statgen-radar/article.html?date=2026-07-14"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "Trajectories of symptom scores and risk of cardiovascular events in the vulnerable phase of heart failure: an analysis using a latent class trajectory model",
+    "journal": "Frontiers in Cardiovascular Medicine",
+    "doi": "10.3389/fcvm.2026.1841870",
+    "score": 8.0,
+    "impact_factor": 3.0,
+    "impact_factor_label": "3",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
   },
   {
     "inclusion_date": "2026-07-16",
@@ -836,6 +1166,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-17"
   },
   {
+    "inclusion_date": "2026-07-21",
+    "article": "GWAS-based identification of a candidate gene and development of a predictive KASP marker for seed protein and oil contents in soybean",
+    "journal": "Genes & Genomics",
+    "doi": "10.1007/s13258-026-01795-3",
+    "score": 8.0,
+    "impact_factor": 2.0,
+    "impact_factor_label": "2",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
     "inclusion_date": "2026-07-15",
     "article": "Genome-Wide Association Study Identifies Candidate Genes for Cold and Salinity Stress Tolerance in Cucumber",
     "journal": "Plant Molecular Biology Reporter",
@@ -845,6 +1186,17 @@
     "impact_factor_label": "2",
     "published": "2026-07-14",
     "brief_url": "/statgen-radar/article.html?date=2026-07-15"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "Influence of genomic retained heterosis on lactation persistence and tropical resilience: leveraging joint-model GWAS to quantify non-additive variance in India’s Karan Fries population",
+    "journal": "Tropical Animal Health and Production",
+    "doi": "10.1007/s11250-026-05207-2",
+    "score": 8.0,
+    "impact_factor": 2.0,
+    "impact_factor_label": "2",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
   },
   {
     "inclusion_date": "2026-07-14",
@@ -946,6 +1298,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-18"
   },
   {
+    "inclusion_date": "2026-07-21",
+    "article": "Integrative exome sequencing and multi-omics analysis elucidates the regulatory role of rare variants in metabolic syndrome",
+    "journal": "Functional & Integrative Genomics",
+    "doi": "10.1007/s10142-026-01987-w",
+    "score": 7.0,
+    "impact_factor": 4.0,
+    "impact_factor_label": "4",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
     "inclusion_date": "2026-07-16",
     "article": "Genome-wide comparison of traditional and commercial Mehraban sheep populations reveals differences in genetic structure, linkage disequilibrium, and inbreeding patterns",
     "journal": "BMC Genomics",
@@ -977,6 +1340,28 @@
     "impact_factor_label": "3.9",
     "published": "2026-07-17",
     "brief_url": "/statgen-radar/article.html?date=2026-07-17"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "Ergodicity transformations predict human decision-making under risk",
+    "journal": "PLOS Computational Biology",
+    "doi": "10.1371/journal.pcbi.1014409",
+    "score": 7.0,
+    "impact_factor": 3.7,
+    "impact_factor_label": "3.7",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "Editorial: AI and genomics: crafting precision diagnostics in future pathology",
+    "journal": "Frontiers in Medicine",
+    "doi": "10.3389/fmed.2026.1918578",
+    "score": 7.0,
+    "impact_factor": 3.6,
+    "impact_factor_label": "3.6",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
   },
   {
     "inclusion_date": "2026-07-15",
@@ -1012,6 +1397,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-17"
   },
   {
+    "inclusion_date": "2026-07-21",
+    "article": "Hidden in the community: poly-clonal spread of KPC- or NDM-producing Klebsiella pneumoniae revealed by whole-genome sequencing in Southeastern Brazil",
+    "journal": "International Microbiology",
+    "doi": "10.1007/s10123-026-00865-6",
+    "score": 7.0,
+    "impact_factor": 2.9,
+    "impact_factor_label": "2.9",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
     "inclusion_date": "2026-07-17",
     "article": "Identification of novel variants in SSX1, CPNE1, and SPTBN5 in men with oligoasthenoteratozoospermia using whole-genome sequencing",
     "journal": "Journal of Applied Genetics",
@@ -1021,6 +1417,17 @@
     "impact_factor_label": "2.1",
     "published": "2026-07-17",
     "brief_url": "/statgen-radar/article.html?date=2026-07-17"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "Genomics of tropical forage grasses in Brazil: resources, progress, and future directions",
+    "journal": "Genome",
+    "doi": "10.1139/gen-2025-0126",
+    "score": 7.0,
+    "impact_factor": 1.9,
+    "impact_factor_label": "1.9",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
   },
   {
     "inclusion_date": "2026-07-14",
@@ -1043,6 +1450,17 @@
     "impact_factor_label": "NA",
     "published": "2026-07-19",
     "brief_url": "/statgen-radar/article.html?date=2026-07-19"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "Cardiovascular versus breast cancer mortality in men with breast cancer: An age-stratified SEER competing-risk study",
+    "journal": "Biomolecules and Biomedicine",
+    "doi": "10.17305/bb.2026.14604",
+    "score": 6.0,
+    "impact_factor": 2.8,
+    "impact_factor_label": "2.8",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
   },
   {
     "inclusion_date": "2026-07-16",
@@ -1078,6 +1496,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-17"
   },
   {
+    "inclusion_date": "2026-07-21",
+    "article": "Causal relationship between gut microbiota, circulating inflammatory proteins, and IgA nephropathy: two-sample and mediated Mendelian randomization analysis",
+    "journal": "International Urology and Nephrology",
+    "doi": "10.1007/s11255-026-05284-0",
+    "score": 6.0,
+    "impact_factor": 2.2,
+    "impact_factor_label": "2.2",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
     "inclusion_date": "2026-07-14",
     "article": "Association Between Sustained Frailty Remission and All-Cause and Cause-Specific Mortality: A Prospective Cohort Study",
     "journal": "Journal of Applied Gerontology",
@@ -1098,6 +1527,17 @@
     "impact_factor_label": "1.7",
     "published": "2026-07-18",
     "brief_url": "/statgen-radar/article.html?date=2026-07-18"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "Causal relationship between cardiac arrhythmias and sepsis: a two-sample bidirectional mendelian randomization study",
+    "journal": "Journal of Cardiothoracic Surgery",
+    "doi": "10.1186/s13019-026-04539-2",
+    "score": 6.0,
+    "impact_factor": 1.6,
+    "impact_factor_label": "1.6",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
   },
   {
     "inclusion_date": "2026-07-14",
@@ -1122,6 +1562,28 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-14"
   },
   {
+    "inclusion_date": "2026-07-21",
+    "article": "Epigenome-wide association study uncovers aging-related genes and enriched pathways in liver transplant recipients",
+    "journal": "Epigenetics Communications",
+    "doi": "10.1186/s43682-026-00050-w",
+    "score": 6.0,
+    "impact_factor": null,
+    "impact_factor_label": "NA",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "Estratificação do risco cardiovascular na prevenção primária das doenças cardiovasculares",
+    "journal": "Revista ft",
+    "doi": "10.69849/p5wxzh38",
+    "score": 6.0,
+    "impact_factor": null,
+    "impact_factor_label": "NA",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
     "inclusion_date": "2026-07-16",
     "article": "Causal association and shared mechanisms between Graves' disease and prostate cancer: insights from Mendelian randomization, machine learning, and comprehensive bioinformatics",
     "journal": "The Aging Male",
@@ -1133,6 +1595,39 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-16"
   },
   {
+    "inclusion_date": "2026-07-21",
+    "article": "Diagnostic and prognostic values of differentially expressed genes in canine mammary carcinoma: An integrated bioinformatics analysis",
+    "journal": "PLOS One",
+    "doi": "10.1371/journal.pone.0354033",
+    "score": 5.0,
+    "impact_factor": 2.8,
+    "impact_factor_label": "2.8",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "Exosomal gene-based predictive model and therapeutic target identification for Alzheimer’s disease: A bioinformatics analysis",
+    "journal": "PLOS One",
+    "doi": "10.1371/journal.pone.0354014",
+    "score": 5.0,
+    "impact_factor": 2.8,
+    "impact_factor_label": "2.8",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "Bioinformatics, Machine Learning and Functional Validation Reveal Mitophagy-Related FABP5 and HMOX1 as Diagnostic and Therapeutic Targets in Polycystic Ovary Syndrome",
+    "journal": "Reproductive Sciences",
+    "doi": "10.1007/s43032-026-02156-x",
+    "score": 5.0,
+    "impact_factor": 2.8,
+    "impact_factor_label": "2.8",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
     "inclusion_date": "2026-07-19",
     "article": "Exploring hsa_circ_0100833 as a Potential Biomarker in Oral Squamous Cell Carcinoma: Bioinformatics and Experimental Insights",
     "journal": "Clinical and Experimental Dental Research",
@@ -1142,6 +1637,17 @@
     "impact_factor_label": "2.4",
     "published": "2026-07-19",
     "brief_url": "/statgen-radar/article.html?date=2026-07-19"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "Integrated Bioinformatics and Network Analysis Identifies Key Molecular Targets and Hub Genes in Zika Virus-induced Neuroinflammation",
+    "journal": "Journal of Molecular Neuroscience",
+    "doi": "10.1007/s12031-026-02572-3",
+    "score": 5.0,
+    "impact_factor": 2.4,
+    "impact_factor_label": "2.4",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
   },
   {
     "inclusion_date": "2026-07-18",
@@ -1177,6 +1683,28 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-17"
   },
   {
+    "inclusion_date": "2026-07-21",
+    "article": "Identification and analysis of EphrinB2/EphB4 signaling pathway and angiogenesis related biomarkers in coronary artery disease based on bioinformatics",
+    "journal": "Journal of Cardiothoracic Surgery",
+    "doi": "10.1186/s13019-026-04577-w",
+    "score": 5.0,
+    "impact_factor": 1.6,
+    "impact_factor_label": "1.6",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "BSTZINB: A Bayesian Framework for Negative-Binomial Modeling of Spatio-Temporal Zero-Inflated Count Data in Epidemiology",
+    "journal": "Stats",
+    "doi": "10.3390/stats9040076",
+    "score": 5.0,
+    "impact_factor": 1.1,
+    "impact_factor_label": "1.1",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
     "inclusion_date": "2026-07-18",
     "article": "In-depth Comparative Analysis of NPNCD and Kerala’s Amrutham Arogyam Telehealth Care Programmes in India",
     "journal": "Journal of Health Management",
@@ -1197,6 +1725,17 @@
     "impact_factor_label": "NA",
     "published": "2026-07-17",
     "brief_url": "/statgen-radar/article.html?date=2026-07-17"
+  },
+  {
+    "inclusion_date": "2026-07-21",
+    "article": "Exploring genetic variability, heritability and genetic advance in hybrids of tomato in Trans-Gangetic Plains region",
+    "journal": "Plant Science Today",
+    "doi": "10.14719/pst.13811",
+    "score": 4.0,
+    "impact_factor": 0.8,
+    "impact_factor_label": "0.8",
+    "published": "2026-07-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-21"
   },
   {
     "inclusion_date": "2026-07-16",
