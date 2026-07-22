@@ -1155,6 +1155,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-14"
   },
   {
+    "inclusion_date": "2026-07-22",
+    "article": "NDRG1 expression in cancers confers dependence on DNA damage repair and sensitivity to quinacrine",
+    "journal": "Science Signaling",
+    "doi": "10.1126/scisignal.adv4272",
+    "score": 10.0,
+    "impact_factor": 7.0,
+    "impact_factor_label": "7",
+    "published": "2026-07-21",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-22"
+  },
+  {
     "inclusion_date": "2026-07-17",
     "article": "Mosaic Loss of Chromosome Y, Smoking, and Risk of Symptomatic Peripheral Artery Disease: Insights From a Longitudinal Cohort Study",
     "journal": "Journal of the American Heart Association",
@@ -2490,6 +2501,17 @@
     "article": "Causal Relationship Between Helicobacter pylori OMP Antibodies and Iron-Deficiency Anemia: A Mendelian Randomization Study",
     "journal": "Journal of Visualized Experiments",
     "doi": "10.3791/71087",
+    "score": 4.0,
+    "impact_factor": null,
+    "impact_factor_label": "NA",
+    "published": "2026-07-21",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-22"
+  },
+  {
+    "inclusion_date": "2026-07-22",
+    "article": "Synergistic Photocatalysis-Self-Fenton Systems for Environmental Remediation: A Mini-Review",
+    "journal": "Science for Energy and Environment",
+    "doi": "10.53941/see.2026.100009",
     "score": 4.0,
     "impact_factor": null,
     "impact_factor_label": "NA",
