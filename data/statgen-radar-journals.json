@@ -132,17 +132,6 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-15"
   },
   {
-    "inclusion_date": "2026-07-23",
-    "article": "Serum total cholesterol and low-density lipoprotein cholesterol are associated with Parkinson’s disease in East Asian populations: a bidirectional Mendelian randomization study with complementary animal observation",
-    "journal": "Frontiers in Aging Neuroscience",
-    "doi": "10.3389/fnagi.2026.1841547",
-    "score": 26.0,
-    "impact_factor": 5.2,
-    "impact_factor_label": "5.2",
-    "published": "2026-07-22",
-    "brief_url": "/statgen-radar/article.html?date=2026-07-23"
-  },
-  {
     "inclusion_date": "2026-07-17",
     "article": "Multilayer Genomic Characterization of a Shared Genetic Factor Linking Depression-Related Liability and Reduced Physical Function",
     "journal": "Genes",
@@ -163,6 +152,17 @@
     "impact_factor_label": "5.7",
     "published": "2026-07-14",
     "brief_url": "/statgen-radar/article.html?date=2026-07-15"
+  },
+  {
+    "inclusion_date": "2026-07-23",
+    "article": "ALPAR: Automated Learning Pipeline for Antimicrobial Resistance",
+    "journal": "Bioinformatics",
+    "doi": "10.1093/bioinformatics/btag545",
+    "score": 23.0,
+    "impact_factor": 5.5,
+    "impact_factor_label": "5.5",
+    "published": "2026-07-22",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-23"
   },
   {
     "inclusion_date": "2026-07-22",
@@ -196,17 +196,6 @@
     "impact_factor_label": "5.9",
     "published": "2026-07-21",
     "brief_url": "/statgen-radar/article.html?date=2026-07-22"
-  },
-  {
-    "inclusion_date": "2026-07-23",
-    "article": "Genome-Wide Association and Meta-Analysis Identify Candidate Genes for Sperm Freezability in Duroc and Yorkshire Boars",
-    "journal": "International Journal of Molecular Sciences",
-    "doi": "10.3390/ijms27146506",
-    "score": 21.0,
-    "impact_factor": 5.6,
-    "impact_factor_label": "5.6",
-    "published": "2026-07-22",
-    "brief_url": "/statgen-radar/article.html?date=2026-07-23"
   },
   {
     "inclusion_date": "2026-07-21",
@@ -286,17 +275,6 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-21"
   },
   {
-    "inclusion_date": "2026-07-23",
-    "article": "Integrated GWAS and transcriptomic analyses reveal genetic variation in stomatal density contributing to water-use efficiency in strawberry",
-    "journal": "Horticulture Research",
-    "doi": "10.1093/hr/uhag306",
-    "score": 18.0,
-    "impact_factor": 9.5,
-    "impact_factor_label": "9.5",
-    "published": "2026-07-22",
-    "brief_url": "/statgen-radar/article.html?date=2026-07-23"
-  },
-  {
     "inclusion_date": "2026-07-14",
     "article": "Evidence standards for multi-ancestry polygenic prediction",
     "journal": "Genome Biology",
@@ -308,17 +286,6 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-14"
   },
   {
-    "inclusion_date": "2026-07-23",
-    "article": "Identification of targets for introgression from rye (Secale ssp.) into wheat (Triticum aestivum) to increase arabinoxylan content in flour using a genome-wide association study",
-    "journal": "Frontiers in Plant Science",
-    "doi": "10.3389/fpls.2026.1892461",
-    "score": 18.0,
-    "impact_factor": 5.9,
-    "impact_factor_label": "5.9",
-    "published": "2026-07-22",
-    "brief_url": "/statgen-radar/article.html?date=2026-07-23"
-  },
-  {
     "inclusion_date": "2026-07-22",
     "article": "Multi-model genome-wide association analysis of agronomic traits in a Kabuli chickpea MAGIC-subset population (Cicer arietinum L.) across Mediterranean environments",
     "journal": "Frontiers in Plant Science",
@@ -328,17 +295,6 @@
     "impact_factor_label": "5.9",
     "published": "2026-07-21",
     "brief_url": "/statgen-radar/article.html?date=2026-07-22"
-  },
-  {
-    "inclusion_date": "2026-07-23",
-    "article": "Multi-Omics Integration Improves Polygenic Risk Prediction for Lipid Traits: A Multi-Ancestry Study in UK Biobank",
-    "journal": "Genes",
-    "doi": "10.3390/genes17070840",
-    "score": 18.0,
-    "impact_factor": 3.1,
-    "impact_factor_label": "3.1",
-    "published": "2026-07-22",
-    "brief_url": "/statgen-radar/article.html?date=2026-07-23"
   },
   {
     "inclusion_date": "2026-07-17",
@@ -372,17 +328,6 @@
     "impact_factor_label": "22.6",
     "published": "2026-07-18",
     "brief_url": "/statgen-radar/article.html?date=2026-07-18"
-  },
-  {
-    "inclusion_date": "2026-07-23",
-    "article": "2025 Donald Seldin Lecture: Leveraging Diverse Population Genomics and Multiomics Integration for Gene Discovery of Cardiovascular and Kidney Diseases",
-    "journal": "Hypertension",
-    "doi": "10.1161/hypertensionaha.126.26092",
-    "score": 17.0,
-    "impact_factor": 9.8,
-    "impact_factor_label": "9.8",
-    "published": "2026-07-22",
-    "brief_url": "/statgen-radar/article.html?date=2026-07-23"
   },
   {
     "inclusion_date": "2026-07-21",
@@ -537,17 +482,6 @@
     "impact_factor_label": "5.7",
     "published": "2026-07-14",
     "brief_url": "/statgen-radar/article.html?date=2026-07-15"
-  },
-  {
-    "inclusion_date": "2026-07-23",
-    "article": "GWAS and selection signature analyses of whole-genome sequencing data identify genes associated with body size in Duolang sheep",
-    "journal": "Frontiers in Veterinary Science",
-    "doi": "10.3389/fvets.2026.1869513",
-    "score": 15.0,
-    "impact_factor": 3.1,
-    "impact_factor_label": "3.1",
-    "published": "2026-07-22",
-    "brief_url": "/statgen-radar/article.html?date=2026-07-23"
   },
   {
     "inclusion_date": "2026-07-17",
