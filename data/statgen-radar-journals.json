@@ -88,6 +88,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-14"
   },
   {
+    "inclusion_date": "2026-07-28",
+    "article": "Causal association between clonal hematopoiesis indeterminate potential and cancer: a Mendelian randomization study",
+    "journal": "Experimental Biology and Medicine",
+    "doi": "10.3389/ebm.2026.10923",
+    "score": 30.0,
+    "impact_factor": 3.8,
+    "impact_factor_label": "3.8",
+    "published": "2026-07-27",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-28"
+  },
+  {
     "inclusion_date": "2026-07-27",
     "article": "Genome-wide association analyses of gestational phenotypes identify context-specific genetic effects",
     "journal": "Nature Genetics",
@@ -165,6 +176,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-15"
   },
   {
+    "inclusion_date": "2026-07-28",
+    "article": "Multimodal classification of mood disorders using structural MRI and polygenic risk scores: a machine learning ablation study in UK Biobank",
+    "journal": "Frontiers in Psychiatry",
+    "doi": "10.3389/fpsyt.2026.1883424",
+    "score": 26.0,
+    "impact_factor": 3.8,
+    "impact_factor_label": "3.8",
+    "published": "2026-07-27",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-28"
+  },
+  {
     "inclusion_date": "2026-07-17",
     "article": "Multilayer Genomic Characterization of a Shared Genetic Factor Linking Depression-Related Liability and Reduced Physical Function",
     "journal": "Genes",
@@ -196,6 +218,17 @@
     "impact_factor_label": "5.5",
     "published": "2026-07-22",
     "brief_url": "/statgen-radar/article.html?date=2026-07-23"
+  },
+  {
+    "inclusion_date": "2026-07-28",
+    "article": "Integrating bulk and single-cell RNA sequencing with GWAS reveals regulatory networks underpinning complex traits in beef cattle",
+    "journal": "Journal of Animal Science and Biotechnology",
+    "doi": "10.1186/s40104-026-01471-2",
+    "score": 22.0,
+    "impact_factor": 7.9,
+    "impact_factor_label": "7.9",
+    "published": "2026-07-28",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-28"
   },
   {
     "inclusion_date": "2026-07-22",
@@ -330,6 +363,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-26"
   },
   {
+    "inclusion_date": "2026-07-28",
+    "article": "3D chromatin structure remodelling in cancer",
+    "journal": "Cell Communication and Signaling",
+    "doi": "10.1186/s12964-026-03097-3",
+    "score": 18.0,
+    "impact_factor": 11.6,
+    "impact_factor_label": "11.6",
+    "published": "2026-07-27",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-28"
+  },
+  {
     "inclusion_date": "2026-07-14",
     "article": "Evidence standards for multi-ancestry polygenic prediction",
     "journal": "Genome Biology",
@@ -361,6 +405,17 @@
     "impact_factor_label": "5.7",
     "published": "2026-07-24",
     "brief_url": "/statgen-radar/article.html?date=2026-07-25"
+  },
+  {
+    "inclusion_date": "2026-07-28",
+    "article": "Cross-modal mapping of cancer stem-like cell plasticity using deep learning",
+    "journal": "NAR Cancer",
+    "doi": "10.1093/narcan/zcag015",
+    "score": 18.0,
+    "impact_factor": 4.6,
+    "impact_factor_label": "4.6",
+    "published": "2026-07-27",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-28"
   },
   {
     "inclusion_date": "2026-07-24",
@@ -427,6 +482,17 @@
     "impact_factor_label": "3.1",
     "published": "2026-07-21",
     "brief_url": "/statgen-radar/article.html?date=2026-07-22"
+  },
+  {
+    "inclusion_date": "2026-07-28",
+    "article": "Multi-Omic Analysis of Cerebrospinal Fluid Metabolites in Autism Spectrum Disorder: Biomarker Identification, Metabolic Genetics Insights, and Network Toxicology",
+    "journal": "Genes",
+    "doi": "10.3390/genes17080874",
+    "score": 17.0,
+    "impact_factor": 3.1,
+    "impact_factor_label": "3.1",
+    "published": "2026-07-27",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-28"
   },
   {
     "inclusion_date": "2026-07-14",
