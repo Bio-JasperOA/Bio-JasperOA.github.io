@@ -11,6 +11,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-22"
   },
   {
+    "inclusion_date": "2026-07-29",
+    "article": "The genetics of fibromyalgia and its relationships to psychiatric and medical traits",
+    "journal": "Nature Communications",
+    "doi": "10.1038/s41467-026-75256-6",
+    "score": 41.0,
+    "impact_factor": 18.1,
+    "impact_factor_label": "18.1",
+    "published": "2026-07-28",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-29"
+  },
+  {
     "inclusion_date": "2026-07-23",
     "article": "Genetic background sets the trajectory of experimental cancer evolution",
     "journal": "Nature",
@@ -75,6 +86,28 @@
     "impact_factor_label": "4.1",
     "published": "2026-07-18",
     "brief_url": "/statgen-radar/article.html?date=2026-07-18"
+  },
+  {
+    "inclusion_date": "2026-07-29",
+    "article": "Shared Genetic Architecture Between Epigenetic Aging and Musculoskeletal Diseases",
+    "journal": "Genes",
+    "doi": "10.3390/genes17080878",
+    "score": 31.0,
+    "impact_factor": 3.1,
+    "impact_factor_label": "3.1",
+    "published": "2026-07-28",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-29"
+  },
+  {
+    "inclusion_date": "2026-07-29",
+    "article": "The genetic architecture of fibromyalgia across 2.5 million individuals",
+    "journal": "Nature Medicine",
+    "doi": "10.1038/s41591-026-04492-6",
+    "score": 30.0,
+    "impact_factor": 52.5,
+    "impact_factor_label": "52.5",
+    "published": "2026-07-28",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-29"
   },
   {
     "inclusion_date": "2026-07-14",
@@ -220,6 +253,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-23"
   },
   {
+    "inclusion_date": "2026-07-29",
+    "article": "Risk-Guided Screening for Atrial Fibrillation Using Electronic Health Records",
+    "journal": "Circulation",
+    "doi": "10.1161/circulationaha.126.079391",
+    "score": 22.0,
+    "impact_factor": 41.3,
+    "impact_factor_label": "41.3",
+    "published": "2026-07-28",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-29"
+  },
+  {
     "inclusion_date": "2026-07-28",
     "article": "Integrating bulk and single-cell RNA sequencing with GWAS reveals regulatory networks underpinning complex traits in beef cattle",
     "journal": "Journal of Animal Science and Biotechnology",
@@ -253,6 +297,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-21"
   },
   {
+    "inclusion_date": "2026-07-29",
+    "article": "A novel support vector regression approach for detecting gene-environment interactions and predicting trait values",
+    "journal": "GENETICS",
+    "doi": "10.1093/genetics/iyag192",
+    "score": 21.0,
+    "impact_factor": 6.5,
+    "impact_factor_label": "6.5",
+    "published": "2026-07-28",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-29"
+  },
+  {
     "inclusion_date": "2026-07-22",
     "article": "Genetic diversity study and molecular marker development for economic traits in Korean pine based on RAD-Seq",
     "journal": "Frontiers in Plant Science",
@@ -264,6 +319,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-22"
   },
   {
+    "inclusion_date": "2026-07-29",
+    "article": "Mendelian Randomization Analysis of the IL-1 Cytokine Family Proteins Identifies IL1RL1 as a Potential Causal Contributor to Traumatic Brain Injury Prognosis",
+    "journal": "Neurocritical Care",
+    "doi": "10.1007/s12028-026-02575-3",
+    "score": 21.0,
+    "impact_factor": 4.2,
+    "impact_factor_label": "4.2",
+    "published": "2026-07-28",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-29"
+  },
+  {
     "inclusion_date": "2026-07-21",
     "article": "Assessing the impact of metabolomic markers on gastric cancer risk: a two-sample Mendelian randomization study",
     "journal": "Korean Journal of Family Medicine",
@@ -273,6 +339,17 @@
     "impact_factor_label": "3.4",
     "published": "2026-07-20",
     "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
+    "inclusion_date": "2026-07-29",
+    "article": "Redefining cardiometabolic biomarkers in the big data era: toward a personalized medicine-centered reconstruction of risk prediction models",
+    "journal": "Frontiers in Cardiovascular Medicine",
+    "doi": "10.3389/fcvm.2026.1846105",
+    "score": 21.0,
+    "impact_factor": 3.0,
+    "impact_factor_label": "3",
+    "published": "2026-07-28",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-29"
   },
   {
     "inclusion_date": "2026-07-16",
@@ -583,6 +660,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-16"
   },
   {
+    "inclusion_date": "2026-07-29",
+    "article": "Disentangling Mature Cow Weight and Body Condition Score: A Comparative Single-Step GWAS of Phenotypic Pre-adjustment vs. Recursive Modeling",
+    "journal": "Journal of Animal Science",
+    "doi": "10.1093/jas/skag231",
+    "score": 16.0,
+    "impact_factor": 3.7,
+    "impact_factor_label": "3.7",
+    "published": "2026-07-28",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-29"
+  },
+  {
     "inclusion_date": "2026-07-21",
     "article": "Genome-Wide Association Study Reveals Significant Single-Nucleotide Polymorphism Marker Detected for Fusarium Wilt Disease Resistance in Louisiana Sweetpotato Germplasm",
     "journal": "Phytopathology®",
@@ -757,6 +845,17 @@
     "impact_factor_label": "4.9",
     "published": "2026-07-17",
     "brief_url": "/statgen-radar/article.html?date=2026-07-17"
+  },
+  {
+    "inclusion_date": "2026-07-29",
+    "article": "Rare Germline Variants in Key Pathways Contribute to Hepatocellular Carcinoma Risk in Hispanic Individuals",
+    "journal": "Cancers",
+    "doi": "10.3390/cancers18152428",
+    "score": 14.0,
+    "impact_factor": 4.8,
+    "impact_factor_label": "4.8",
+    "published": "2026-07-28",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-29"
   },
   {
     "inclusion_date": "2026-07-14",
