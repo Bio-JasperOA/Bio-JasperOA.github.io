@@ -44,6 +44,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-23"
   },
   {
+    "inclusion_date": "2026-07-31",
+    "article": "Genetic pleiotropy differentially linking brain variation to cannabis use and cannabis use disorder",
+    "journal": "Neuropsychopharmacology",
+    "doi": "10.1038/s41386-026-02506-y",
+    "score": 35.0,
+    "impact_factor": 7.6,
+    "impact_factor_label": "7.6",
+    "published": "2026-07-30",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-31"
+  },
+  {
     "inclusion_date": "2026-07-27",
     "article": "Exploratory Genome and Transcriptome-Wide Association Analyses of Addiction-Related Phenotypes in a Twin Cohort",
     "journal": "Biomedicines",
@@ -220,6 +231,28 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-27"
   },
   {
+    "inclusion_date": "2026-07-31",
+    "article": "Engineered Heart Tissues Facilitate Noncoding Variant Studies in Cardiomyopathy",
+    "journal": "Circulation Research",
+    "doi": "10.1161/circresaha.125.327506",
+    "score": 26.0,
+    "impact_factor": 18.0,
+    "impact_factor_label": "18",
+    "published": "2026-07-31",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-31"
+  },
+  {
+    "inclusion_date": "2026-07-31",
+    "article": "CDH13 Is Associated with Cellular Viability After Exposure to Ionizing Radiation Using Genome-Wide Screening",
+    "journal": "International Journal of Molecular Sciences",
+    "doi": "10.3390/ijms27156826",
+    "score": 26.0,
+    "impact_factor": 5.6,
+    "impact_factor_label": "5.6",
+    "published": "2026-07-30",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-31"
+  },
+  {
     "inclusion_date": "2026-07-15",
     "article": "Sex-stratified insights into the genetics of brain volumes in late adulthood",
     "journal": "Biology of Sex Differences",
@@ -253,6 +286,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-17"
   },
   {
+    "inclusion_date": "2026-07-31",
+    "article": "XXYLT1 and Mendelian Retinal Dystrophy",
+    "journal": "JAMA Ophthalmology",
+    "doi": "10.1001/jamaophthalmol.2026.2795",
+    "score": 25.0,
+    "impact_factor": 10.5,
+    "impact_factor_label": "10.5",
+    "published": "2026-07-30",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-31"
+  },
+  {
     "inclusion_date": "2026-07-15",
     "article": "Tuber intake is independently associated with reduced risk of Hashimoto’s thyroiditis: a community-based cross-sectional study",
     "journal": "Frontiers in Endocrinology",
@@ -264,6 +308,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-15"
   },
   {
+    "inclusion_date": "2026-07-31",
+    "article": "Somatic mutations reveal the ontogeny of microglia in human aging",
+    "journal": "Nature",
+    "doi": "10.1038/s41586-026-10939-0",
+    "score": 24.0,
+    "impact_factor": 56.1,
+    "impact_factor_label": "56.1",
+    "published": "2026-07-30",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-31"
+  },
+  {
     "inclusion_date": "2026-07-23",
     "article": "ALPAR: Automated Learning Pipeline for Antimicrobial Resistance",
     "journal": "Bioinformatics",
@@ -273,6 +328,17 @@
     "impact_factor_label": "5.5",
     "published": "2026-07-22",
     "brief_url": "/statgen-radar/article.html?date=2026-07-23"
+  },
+  {
+    "inclusion_date": "2026-07-31",
+    "article": "Genetic parameters and genome-wide association analysis of service sire effects on litter size and its relationship with boar semen quality in three terminal sire lines",
+    "journal": "Genetics Selection Evolution",
+    "doi": "10.1186/s12711-026-01071-8",
+    "score": 23.0,
+    "impact_factor": 4.4,
+    "impact_factor_label": "4.4",
+    "published": "2026-07-30",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-31"
   },
   {
     "inclusion_date": "2026-07-30",
@@ -295,6 +361,17 @@
     "impact_factor_label": "41.3",
     "published": "2026-07-28",
     "brief_url": "/statgen-radar/article.html?date=2026-07-29"
+  },
+  {
+    "inclusion_date": "2026-07-31",
+    "article": "Genome-wide analyses of an avian herpesvirus identify 10 loci associated with tumorigenicity and vaccine escape",
+    "journal": "Science Advances",
+    "doi": "10.1126/sciadv.aee9024",
+    "score": 22.0,
+    "impact_factor": 13.9,
+    "impact_factor_label": "13.9",
+    "published": "2026-07-31",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-31"
   },
   {
     "inclusion_date": "2026-07-28",
@@ -330,6 +407,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-21"
   },
   {
+    "inclusion_date": "2026-07-31",
+    "article": "Genetic loci and functional genes underlying black spot disease resistance across multiple environments in chrysanthemum",
+    "journal": "Horticulture Research",
+    "doi": "10.1093/hr/uhag330",
+    "score": 21.0,
+    "impact_factor": 9.5,
+    "impact_factor_label": "9.5",
+    "published": "2026-07-30",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-31"
+  },
+  {
     "inclusion_date": "2026-07-29",
     "article": "A novel support vector regression approach for detecting gene-environment interactions and predicting trait values",
     "journal": "GENETICS",
@@ -339,6 +427,17 @@
     "impact_factor_label": "6.5",
     "published": "2026-07-28",
     "brief_url": "/statgen-radar/article.html?date=2026-07-29"
+  },
+  {
+    "inclusion_date": "2026-07-31",
+    "article": "Cross-species variant-to-function analyses implicate MEIS1 in conferring sleep abnormalities and impaired cerebellar development",
+    "journal": "Genome Research",
+    "doi": "10.1101/gr.281655.125",
+    "score": 21.0,
+    "impact_factor": 6.3,
+    "impact_factor_label": "6.3",
+    "published": "2026-07-30",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-31"
   },
   {
     "inclusion_date": "2026-07-22",
@@ -495,6 +594,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-28"
   },
   {
+    "inclusion_date": "2026-07-31",
+    "article": "Preventing cardiovascular disease within the built and living environment: An Expert Opinion",
+    "journal": "European Journal of Preventive Cardiology",
+    "doi": "10.1093/eurjpc/zwag387",
+    "score": 18.0,
+    "impact_factor": 10.0,
+    "impact_factor_label": "10",
+    "published": "2026-07-30",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-31"
+  },
+  {
     "inclusion_date": "2026-07-14",
     "article": "Evidence standards for multi-ancestry polygenic prediction",
     "journal": "Genome Biology",
@@ -504,6 +614,17 @@
     "impact_factor_label": "9.2",
     "published": "",
     "brief_url": "/statgen-radar/article.html?date=2026-07-14"
+  },
+  {
+    "inclusion_date": "2026-07-31",
+    "article": "Integrated Genome-Wide Association and QTL Mapping Elucidate the Genetic Basis of Fruit Yield and Quality Traits in Pepper under Water Stress",
+    "journal": "Journal of Experimental Botany",
+    "doi": "10.1093/jxb/erag385",
+    "score": 18.0,
+    "impact_factor": 6.5,
+    "impact_factor_label": "6.5",
+    "published": "2026-07-30",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-31"
   },
   {
     "inclusion_date": "2026-07-22",
@@ -548,6 +669,17 @@
     "impact_factor_label": "4.5",
     "published": "2026-07-29",
     "brief_url": "/statgen-radar/article.html?date=2026-07-30"
+  },
+  {
+    "inclusion_date": "2026-07-31",
+    "article": "Case Report: DICER1-mutant primary intracranial sarcoma with concurrent TP53, PDGFRA, and KEAP1 somatic mutations in a 5.5-year-old boy",
+    "journal": "Frontiers in Oncology",
+    "doi": "10.3389/fonc.2026.1907304",
+    "score": 18.0,
+    "impact_factor": 3.4,
+    "impact_factor_label": "3.4",
+    "published": "2026-07-30",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-31"
   },
   {
     "inclusion_date": "2026-07-24",
@@ -693,6 +825,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-25"
   },
   {
+    "inclusion_date": "2026-07-31",
+    "article": "From QTL to candidate genes: a data-driven approach to unravel the genetic architecture of yellow rust resistance in central European wheat",
+    "journal": "Theoretical and Applied Genetics",
+    "doi": "10.1007/s00122-026-05312-8",
+    "score": 16.0,
+    "impact_factor": 4.1,
+    "impact_factor_label": "4.1",
+    "published": "2026-07-30",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-31"
+  },
+  {
     "inclusion_date": "2026-07-15",
     "article": "C-reactive protein polygenic risk is associated with obesity-related traits in schizophrenia spectrum disorders",
     "journal": "Frontiers in Psychiatry",
@@ -735,6 +878,17 @@
     "impact_factor_label": "3.4",
     "published": "2026-07-20",
     "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
+    "inclusion_date": "2026-07-31",
+    "article": "Major Histocompatibility Complex Genomic Regions as Candidates for Reproductive Success in Cattle: From GWAS to Post-GWAS Analysis",
+    "journal": "Genes",
+    "doi": "10.3390/genes17080895",
+    "score": 16.0,
+    "impact_factor": 3.1,
+    "impact_factor_label": "3.1",
+    "published": "2026-07-30",
+    "brief_url": "/statgen-radar/article.html?date=2026-07-31"
   },
   {
     "inclusion_date": "2026-07-18",
