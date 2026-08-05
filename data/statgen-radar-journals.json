@@ -1,5 +1,16 @@
 [
   {
+    "inclusion_date": "2026-08-05",
+    "article": "Shared genetic architecture between Crohn’s disease and IgA nephropathy: implications for a gut–immune–kidney axis",
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2026.1905767",
+    "score": 48.0,
+    "impact_factor": 7.0,
+    "impact_factor_label": "7",
+    "published": "2026-08-04",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-05"
+  },
+  {
     "inclusion_date": "2026-07-22",
     "article": "Multi-ancestry colocalization approaches",
     "journal": "PLOS Genetics",
@@ -31,6 +42,17 @@
     "impact_factor_label": "25.5",
     "published": "2026-07-29",
     "brief_url": "/statgen-radar/article.html?date=2026-07-30"
+  },
+  {
+    "inclusion_date": "2026-08-05",
+    "article": "Autoimmune hypothyroidism and endometriosis: evidence from bidirectional Mendelian randomization and an independent clinical cohort analysis",
+    "journal": "Frontiers in Endocrinology",
+    "doi": "10.3389/fendo.2026.1898299",
+    "score": 36.0,
+    "impact_factor": 5.7,
+    "impact_factor_label": "5.7",
+    "published": "2026-08-04",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-05"
   },
   {
     "inclusion_date": "2026-07-23",
@@ -297,6 +319,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-17"
   },
   {
+    "inclusion_date": "2026-08-05",
+    "article": "From markers to mechanisms: a comprehensive review of major genes and quantitative trait loci shaping the modern sheep (Ovis aries)",
+    "journal": "Frontiers in Genetics",
+    "doi": "10.3389/fgene.2026.1865980",
+    "score": 26.0,
+    "impact_factor": 3.0,
+    "impact_factor_label": "3",
+    "published": "2026-08-05",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-05"
+  },
+  {
     "inclusion_date": "2026-07-31",
     "article": "XXYLT1 and Mendelian Retinal Dystrophy",
     "journal": "JAMA Ophthalmology",
@@ -328,6 +361,17 @@
     "impact_factor_label": "56.1",
     "published": "2026-07-30",
     "brief_url": "/statgen-radar/article.html?date=2026-07-31"
+  },
+  {
+    "inclusion_date": "2026-08-05",
+    "article": "Association between primary aldosteronism and type 2 diabetes and identification of potential molecular mechanisms",
+    "journal": "Frontiers in Endocrinology",
+    "doi": "10.3389/fendo.2026.1863900",
+    "score": 24.0,
+    "impact_factor": 5.7,
+    "impact_factor_label": "5.7",
+    "published": "2026-08-04",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-05"
   },
   {
     "inclusion_date": "2026-07-23",
@@ -473,6 +517,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-22"
   },
   {
+    "inclusion_date": "2026-08-05",
+    "article": "Genetic architecture of node-specific leaf length and candidate gene identification in maize revealed by a temperate–tropical multiparental population",
+    "journal": "BMC Plant Biology",
+    "doi": "10.1186/s12870-026-09606-3",
+    "score": 21.0,
+    "impact_factor": 5.6,
+    "impact_factor_label": "5.6",
+    "published": "2026-08-04",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-05"
+  },
+  {
     "inclusion_date": "2026-07-29",
     "article": "Mendelian Randomization Analysis of the IL-1 Cytokine Family Proteins Identifies IL1RL1 as a Potential Causal Contributor to Traumatic Brain Injury Prognosis",
     "journal": "Neurocritical Care",
@@ -528,6 +583,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-23"
   },
   {
+    "inclusion_date": "2026-08-05",
+    "article": "The joint association of clonal hematopoiesis of indeterminate potential and biological aging with cancer risk among 332,911 individuals",
+    "journal": "JNCI: Journal of the National Cancer Institute",
+    "doi": "10.1093/jnci/djag268",
+    "score": 20.0,
+    "impact_factor": 7.7,
+    "impact_factor_label": "7.7",
+    "published": "2026-08-04",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-05"
+  },
+  {
     "inclusion_date": "2026-07-14",
     "article": "Glucagon-like peptide-1 receptor activation and mental health: a drug-target Mendelian randomization study",
     "journal": "Translational Psychiatry",
@@ -537,6 +603,17 @@
     "impact_factor_label": "7.5",
     "published": "",
     "brief_url": "/statgen-radar/article.html?date=2026-07-14"
+  },
+  {
+    "inclusion_date": "2026-08-05",
+    "article": "Does Toxoplasma gondii infection have a causal impact on human psychopathology? A Mendelian randomization analysis",
+    "journal": "PLOS Pathogens",
+    "doi": "10.1371/journal.ppat.1014312",
+    "score": 20.0,
+    "impact_factor": 4.9,
+    "impact_factor_label": "4.9",
+    "published": "2026-08-04",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-05"
   },
   {
     "inclusion_date": "2026-07-22",
@@ -570,6 +647,17 @@
     "impact_factor_label": "5.7",
     "published": "2026-07-29",
     "brief_url": "/statgen-radar/article.html?date=2026-07-30"
+  },
+  {
+    "inclusion_date": "2026-08-05",
+    "article": "Endothelial EPAS1 as a prognostic and therapeutic target in acute myocardial infarction: integrative bioinformatics, Mendelian randomization and experimental validation",
+    "journal": "Frontiers in Pharmacology",
+    "doi": "10.3389/fphar.2026.1893164",
+    "score": 19.0,
+    "impact_factor": 5.4,
+    "impact_factor_label": "5.4",
+    "published": "2026-08-04",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-05"
   },
   {
     "inclusion_date": "2026-08-04",
@@ -660,6 +748,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-31"
   },
   {
+    "inclusion_date": "2026-08-05",
+    "article": "Multi-locus allelic architecture underlying natural variation in leaf rolling in japonica rice",
+    "journal": "Frontiers in Plant Science",
+    "doi": "10.3389/fpls.2026.1839728",
+    "score": 18.0,
+    "impact_factor": 5.9,
+    "impact_factor_label": "5.9",
+    "published": "2026-08-04",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-05"
+  },
+  {
     "inclusion_date": "2026-07-22",
     "article": "Multi-model genome-wide association analysis of agronomic traits in a Kabuli chickpea MAGIC-subset population (Cicer arietinum L.) across Mediterranean environments",
     "journal": "Frontiers in Plant Science",
@@ -691,6 +790,17 @@
     "impact_factor_label": "5.7",
     "published": "2026-07-24",
     "brief_url": "/statgen-radar/article.html?date=2026-07-25"
+  },
+  {
+    "inclusion_date": "2026-08-05",
+    "article": "Functional Annotation of GWAS Loci Using Public Transcriptome and Epigenome Datasets Reveals Non-Coding Genes and Regulatory Elements Which May Contribute to BMI",
+    "journal": "International Journal of Molecular Sciences",
+    "doi": "10.3390/ijms27157015",
+    "score": 18.0,
+    "impact_factor": 5.6,
+    "impact_factor_label": "5.6",
+    "published": "2026-08-04",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-05"
   },
   {
     "inclusion_date": "2026-07-28",
@@ -768,6 +878,17 @@
     "impact_factor_label": "22.6",
     "published": "2026-07-18",
     "brief_url": "/statgen-radar/article.html?date=2026-07-18"
+  },
+  {
+    "inclusion_date": "2026-08-05",
+    "article": "Global research trends and hotspots evolution in type 2 diabetes mellitus complicated with coronary heart disease: a bibliometric analysis from 2016 to 2026",
+    "journal": "Frontiers in Endocrinology",
+    "doi": "10.3389/fendo.2026.1900634",
+    "score": 17.0,
+    "impact_factor": 5.7,
+    "impact_factor_label": "5.7",
+    "published": "2026-08-04",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-05"
   },
   {
     "inclusion_date": "2026-08-04",
@@ -858,6 +979,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-26"
   },
   {
+    "inclusion_date": "2026-08-05",
+    "article": "Integration of genome-wide association study and single-cell transcriptome analysis reveals the role of N6-methyladenosine in treatment resistance in lung cancer",
+    "journal": "Cell Biology and Toxicology",
+    "doi": "10.1007/s10565-026-10244-6",
+    "score": 16.0,
+    "impact_factor": 5.7,
+    "impact_factor_label": "5.7",
+    "published": "2026-08-04",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-05"
+  },
+  {
     "inclusion_date": "2026-07-15",
     "article": "Epigenome-wide association study meta-analysis of wellbeing",
     "journal": "Clinical Epigenetics",
@@ -922,6 +1054,17 @@
     "impact_factor_label": "3.7",
     "published": "2026-07-28",
     "brief_url": "/statgen-radar/article.html?date=2026-07-29"
+  },
+  {
+    "inclusion_date": "2026-08-05",
+    "article": "Identification of Early Stage Physiological Indicators for Summer Heat Resilience in Kimchi Cabbage (Brassica rapa L. ssp. pekinensis) via Integrated GWAS and Machine Learning",
+    "journal": "Horticulturae",
+    "doi": "10.3390/horticulturae12080970",
+    "score": 16.0,
+    "impact_factor": 3.4,
+    "impact_factor_label": "3.4",
+    "published": "2026-08-04",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-05"
   },
   {
     "inclusion_date": "2026-07-21",
