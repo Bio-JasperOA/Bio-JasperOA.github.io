@@ -352,6 +352,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-15"
   },
   {
+    "inclusion_date": "2026-08-06",
+    "article": "A compendium of next-generation patient-derived models for diverse cancers",
+    "journal": "Nature",
+    "doi": "10.1038/s41586-026-10806-y",
+    "score": 24.0,
+    "impact_factor": 56.1,
+    "impact_factor_label": "56.1",
+    "published": "2026-08-05",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-06"
+  },
+  {
     "inclusion_date": "2026-07-31",
     "article": "Somatic mutations reveal the ontogeny of microglia in human aging",
     "journal": "Nature",
@@ -363,6 +374,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-31"
   },
   {
+    "inclusion_date": "2026-08-06",
+    "article": "Effects of maternal and paternal smoking on offspring cardiometabolic risk factors in adulthood: a multi-method intergenerational Mendelian randomization study",
+    "journal": "BMC Medicine",
+    "doi": "10.1186/s12916-026-05065-7",
+    "score": 24.0,
+    "impact_factor": 8.7,
+    "impact_factor_label": "8.7",
+    "published": "2026-08-05",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-06"
+  },
+  {
     "inclusion_date": "2026-08-05",
     "article": "Association between primary aldosteronism and type 2 diabetes and identification of potential molecular mechanisms",
     "journal": "Frontiers in Endocrinology",
@@ -372,6 +394,39 @@
     "impact_factor_label": "5.7",
     "published": "2026-08-04",
     "brief_url": "/statgen-radar/article.html?date=2026-08-05"
+  },
+  {
+    "inclusion_date": "2026-08-06",
+    "article": "Integrative benchmarking and automation of clonal reconstruction of somatic mutations in single-sample tumor genome analysis",
+    "journal": "BMC Bioinformatics",
+    "doi": "10.1186/s12859-026-06589-8",
+    "score": 24.0,
+    "impact_factor": 4.4,
+    "impact_factor_label": "4.4",
+    "published": "2026-08-05",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-06"
+  },
+  {
+    "inclusion_date": "2026-08-06",
+    "article": "A multi-ancestry polygenic risk score for body mass index predicts longitudinal weight change",
+    "journal": "Genome Medicine",
+    "doi": "10.1186/s13073-026-01741-8",
+    "score": 23.0,
+    "impact_factor": 10.8,
+    "impact_factor_label": "10.8",
+    "published": "2026-08-05",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-06"
+  },
+  {
+    "inclusion_date": "2026-08-06",
+    "article": "Integrative stratification of response to immunotherapy using host and microbial signatures in patients with advanced non-small cell lung cancer",
+    "journal": "Genome Medicine",
+    "doi": "10.1186/s13073-026-01736-5",
+    "score": 23.0,
+    "impact_factor": 10.8,
+    "impact_factor_label": "10.8",
+    "published": "2026-08-06",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-06"
   },
   {
     "inclusion_date": "2026-07-23",
@@ -405,6 +460,17 @@
     "impact_factor_label": "3.1",
     "published": "2026-07-29",
     "brief_url": "/statgen-radar/article.html?date=2026-07-30"
+  },
+  {
+    "inclusion_date": "2026-08-06",
+    "article": "Risk factors and coronary events: attenuation of the association in secondary prevention",
+    "journal": "European Heart Journal",
+    "doi": "10.1093/eurheartj/ehag582",
+    "score": 22.0,
+    "impact_factor": 45.3,
+    "impact_factor_label": "45.3",
+    "published": "2026-08-06",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-06"
   },
   {
     "inclusion_date": "2026-07-29",
@@ -737,6 +803,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-14"
   },
   {
+    "inclusion_date": "2026-08-06",
+    "article": "Integrating landscape genomics and machine learning to analyze the genetic structure and specific molecular markers of Chinese dairy goats (Capra hircus)",
+    "journal": "Journal of Animal Science and Biotechnology",
+    "doi": "10.1186/s40104-026-01473-0",
+    "score": 18.0,
+    "impact_factor": 7.9,
+    "impact_factor_label": "7.9",
+    "published": "2026-08-06",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-06"
+  },
+  {
     "inclusion_date": "2026-07-31",
     "article": "Integrated Genome-Wide Association and QTL Mapping Elucidate the Genetic Basis of Fruit Yield and Quality Traits in Pepper under Water Stress",
     "journal": "Journal of Experimental Botany",
@@ -968,6 +1045,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-21"
   },
   {
+    "inclusion_date": "2026-08-06",
+    "article": "Integrating biological pathway polygenic scores and trauma in psychosis: findings from the EU-GEI study",
+    "journal": "Translational Psychiatry",
+    "doi": "10.1038/s41398-026-04317-7",
+    "score": 16.0,
+    "impact_factor": 7.5,
+    "impact_factor_label": "7.5",
+    "published": "2026-08-05",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-06"
+  },
+  {
     "inclusion_date": "2026-07-26",
     "article": "Multi‐Omics Analysis for Pathogenesis and Candidate Therapeutic Target in Thoracic Aortic Aneurysms",
     "journal": "Journal of the American Heart Association",
@@ -999,6 +1087,28 @@
     "impact_factor_label": "5.7",
     "published": "2026-07-14",
     "brief_url": "/statgen-radar/article.html?date=2026-07-15"
+  },
+  {
+    "inclusion_date": "2026-08-06",
+    "article": "GERBEHRT: a BERT-based model tailored for German electronic health records – potential in chronic kidney disease prediction",
+    "journal": "BMC Medical Informatics and Decision Making",
+    "doi": "10.1186/s12911-026-03733-5",
+    "score": 16.0,
+    "impact_factor": 5.5,
+    "impact_factor_label": "5.5",
+    "published": "2026-08-05",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-06"
+  },
+  {
+    "inclusion_date": "2026-08-06",
+    "article": "Alzheimer’s disease polygenic risk score associates with hippocampal subfield atrophy and immune-related genetic mechanism",
+    "journal": "Frontiers in Aging Neuroscience",
+    "doi": "10.3389/fnagi.2026.1875172",
+    "score": 16.0,
+    "impact_factor": 5.2,
+    "impact_factor_label": "5.2",
+    "published": "2026-08-05",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-06"
   },
   {
     "inclusion_date": "2026-07-25",
@@ -1274,6 +1384,17 @@
     "impact_factor_label": "4.8",
     "published": "2026-07-28",
     "brief_url": "/statgen-radar/article.html?date=2026-07-29"
+  },
+  {
+    "inclusion_date": "2026-08-06",
+    "article": "Quantum-Augmented Federated AI for Adaptive Pharmacogenomic Precision Oncology: A Perspective",
+    "journal": "ACS Pharmacology & Translational Science",
+    "doi": "10.1021/acsptsci.6c00261",
+    "score": 14.0,
+    "impact_factor": 4.0,
+    "impact_factor_label": "4",
+    "published": "2026-08-05",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-06"
   },
   {
     "inclusion_date": "2026-07-14",
