@@ -27,7 +27,7 @@
 .site-header nav a.nav-gallery {
   background: none;
   border: 0;
-  color: #15171b;
+  color: #111 !important;
   padding: 0;
 }
 
@@ -37,7 +37,7 @@
 .site-header nav a.nav-blog[aria-current="page"],
 .site-header nav a.nav-tutorial[aria-current="page"],
 .site-header nav a.nav-gallery[aria-current="page"] {
-  color: #000;
+  color: #000 !important;
 }
 
 .site-header nav a.nav-blog {
