@@ -1,6 +1,5 @@
 .radar-shell { max-width: 1120px; }
 .radar-latest,
-.radar-method-note,
 .radar-brief {
   background: rgba(255, 255, 255, .64);
   border: 1px solid rgba(49, 105, 198, .14);
@@ -10,8 +9,7 @@
   padding: clamp(1.25rem, 3vw, 2.4rem);
 }
 .radar-latest h2,
-.radar-archive-section h2,
-.radar-method-note h2 { margin-top: 0; }
+.radar-archive-section h2 { margin-top: 0; }
 .radar-meta { display: flex; flex-wrap: wrap; gap: .55rem; margin: 1rem 0; }
 .radar-chip {
   background: rgba(49, 105, 198, .07);
@@ -123,28 +121,6 @@
   padding: 1rem 1.05rem;
 }
 .radar-record-card:hover { border-color: rgba(49, 105, 198, .34); box-shadow: 0 8px 24px rgba(24, 36, 58, .05); }
-.radar-record-card[hidden],
-.radar-brief [data-priority-overflow="true"][hidden] { display: none; }
-.radar-record-toggle,
-.radar-priority-toggle {
-  background: rgba(49, 105, 198, .07);
-  border: 1px solid rgba(49, 105, 198, .2);
-  border-radius: 999px;
-  color: #3169c6;
-  cursor: pointer;
-  font: inherit;
-  font-size: .82rem;
-  font-weight: 680;
-  justify-self: start;
-  margin-top: .65rem;
-  padding: .62rem .95rem;
-}
-.radar-record-toggle:hover,
-.radar-priority-toggle:hover {
-  background: rgba(49, 105, 198, .12);
-  border-color: rgba(49, 105, 198, .34);
-}
-.radar-priority-toggle { display: block; margin-bottom: 1.2rem; }
 .radar-record-header { align-items: flex-start; display: grid; gap: .8rem; grid-template-columns: auto minmax(0, 1fr) auto; }
 .radar-record-number {
   align-items: center;
