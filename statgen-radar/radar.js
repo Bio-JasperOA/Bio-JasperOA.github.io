@@ -130,8 +130,10 @@ function transformInclusionTable(root) {
   const rows = [...table.querySelectorAll('tbody tr')];
   const list = document.createElement('div');
   list.className = 'radar-record-list';
+  const recordLimit = 10;
+  const overflowCards = [];
 
-  rows.forEach(row => {
+  rows.forEach((row, index) => {
     const values = [...row.querySelectorAll('td')].map(cell => cell.textContent.trim());
     const record = Object.fromEntries(headers.map((header, index) => [header, values[index] || '']));
     const number = record['No.'] || record['No'] || '';
@@ -160,11 +162,83 @@ function transformInclusionTable(root) {
         ${publication ? `<span><strong>Publication</strong> ${escapeHtml(publication)}</span>` : ''}
       </div>
       ${linkDoi(doi)}`;
+
+    if (index >= recordLimit) {
+      card.hidden = true;
+      card.dataset.recordOverflow = 'true';
+      overflowCards.push(card);
+    }
     list.appendChild(card);
   });
 
+  if (overflowCards.length) {
+    const toggle = document.createElement('button');
+    toggle.className = 'radar-record-toggle';
+    toggle.type = 'button';
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.textContent = `Show ${overflowCards.length} more records ↓`;
+
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      overflowCards.forEach(card => {
+        card.hidden = expanded;
+      });
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      toggle.textContent = expanded
+        ? `Show ${overflowCards.length} more records ↓`
+        : 'Show fewer records ↑';
+    });
+
+    list.appendChild(toggle);
+  }
+
   table.classList.add('radar-table-source');
   table.insertAdjacentElement('afterend', list);
+}
+
+function limitPriorityReading(root, limit = 10) {
+  const heading = [...root.querySelectorAll('h2')].find(node =>
+    node.textContent.trim().toLowerCase() === 'priority reading'
+  );
+  if (!heading) return;
+
+  let node = heading.nextElementSibling;
+  let entryNumber = 0;
+  const overflowNodes = [];
+  let firstOverflowNode = null;
+
+  while (node && node.tagName !== 'H2') {
+    const next = node.nextElementSibling;
+    if (node.tagName === 'H3') entryNumber += 1;
+    if (entryNumber > limit) {
+      if (!firstOverflowNode) firstOverflowNode = node;
+      node.hidden = true;
+      node.dataset.priorityOverflow = 'true';
+      overflowNodes.push(node);
+    }
+    node = next;
+  }
+
+  if (!overflowNodes.length || !firstOverflowNode) return;
+
+  const toggle = document.createElement('button');
+  toggle.className = 'radar-priority-toggle';
+  toggle.type = 'button';
+  toggle.setAttribute('aria-expanded', 'false');
+  toggle.textContent = `Show ${entryNumber - limit} more detailed records ↓`;
+
+  toggle.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+    overflowNodes.forEach(item => {
+      item.hidden = expanded;
+    });
+    toggle.setAttribute('aria-expanded', String(!expanded));
+    toggle.textContent = expanded
+      ? `Show ${entryNumber - limit} more detailed records ↓`
+      : 'Show fewer detailed records ↑';
+  });
+
+  firstOverflowNode.insertAdjacentElement('beforebegin', toggle);
 }
 
 function tidyBriefMeta(root) {
@@ -203,6 +277,7 @@ async function renderArticle() {
     tidyBriefMeta(root);
     injectSummaryGrid(root, stats);
     transformInclusionTable(root);
+    limitPriorityReading(root);
     document.title = `StatGen Radar — ${date} | Song Jie`;
   } catch (error) {
     root.innerHTML = `<h1>Brief unavailable</h1><p>${escapeHtml(error.message)}</p>`;
