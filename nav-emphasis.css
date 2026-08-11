@@ -27,7 +27,17 @@
 .site-header nav a.nav-gallery {
   background: none;
   border: 0;
+  color: #15171b;
   padding: 0;
+}
+
+.site-header nav a.nav-blog:hover,
+.site-header nav a.nav-tutorial:hover,
+.site-header nav a.nav-gallery:hover,
+.site-header nav a.nav-blog[aria-current="page"],
+.site-header nav a.nav-tutorial[aria-current="page"],
+.site-header nav a.nav-gallery[aria-current="page"] {
+  color: #000;
 }
 
 .site-header nav a.nav-blog {
