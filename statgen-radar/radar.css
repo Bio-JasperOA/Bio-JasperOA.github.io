@@ -31,6 +31,24 @@
 .radar-entry h3 { font-size: 1rem; margin: 0 0 .25rem; }
 .radar-entry p { margin: 0; opacity: .75; }
 .radar-entry a { color: #3169c6; font-weight: 650; white-space: nowrap; }
+.radar-entry[hidden] { display: none; }
+.radar-archive-toggle {
+  background: rgba(49, 105, 198, .07);
+  border: 1px solid rgba(49, 105, 198, .2);
+  border-radius: 999px;
+  color: #3169c6;
+  cursor: pointer;
+  font: inherit;
+  font-size: .82rem;
+  font-weight: 680;
+  justify-self: start;
+  margin-top: .55rem;
+  padding: .62rem .95rem;
+}
+.radar-archive-toggle:hover {
+  background: rgba(49, 105, 198, .12);
+  border-color: rgba(49, 105, 198, .34);
+}
 
 .radar-brief { overflow-wrap: normal; }
 .radar-brief > h1 {
