@@ -47,13 +47,14 @@ a { color: inherit; text-decoration: none; }
   padding: 4px 0;
   transition: color .18s ease, transform .18s ease;
 }
-.site-header nav .nav-blog { color: #2f7d4a; margin-left: 8px; }
-.site-header nav .nav-tutorial { color: #3169c6; }
-.site-header nav .nav-gallery { color: #7652a6; margin-right: 4px; }
+.site-header nav .nav-blog { color: #15171b; margin-left: 8px; }
+.site-header nav .nav-tutorial { color: #15171b; }
+.site-header nav .nav-gallery { color: #15171b; margin-right: 4px; }
 .site-header nav .nav-blog:hover,
 .site-header nav .nav-tutorial:hover,
 .site-header nav .nav-gallery:hover {
-  filter: brightness(.82);
+  color: #000;
+  filter: none;
   transform: translateY(-1px);
 }
 
