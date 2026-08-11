@@ -330,6 +330,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-08-05"
   },
   {
+    "inclusion_date": "2026-08-11",
+    "article": "AI-based multimodal integration of genomics and electronic health records",
+    "journal": "Nature Reviews Genetics",
+    "doi": "10.1038/s41576-026-00992-w",
+    "score": 25.0,
+    "impact_factor": 51.4,
+    "impact_factor_label": "51.4",
+    "published": "2026-08-10",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-11"
+  },
+  {
     "inclusion_date": "2026-07-31",
     "article": "XXYLT1 and Mendelian Retinal Dystrophy",
     "journal": "JAMA Ophthalmology",
@@ -660,6 +671,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-23"
   },
   {
+    "inclusion_date": "2026-08-11",
+    "article": "Statistical Methods for Understanding Trajectories in Genetic Epidemiology",
+    "journal": "Annual Review of Biomedical Data Science",
+    "doi": "10.1146/annurev-biodatasci-092724-035434",
+    "score": 20.0,
+    "impact_factor": 8.1,
+    "impact_factor_label": "8.1",
+    "published": "2026-08-10",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-11"
+  },
+  {
     "inclusion_date": "2026-08-05",
     "article": "The joint association of clonal hematopoiesis of indeterminate potential and biological aging with cancer risk among 332,911 individuals",
     "journal": "JNCI: Journal of the National Cancer Institute",
@@ -715,6 +737,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-08-05"
   },
   {
+    "inclusion_date": "2026-08-11",
+    "article": "Tumor-Infiltrating Clonal Hematopoiesis Is Associated with Adverse Clinical Outcomes in Diffuse Large B-cell Lymphoma",
+    "journal": "Blood Cancer Discovery",
+    "doi": "10.1158/2643-3230.bcd-25-0191",
+    "score": 19.0,
+    "impact_factor": 12.2,
+    "impact_factor_label": "12.2",
+    "published": "2026-08-10",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-11"
+  },
+  {
     "inclusion_date": "2026-07-22",
     "article": "Abstract A071: Catalyzing TBXT as a therapeutic target through an integrated discovery pipeline",
     "journal": "Clinical Cancer Research",
@@ -735,6 +768,17 @@
     "impact_factor_label": "10.8",
     "published": "2026-07-27",
     "brief_url": "/statgen-radar/article.html?date=2026-07-27"
+  },
+  {
+    "inclusion_date": "2026-08-11",
+    "article": "Sex and the Genome: Divergent Genetic Architecture Across the Human Lifespan",
+    "journal": "Annual Review of Biomedical Data Science",
+    "doi": "10.1146/annurev-biodatasci-092724-060518",
+    "score": 19.0,
+    "impact_factor": 8.1,
+    "impact_factor_label": "8.1",
+    "published": "2026-08-10",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-11"
   },
   {
     "inclusion_date": "2026-07-30",
@@ -891,6 +935,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-22"
   },
   {
+    "inclusion_date": "2026-08-11",
+    "article": "Post-hoc permutation GWAS refinement reveals robust marker-trait associations in faba bean",
+    "journal": "Frontiers in Plant Science",
+    "doi": "10.3389/fpls.2026.1895808",
+    "score": 18.0,
+    "impact_factor": 5.9,
+    "impact_factor_label": "5.9",
+    "published": "2026-08-10",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-11"
+  },
+  {
     "inclusion_date": "2026-08-04",
     "article": "Cardiovascular-kidney-metabolic health, genetic susceptibility, and incident cancer risk: a prospective UK biobank cohort and machine learning study",
     "journal": "Frontiers in Endocrinology",
@@ -1032,6 +1087,17 @@
     "impact_factor_label": "22.6",
     "published": "2026-07-18",
     "brief_url": "/statgen-radar/article.html?date=2026-07-18"
+  },
+  {
+    "inclusion_date": "2026-08-11",
+    "article": "The Role of Autophagy in Cancer Evolution and Prognosis, Highlighting Its Role in PCa and Its Interaction with Apoptosis and Epigenetic Regulation by miRNAs",
+    "journal": "Medical Sciences",
+    "doi": "10.3390/medsci14040471",
+    "score": 17.0,
+    "impact_factor": 5.9,
+    "impact_factor_label": "5.9",
+    "published": "2026-08-10",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-11"
   },
   {
     "inclusion_date": "2026-08-08",
@@ -1307,6 +1373,17 @@
     "impact_factor_label": "3.7",
     "published": "2026-07-28",
     "brief_url": "/statgen-radar/article.html?date=2026-07-29"
+  },
+  {
+    "inclusion_date": "2026-08-11",
+    "article": "Identification of candidate genes for reproductive traits in Chinese Holstein cattle using single-step genome-wide association study",
+    "journal": "Journal of Animal Science",
+    "doi": "10.1093/jas/skag244",
+    "score": 16.0,
+    "impact_factor": 3.7,
+    "impact_factor_label": "3.7",
+    "published": "2026-08-10",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-11"
   },
   {
     "inclusion_date": "2026-08-05",
@@ -1593,6 +1670,17 @@
     "impact_factor_label": "3.8",
     "published": "2026-08-06",
     "brief_url": "/statgen-radar/article.html?date=2026-08-07"
+  },
+  {
+    "inclusion_date": "2026-08-11",
+    "article": "From one genome to thousands, and beyond",
+    "journal": "FEMS Yeast Research",
+    "doi": "10.1093/femsyr/foag038",
+    "score": 14.0,
+    "impact_factor": 3.5,
+    "impact_factor_label": "3.5",
+    "published": "2026-08-10",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-11"
   },
   {
     "inclusion_date": "2026-07-14",
