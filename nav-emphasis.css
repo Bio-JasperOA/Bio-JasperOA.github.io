@@ -1,6 +1,7 @@
 .site-header nav {
+  --content-nav-gap: 20px;
   align-items: center;
-  gap: 20px;
+  gap: var(--content-nav-gap);
 }
 
 .site-header nav > a {
@@ -25,28 +26,33 @@
 .site-header nav a.nav-blog,
 .site-header nav a.nav-tutorial,
 .site-header nav a.nav-gallery {
-  background: none;
-  border: 0;
+  background: rgba(49, 105, 198, .045);
+  border-color: rgba(49, 105, 198, .18);
+  border-style: solid;
+  border-width: 1px 0;
   color: #111 !important;
   font-weight: 680;
   letter-spacing: .005em;
-  padding: 0;
-  position: relative;
+  padding: 0 10px;
+  transition: background .18s ease, box-shadow .18s ease, color .18s ease;
 }
 
-.site-header nav a.nav-blog::after,
-.site-header nav a.nav-tutorial::after,
-.site-header nav a.nav-gallery::after {
-  background: #3169c6;
-  bottom: 3px;
-  content: "";
-  height: 2px;
-  left: 50%;
-  opacity: .38;
-  position: absolute;
-  transform: translateX(-50%);
-  transition: opacity .18s ease, width .18s ease;
-  width: 14px;
+.site-header nav a.nav-blog {
+  border-left-width: 1px;
+  border-radius: 7px 0 0 7px;
+  margin-left: 4px;
+}
+
+.site-header nav a.nav-tutorial,
+.site-header nav a.nav-gallery {
+  border-left: 1px solid rgba(49, 105, 198, .14);
+  margin-left: calc(-1 * var(--content-nav-gap));
+}
+
+.site-header nav a.nav-gallery {
+  border-radius: 0 7px 7px 0;
+  border-right-width: 1px;
+  margin-right: 2px;
 }
 
 .site-header nav a.nav-blog:hover,
@@ -55,25 +61,10 @@
 .site-header nav a.nav-blog[aria-current="page"],
 .site-header nav a.nav-tutorial[aria-current="page"],
 .site-header nav a.nav-gallery[aria-current="page"] {
+  background: rgba(49, 105, 198, .10);
+  box-shadow: inset 0 -2px 0 #3169c6;
   color: #000 !important;
-}
-
-.site-header nav a.nav-blog:hover::after,
-.site-header nav a.nav-tutorial:hover::after,
-.site-header nav a.nav-gallery:hover::after,
-.site-header nav a.nav-blog[aria-current="page"]::after,
-.site-header nav a.nav-tutorial[aria-current="page"]::after,
-.site-header nav a.nav-gallery[aria-current="page"]::after {
-  opacity: 1;
-  width: 100%;
-}
-
-.site-header nav a.nav-blog {
-  margin-left: 4px;
-}
-
-.site-header nav a.nav-gallery {
-  margin-right: 2px;
+  transform: none !important;
 }
 
 .site-header nav a.nav-journal-club {
@@ -121,7 +112,8 @@
 
 @media (max-width: 760px) {
   .site-header nav {
-    gap: 10px 16px;
+    --content-nav-gap: 16px;
+    gap: 10px var(--content-nav-gap);
   }
 
   .site-header nav a,
