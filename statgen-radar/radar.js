@@ -38,8 +38,9 @@ async function renderIndex() {
       <div class="radar-meta">${summaryChips(latest)}</div>
       <a class="radar-primary-link" href="${escapeHtml(latest.url)}">Read the full brief →</a>`;
 
-    archiveRoot.innerHTML = items.map(item => `
-      <article class="radar-entry">
+    const archiveLimit = 10;
+    archiveRoot.innerHTML = items.map((item, index) => `
+      <article class="radar-entry" data-archive-overflow="${index >= archiveLimit}"${index >= archiveLimit ? ' hidden' : ''}>
         <time datetime="${escapeHtml(item.date)}">${escapeHtml(item.date)}</time>
         <div>
           <h3>${escapeHtml(item.title || 'Daily Brief')}</h3>
@@ -47,6 +48,28 @@ async function renderIndex() {
         </div>
         <a href="${escapeHtml(item.url)}">Open →</a>
       </article>`).join('');
+
+    const overflowEntries = [...archiveRoot.querySelectorAll('[data-archive-overflow="true"]')];
+    if (overflowEntries.length) {
+      const toggle = document.createElement('button');
+      toggle.className = 'radar-archive-toggle';
+      toggle.type = 'button';
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.textContent = `Show ${overflowEntries.length} more briefs ↓`;
+
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        overflowEntries.forEach(entry => {
+          entry.hidden = expanded;
+        });
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        toggle.textContent = expanded
+          ? `Show ${overflowEntries.length} more briefs ↓`
+          : 'Show fewer briefs ↑';
+      });
+
+      archiveRoot.appendChild(toggle);
+    }
   } catch (error) {
     latestRoot.innerHTML = '<p class="notice-label">Unable to load the latest brief.</p>';
     archiveRoot.innerHTML = `<p>${escapeHtml(error.message)}</p>`;
