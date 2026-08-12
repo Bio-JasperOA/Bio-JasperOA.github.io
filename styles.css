@@ -146,6 +146,10 @@ h2 { font-size: 20px; font-weight: 680; letter-spacing: -.025em; line-height: 1.
 #honors.content-section { gap: 32px; }
 .honors-list article { gap: 16px; grid-template-columns: 64px 1fr; padding: 14px 0; }
 .honors-list time { color: var(--blue); font-weight: 650; }
+.jamboree-marker { align-items: center; display: flex; gap: 9px; margin-top: 11px; }
+.jamboree-marker::before { background: var(--blue); border-radius: 1px; box-shadow: 0 0 0 4px rgba(49, 105, 198, .10); content: ""; flex: 0 0 auto; height: 6px; transform: rotate(45deg); width: 6px; }
+.jamboree-marker span { border: 1px solid rgba(49, 105, 198, .28); color: var(--blue); font-size: 9px; font-weight: 750; letter-spacing: .07em; padding: 4px 6px; text-transform: uppercase; }
+.jamboree-marker strong { color: var(--ink); font-size: 11px; font-weight: 650; line-height: 1.45; }
 .nomination-highlight { background: var(--soft); border-left: 2px solid var(--blue); display: grid; gap: 4px; margin-top: 13px; padding: 11px 14px; }
 .nomination-highlight strong { color: var(--blue); font-size: 11px; letter-spacing: .02em; text-transform: uppercase; }
 .nomination-highlight span { color: var(--ink); font-size: 12px; font-weight: 620; line-height: 1.45; }
