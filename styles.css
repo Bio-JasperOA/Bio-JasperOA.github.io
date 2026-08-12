@@ -142,7 +142,7 @@ h2 { font-size: 20px; font-weight: 680; letter-spacing: -.025em; line-height: 1.
 .dated-list p { margin-top: 6px; }
 .education-list article { grid-template-columns: 148px 1fr; }
 .education-list time { color: var(--blue); font-weight: 650; }
-.education-list .supervisor { color: var(--ink); font-size: 11px; }
+.education-list .supervisor { color: var(--muted); font-size: 11px; font-weight: 400; }
 #honors.content-section { gap: 32px; }
 .honors-list article { gap: 16px; grid-template-columns: 64px 1fr; padding: 14px 0; }
 .honors-list time { color: var(--blue); font-weight: 650; }
