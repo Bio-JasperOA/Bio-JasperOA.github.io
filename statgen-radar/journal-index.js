@@ -60,7 +60,9 @@ function journalStarButton(record, pinnedKeys) {
 
 function journalJif(record) {
   const value = validNumber(record.impact_factor);
-  return value === null ? '<span class="journal-jif-missing">NA</span>' : `<strong>${journalEscape(value)}</strong>`;
+  return value === null
+    ? '<span class="journal-jif-value journal-jif-missing">NA</span>'
+    : `<strong class="journal-jif-value">${journalEscape(value)}</strong>`;
 }
 
 function renderJournalIndex() {
