@@ -83,7 +83,10 @@
 }
 
 .journal-index-table tbody tr.is-pinned td { background: rgba(49, 105, 198, .04); }
-.journal-index-table tbody tr.is-pinned td:first-child { box-shadow: inset 3px 0 0 var(--blue); }
+.journal-index-table tbody tr.is-pinned td:first-child {
+  box-shadow: inset 3px 0 0 var(--blue);
+  padding-left: 16px;
+}
 
 .journal-index-table th:first-child,
 .journal-index-table td:first-child {
@@ -151,19 +154,31 @@
   font-weight: 620;
 }
 
+.journal-brief-link { white-space: nowrap; }
+
 .journal-doi-missing {
   color: var(--muted);
+}
+
+.journal-score,
+.journal-jif-value {
+  align-items: center;
+  display: inline-flex;
+  font-variant-numeric: tabular-nums;
+  height: 27px;
+  justify-content: center;
+  line-height: 1;
+  min-width: 44px;
+  padding: 0 7px;
 }
 
 .journal-score {
   background: var(--soft);
   color: var(--blue);
-  display: inline-block;
   font-weight: 700;
-  min-width: 30px;
-  padding: 4px 7px;
-  text-align: center;
 }
+
+.journal-jif-value { color: var(--muted); font-weight: 700; }
 
 .journal-pagination {
   align-items: center;
