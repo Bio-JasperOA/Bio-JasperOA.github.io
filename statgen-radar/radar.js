@@ -1,5 +1,73 @@
 const ARCHIVE_URL = '/data/statgen-radar.json';
 
+const StatGenStars = (() => {
+  const storageKey = 'statgen-radar-pinned-v1';
+  let memoryStars = new Set();
+
+  function normalizeText(value) {
+    return String(value || '').trim().toLowerCase().replace(/\s+/g, ' ');
+  }
+
+  function normalizeDoi(value) {
+    return normalizeText(value)
+      .replace(/^doi:\s*/i, '')
+      .replace(/^https?:\/\/(?:dx\.)?doi\.org\//i, '')
+      .replace(/[?#].*$/, '');
+  }
+
+  function key(record) {
+    const doi = normalizeDoi(record?.doi ?? record?.DOI);
+    if (doi && doi !== '—' && doi !== '-') return `doi:${doi}`;
+
+    const article = normalizeText(record?.article ?? record?.title ?? record?.Article ?? 'untitled');
+    const source = normalizeText(record?.journal ?? record?.source ?? record?.Journal ?? 'unknown');
+    return `article:${article}|source:${source}`;
+  }
+
+  function score(record) {
+    const value = record?.score ?? record?.total ?? record?.Total;
+    if (value === null || value === undefined || value === '') return null;
+    const number = Number(value);
+    return Number.isFinite(number) ? number : null;
+  }
+
+  function read() {
+    try {
+      const saved = JSON.parse(window.localStorage.getItem(storageKey) || '[]');
+      if (Array.isArray(saved)) memoryStars = new Set(saved.map(String));
+    } catch (error) {
+      // Keep the in-memory selection when browser storage is unavailable.
+    }
+    return new Set(memoryStars);
+  }
+
+  function write(stars) {
+    memoryStars = new Set(stars);
+    try {
+      window.localStorage.setItem(storageKey, JSON.stringify([...memoryStars]));
+    } catch (error) {
+      // Star controls still work for the current page when storage is unavailable.
+    }
+  }
+
+  function isPinned(record) {
+    return read().has(key(record));
+  }
+
+  function toggle(record) {
+    const stars = read();
+    const recordKey = key(record);
+    if (stars.has(recordKey)) stars.delete(recordKey);
+    else stars.add(recordKey);
+    write(stars);
+    return stars.has(recordKey);
+  }
+
+  return { storageKey, key, score, keys: read, isPinned, toggle };
+})();
+
+window.StatGenStars = StatGenStars;
+
 function escapeHtml(value) {
   return String(value ?? '').replace(/[&<>'"]/g, char => ({
     '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
@@ -130,18 +198,48 @@ function transformInclusionTable(root) {
   const rows = [...table.querySelectorAll('tbody tr')];
   const list = document.createElement('div');
   list.className = 'radar-record-list';
-  rows.forEach(row => {
+  const entries = [];
+
+  function updateEntry(entry, pinnedKeys) {
+    const pinned = pinnedKeys.has(StatGenStars.key(entry.record));
+    entry.card.classList.toggle('is-pinned', pinned);
+    entry.button.setAttribute('aria-pressed', String(pinned));
+    entry.button.setAttribute('aria-label', `${pinned ? 'Unpin' : 'Pin'} ${entry.record.article}`);
+    entry.button.title = pinned ? 'Remove from pinned articles' : 'Pin this article';
+    entry.button.querySelector('[aria-hidden="true"]').textContent = pinned ? '★' : '☆';
+  }
+
+  function arrangeEntries() {
+    const pinnedKeys = StatGenStars.keys();
+    entries.forEach(entry => updateEntry(entry, pinnedKeys));
+    const ordered = [...entries].sort((a, b) => {
+      const pinnedA = pinnedKeys.has(StatGenStars.key(a.record));
+      const pinnedB = pinnedKeys.has(StatGenStars.key(b.record));
+      if (pinnedA !== pinnedB) return pinnedA ? -1 : 1;
+      if (pinnedA && pinnedB) {
+        const scoreA = StatGenStars.score(a.record) ?? -Infinity;
+        const scoreB = StatGenStars.score(b.record) ?? -Infinity;
+        if (scoreA !== scoreB) return scoreB - scoreA;
+      }
+      return a.originalOrder - b.originalOrder;
+    });
+    list.replaceChildren(...ordered.map(entry => entry.card));
+    list.dataset.pinnedCount = String(ordered.filter(entry => pinnedKeys.has(StatGenStars.key(entry.record))).length);
+  }
+
+  rows.forEach((row, originalOrder) => {
     const values = [...row.querySelectorAll('td')].map(cell => cell.textContent.trim());
-    const record = Object.fromEntries(headers.map((header, index) => [header, values[index] || '']));
-    const number = record['No.'] || record['No'] || '';
-    const title = record.Article || 'Untitled record';
-    const type = record.Type || '';
-    const journal = record['Journal / platform'] || record.Journal || '';
-    const jif = record['2025 JIF'] || record.JIF || '';
-    const relevance = record.Relevance || '';
-    const publication = record.Publication || '';
-    const total = record.Total || '';
-    const doi = record.DOI || '';
+    const sourceRecord = Object.fromEntries(headers.map((header, index) => [header, values[index] || '']));
+    const number = sourceRecord['No.'] || sourceRecord['No'] || '';
+    const title = sourceRecord.Article || 'Untitled record';
+    const type = sourceRecord.Type || '';
+    const journal = sourceRecord['Journal / platform'] || sourceRecord.Journal || '';
+    const jif = sourceRecord['2025 JIF'] || sourceRecord.JIF || '';
+    const relevance = sourceRecord.Relevance || '';
+    const publication = sourceRecord.Publication || '';
+    const total = sourceRecord.Total || '';
+    const doi = sourceRecord.DOI || '';
+    const record = { article: title, journal, doi, score: total };
 
     const card = document.createElement('article');
     card.className = 'radar-record-card';
@@ -150,6 +248,7 @@ function transformInclusionTable(root) {
         <span class="radar-record-number">${escapeHtml(number)}</span>
         <h3 class="radar-record-title">${escapeHtml(title)}</h3>
         <span class="radar-score-badge">Score ${escapeHtml(total)}</span>
+        <button class="radar-star-button" type="button" aria-pressed="false"><span aria-hidden="true">☆</span></button>
       </div>
       <div class="radar-record-meta">
         ${type ? `<span><strong>Type</strong> ${escapeHtml(type)}</span>` : ''}
@@ -160,7 +259,18 @@ function transformInclusionTable(root) {
       </div>
       ${linkDoi(doi)}`;
 
-    list.appendChild(card);
+    const button = card.querySelector('.radar-star-button');
+    const entry = { record, card, button, originalOrder };
+    button.addEventListener('click', () => {
+      StatGenStars.toggle(record);
+      arrangeEntries();
+    });
+    entries.push(entry);
+  });
+
+  arrangeEntries();
+  window.addEventListener('storage', event => {
+    if (event.key === StatGenStars.storageKey) arrangeEntries();
   });
 
   table.classList.add('radar-table-source');
