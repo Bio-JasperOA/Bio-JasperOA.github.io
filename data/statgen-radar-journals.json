@@ -88,6 +88,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-27"
   },
   {
+    "inclusion_date": "2026-08-14",
+    "article": "Detecting somatic mutations in rare clones using single-cell multiomics",
+    "journal": "Genome Research",
+    "doi": "10.1101/gr.281609.125",
+    "score": 34.0,
+    "impact_factor": 6.3,
+    "impact_factor_label": "6.3",
+    "published": "2026-08-13",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-14"
+  },
+  {
     "inclusion_date": "2026-07-22",
     "article": "Genetic Associations With Carotid Intima-Media Thickness in the Chinese Population and Shared Genetic Architecture With Cardiometabolic Diseases and Traits",
     "journal": "Circulation: Genomic and Precision Medicine",
@@ -198,6 +209,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-08-01"
   },
   {
+    "inclusion_date": "2026-08-14",
+    "article": "Multi-ancestry genetic architecture of heart failure subtypes",
+    "journal": "Nature Communications",
+    "doi": "10.1038/s41467-026-76438-y",
+    "score": 29.0,
+    "impact_factor": 18.1,
+    "impact_factor_label": "18.1",
+    "published": "2026-08-13",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-14"
+  },
+  {
     "inclusion_date": "2026-08-12",
     "article": "A population-specific genomic reference panel for Taiwan: NHRI-RP-1",
     "journal": "Journal of Biomedical Science",
@@ -207,6 +229,17 @@
     "impact_factor_label": "14.5",
     "published": "2026-08-11",
     "brief_url": "/statgen-radar/article.html?date=2026-08-12"
+  },
+  {
+    "inclusion_date": "2026-08-14",
+    "article": "Cross-trait genetic analysis maps shared polygenic architecture between primary aldosteronism and blood pressure to adrenal cell states",
+    "journal": "Journal of Translational Medicine",
+    "doi": "10.1186/s12967-026-08819-2",
+    "score": 29.0,
+    "impact_factor": 9.7,
+    "impact_factor_label": "9.7",
+    "published": "2026-08-13",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-14"
   },
   {
     "inclusion_date": "2026-07-27",
@@ -352,6 +385,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-08-11"
   },
   {
+    "inclusion_date": "2026-08-14",
+    "article": "How I utilize somatic alterations in the diagnosis, risk stratification, and therapy of hypocellular bone marrow failure",
+    "journal": "Blood",
+    "doi": "10.1182/blood.2025029923",
+    "score": 25.0,
+    "impact_factor": 23.9,
+    "impact_factor_label": "23.9",
+    "published": "2026-08-13",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-14"
+  },
+  {
     "inclusion_date": "2026-07-31",
     "article": "XXYLT1 and Mendelian Retinal Dystrophy",
     "journal": "JAMA Ophthalmology",
@@ -405,6 +449,17 @@
     "impact_factor_label": "8.7",
     "published": "2026-08-05",
     "brief_url": "/statgen-radar/article.html?date=2026-08-06"
+  },
+  {
+    "inclusion_date": "2026-08-14",
+    "article": "ADHD-anchored partitioning of non-small cell lung cancer genetic covariance identifies CLPTM1L and suggestive innate-immune signals",
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2026.1913958",
+    "score": 24.0,
+    "impact_factor": 7.0,
+    "impact_factor_label": "7",
+    "published": "2026-08-13",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-14"
   },
   {
     "inclusion_date": "2026-08-05",
@@ -594,6 +649,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-08-12"
   },
   {
+    "inclusion_date": "2026-08-14",
+    "article": "A Gapless T2T Genome and Population-Scale Resequencing of Adzuki Bean Reveal Centromere Evolution and Accelerate Molecular Breeding",
+    "journal": "Horticulture Research",
+    "doi": "10.1093/hr/uhag346",
+    "score": 21.0,
+    "impact_factor": 9.5,
+    "impact_factor_label": "9.5",
+    "published": "2026-08-13",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-14"
+  },
+  {
     "inclusion_date": "2026-07-31",
     "article": "Genetic loci and functional genes underlying black spot disease resistance across multiple environments in chrysanthemum",
     "journal": "Horticulture Research",
@@ -735,6 +801,17 @@
     "impact_factor_label": "18.1",
     "published": "2026-08-11",
     "brief_url": "/statgen-radar/article.html?date=2026-08-12"
+  },
+  {
+    "inclusion_date": "2026-08-14",
+    "article": "Proteogenomic characterization of pulmonary large-cell neuroendocrine carcinoma identifies molecular features and therapeutic strategy",
+    "journal": "Science Advances",
+    "doi": "10.1126/sciadv.adz0583",
+    "score": 20.0,
+    "impact_factor": 13.9,
+    "impact_factor_label": "13.9",
+    "published": "2026-08-14",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-14"
   },
   {
     "inclusion_date": "2026-08-13",
@@ -900,6 +977,17 @@
     "impact_factor_label": "3.6",
     "published": "2026-08-03",
     "brief_url": "/statgen-radar/article.html?date=2026-08-04"
+  },
+  {
+    "inclusion_date": "2026-08-14",
+    "article": "Trans‐ancestry meta‐analysis of genome‐wide association study identifies eight novel genetic loci in type 1 diabetes: A multi‐population study",
+    "journal": "Diabetic Medicine",
+    "doi": "10.1111/dme.70434",
+    "score": 19.0,
+    "impact_factor": 3.3,
+    "impact_factor_label": "3.3",
+    "published": "2026-08-13",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-14"
   },
   {
     "inclusion_date": "2026-07-22",
@@ -1494,6 +1582,17 @@
     "impact_factor_label": "4.1",
     "published": "2026-07-30",
     "brief_url": "/statgen-radar/article.html?date=2026-07-31"
+  },
+  {
+    "inclusion_date": "2026-08-14",
+    "article": "New biologically relevant resistance to bacterial wilt in heat-stressed tomato revealed by two-reference Genome Wide Association",
+    "journal": "PLOS Genetics",
+    "doi": "10.1371/journal.pgen.1011820",
+    "score": 16.0,
+    "impact_factor": 3.9,
+    "impact_factor_label": "3.9",
+    "published": "2026-08-13",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-14"
   },
   {
     "inclusion_date": "2026-07-15",
