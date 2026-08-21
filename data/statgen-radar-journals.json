@@ -1,5 +1,16 @@
 [
   {
+    "inclusion_date": "2026-08-21",
+    "article": "Genetic Evidence for Unified Airway Disease: Shared Epithelial and Immune Architecture Across Major Airway Diseases",
+    "journal": "International Journal of Molecular Sciences",
+    "doi": "10.3390/ijms27167450",
+    "score": 50.0,
+    "impact_factor": 5.6,
+    "impact_factor_label": "5.6",
+    "published": "2026-08-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-21"
+  },
+  {
     "inclusion_date": "2026-08-05",
     "article": "Shared genetic architecture between Crohn’s disease and IgA nephropathy: implications for a gut–immune–kidney axis",
     "journal": "Frontiers in Immunology",
@@ -31,6 +42,17 @@
     "impact_factor_label": "18.1",
     "published": "2026-07-28",
     "brief_url": "/statgen-radar/article.html?date=2026-07-29"
+  },
+  {
+    "inclusion_date": "2026-08-21",
+    "article": "Potential mitochondria-associated pathogenic genes in sepsis: a multi-omics Mendelian randomization study",
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2026.1881375",
+    "score": 38.0,
+    "impact_factor": 7.0,
+    "impact_factor_label": "7",
+    "published": "2026-08-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-21"
   },
   {
     "inclusion_date": "2026-07-30",
@@ -1045,6 +1067,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-08-05"
   },
   {
+    "inclusion_date": "2026-08-21",
+    "article": "Multi-Breed Genome-Wide Association Analysis Reveals Candidate Genes for Growth and Body Conformation Traits in Four Populations of Native and Crossbred Chinese Sheep",
+    "journal": "Animals",
+    "doi": "10.3390/ani16162605",
+    "score": 20.0,
+    "impact_factor": 3.2,
+    "impact_factor_label": "3.2",
+    "published": "2026-08-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-21"
+  },
+  {
     "inclusion_date": "2026-08-11",
     "article": "Tumor-Infiltrating Clonal Hematopoiesis Is Associated with Adverse Clinical Outcomes in Diffuse Large B-cell Lymphoma",
     "journal": "Blood Cancer Discovery",
@@ -1318,6 +1351,17 @@
     "impact_factor_label": "5.9",
     "published": "2026-08-19",
     "brief_url": "/statgen-radar/article.html?date=2026-08-20"
+  },
+  {
+    "inclusion_date": "2026-08-21",
+    "article": "Genome-wide association studies reveal genetic variants associated with antineoplastic monoterpenoid indole alkaloid accumulation in Catharanthus roseus",
+    "journal": "Frontiers in Plant Science",
+    "doi": "10.3389/fpls.2026.1828182",
+    "score": 18.0,
+    "impact_factor": 5.9,
+    "impact_factor_label": "5.9",
+    "published": "2026-08-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-21"
   },
   {
     "inclusion_date": "2026-08-05",
@@ -1661,6 +1705,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-21"
   },
   {
+    "inclusion_date": "2026-08-21",
+    "article": "A Comprehensive Review of T-Cell Lymphoma Following CAR T-Cell Immunotherapy",
+    "journal": "Blood Advances",
+    "doi": "10.1182/bloodadvances.2026021166",
+    "score": 16.0,
+    "impact_factor": 7.7,
+    "impact_factor_label": "7.7",
+    "published": "2026-08-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-21"
+  },
+  {
     "inclusion_date": "2026-08-06",
     "article": "Integrating biological pathway polygenic scores and trauma in psychosis: findings from the EU-GEI study",
     "journal": "Translational Psychiatry",
@@ -1670,6 +1725,17 @@
     "impact_factor_label": "7.5",
     "published": "2026-08-05",
     "brief_url": "/statgen-radar/article.html?date=2026-08-06"
+  },
+  {
+    "inclusion_date": "2026-08-21",
+    "article": "Causal AI for cancer immunotherapy: a narrative framework review of target trial emulation, treatment-effect learning and clinical translation",
+    "journal": "Frontiers in Immunology",
+    "doi": "10.3389/fimmu.2026.1896755",
+    "score": 16.0,
+    "impact_factor": 7.0,
+    "impact_factor_label": "7",
+    "published": "2026-08-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-21"
   },
   {
     "inclusion_date": "2026-08-12",
@@ -1727,6 +1793,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-15"
   },
   {
+    "inclusion_date": "2026-08-21",
+    "article": "Genetic Modifiers of Cardiac Remodeling Severity in IVS4+919G>A-Associated Fabry Cardiomyopathy",
+    "journal": "International Journal of Molecular Sciences",
+    "doi": "10.3390/ijms27167447",
+    "score": 16.0,
+    "impact_factor": 5.6,
+    "impact_factor_label": "5.6",
+    "published": "2026-08-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-21"
+  },
+  {
     "inclusion_date": "2026-08-20",
     "article": "Pesci: fast and user-friendly software to compare single-cell gene expression across species",
     "journal": "Bioinformatics",
@@ -1747,6 +1824,17 @@
     "impact_factor_label": "5.5",
     "published": "2026-08-05",
     "brief_url": "/statgen-radar/article.html?date=2026-08-06"
+  },
+  {
+    "inclusion_date": "2026-08-21",
+    "article": "Early-Onset Colorectal Cancer: From Epidemiologic Shift to Life-Course Carcinogenesis and Age-Attuned Care",
+    "journal": "Current Oncology Reports",
+    "doi": "10.1007/s11912-026-01815-1",
+    "score": 16.0,
+    "impact_factor": 5.2,
+    "impact_factor_label": "5.2",
+    "published": "2026-08-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-21"
   },
   {
     "inclusion_date": "2026-08-06",
@@ -2231,6 +2319,17 @@
     "impact_factor_label": "4.1",
     "published": "2026-08-18",
     "brief_url": "/statgen-radar/article.html?date=2026-08-19"
+  },
+  {
+    "inclusion_date": "2026-08-21",
+    "article": "The stability of fatty acid composition in sunflower oil is dependent on environment and affected by structural variation",
+    "journal": "Theoretical and Applied Genetics",
+    "doi": "10.1007/s00122-026-05346-y",
+    "score": 14.0,
+    "impact_factor": 4.1,
+    "impact_factor_label": "4.1",
+    "published": "2026-08-20",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-21"
   },
   {
     "inclusion_date": "2026-08-06",
