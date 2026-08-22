@@ -748,6 +748,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-08-10"
   },
   {
+    "inclusion_date": "2026-08-22",
+    "article": "Resolving Cattle GWAS Loci: Current Progress, Persistent Challenges and Future Directions",
+    "journal": "Current Issues in Molecular Biology",
+    "doi": "10.3390/cimb48080852",
+    "score": 22.0,
+    "impact_factor": 4.1,
+    "impact_factor_label": "4.1",
+    "published": "2026-08-21",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-22"
+  },
+  {
     "inclusion_date": "2026-07-21",
     "article": "Unraveling the role of lipid metabolism in ALS risk: a Mendelian randomization analysis using GWAS data",
     "journal": "Orphanet Journal of Rare Diseases",
@@ -922,6 +933,17 @@
     "impact_factor_label": "2.9",
     "published": "2026-07-15",
     "brief_url": "/statgen-radar/article.html?date=2026-07-16"
+  },
+  {
+    "inclusion_date": "2026-08-22",
+    "article": "AI Model Predicts Cancer Development, Diagnoses Tumors",
+    "journal": "Cancer Discovery",
+    "doi": "10.1158/2159-8290.cd-nw2026-0083",
+    "score": 20.0,
+    "impact_factor": 29.5,
+    "impact_factor_label": "29.5",
+    "published": "2026-08-21",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-22"
   },
   {
     "inclusion_date": "2026-08-12",
@@ -1771,6 +1793,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-08-17"
   },
   {
+    "inclusion_date": "2026-08-22",
+    "article": "Integrating predictive models and GWAS to identify candidate loci and genes for agronomic traits in rice",
+    "journal": "Frontiers in Plant Science",
+    "doi": "10.3389/fpls.2026.1942478",
+    "score": 16.0,
+    "impact_factor": 5.9,
+    "impact_factor_label": "5.9",
+    "published": "2026-08-21",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-22"
+  },
+  {
     "inclusion_date": "2026-08-05",
     "article": "Integration of genome-wide association study and single-cell transcriptome analysis reveals the role of N6-methyladenosine in treatment resistance in lung cancer",
     "journal": "Cell Biology and Toxicology",
@@ -2396,6 +2429,28 @@
     "impact_factor_label": "3.4",
     "published": "2026-08-17",
     "brief_url": "/statgen-radar/article.html?date=2026-08-18"
+  },
+  {
+    "inclusion_date": "2026-08-22",
+    "article": "The Effect of Weight Loss and Metabolic Interventions on Recurrence After Atrial Fibrillation Ablation",
+    "journal": "Journal of Clinical Medicine",
+    "doi": "10.3390/jcm15166493",
+    "score": 14.0,
+    "impact_factor": 3.3,
+    "impact_factor_label": "3.3",
+    "published": "2026-08-21",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-22"
+  },
+  {
+    "inclusion_date": "2026-08-22",
+    "article": "Development of an automated machine learning classifier for chronic obstructive pulmonary disease in non-small cell lung cancer patients using electronic health records",
+    "journal": "BMC Pulmonary Medicine",
+    "doi": "10.1186/s12890-026-04448-z",
+    "score": 14.0,
+    "impact_factor": 3.1,
+    "impact_factor_label": "3.1",
+    "published": "2026-08-21",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-22"
   },
   {
     "inclusion_date": "2026-08-19",
