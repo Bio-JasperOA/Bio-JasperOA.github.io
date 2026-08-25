@@ -4,7 +4,8 @@ const journalStars = window.StatGenStars;
 const journalState = {
   rows: [],
   page: 1,
-  pageSize: 10
+  pageSize: 10,
+  query: ''
 };
 
 function journalEscape(value) {
@@ -42,9 +43,40 @@ function journalBaseCompare(a, b) {
   return String(a.journal || '').localeCompare(String(b.journal || ''));
 }
 
+function normalizeJournalSearch(value) {
+  return String(value ?? '')
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function journalSearchText(record) {
+  return normalizeJournalSearch([
+    record.inclusion_date,
+    record.published,
+    record.article,
+    record.journal,
+    record.doi,
+    record.score,
+    record.impact_factor,
+    record.impact_factor_label
+  ].join(' '));
+}
+
+function filteredJournalRows() {
+  const terms = normalizeJournalSearch(journalState.query).split(' ').filter(Boolean);
+  if (!terms.length) return [...journalState.rows];
+  return journalState.rows.filter(record => {
+    const haystack = journalSearchText(record);
+    return terms.every(term => haystack.includes(term));
+  });
+}
+
 function sortedJournalRows() {
   const pinnedKeys = journalStars.keys();
-  return [...journalState.rows].sort((a, b) => {
+  return filteredJournalRows().sort((a, b) => {
     const pinnedA = pinnedKeys.has(journalStars.key(a));
     const pinnedB = pinnedKeys.has(journalStars.key(b));
     if (pinnedA !== pinnedB) return pinnedA ? -1 : 1;
@@ -77,6 +109,7 @@ function renderJournalIndex() {
   const pinnedKeys = journalStars.keys();
   const pinnedCount = sortedRows.filter(record => pinnedKeys.has(journalStars.key(record))).length;
   const total = sortedRows.length;
+  const overallTotal = journalState.rows.length;
   const pages = Math.max(1, Math.ceil(total / journalState.pageSize));
   journalState.page = Math.min(Math.max(1, journalState.page), pages);
   const start = (journalState.page - 1) * journalState.pageSize;
@@ -84,7 +117,9 @@ function renderJournalIndex() {
   const visible = sortedRows.slice(start, end);
 
   if (!visible.length) {
-    body.innerHTML = '<tr><td colspan="6">No indexed journal articles are available yet.</td></tr>';
+    body.innerHTML = journalState.query
+      ? `<tr><td colspan="6">No indexed articles match “${journalEscape(journalState.query)}”.</td></tr>`
+      : '<tr><td colspan="6">No indexed journal articles are available yet.</td></tr>';
   } else {
     body.innerHTML = visible.map(record => {
       const pinned = pinnedKeys.has(journalStars.key(record));
@@ -100,9 +135,18 @@ function renderJournalIndex() {
     }).join('');
   }
 
-  summary.textContent = total
-    ? `${pinnedCount ? `${pinnedCount} pinned · ` : ''}Showing ${start + 1}–${end} of ${total} indexed articles`
-    : '0 indexed articles';
+  if (total) {
+    const pinText = pinnedCount ? `${pinnedCount} pinned · ` : '';
+    const rangeText = `Showing ${start + 1}–${end} of ${total}`;
+    summary.textContent = journalState.query
+      ? `${pinText}${rangeText} matching articles · ${overallTotal} total indexed`
+      : `${pinText}${rangeText} indexed articles`;
+  } else {
+    summary.textContent = journalState.query
+      ? `0 matches · ${overallTotal} total indexed`
+      : '0 indexed articles';
+  }
+
   number.textContent = `Page ${journalState.page} of ${pages}`;
   previous.disabled = journalState.page <= 1;
   next.disabled = journalState.page >= pages;
@@ -140,6 +184,23 @@ window.addEventListener('storage', event => {
   journalState.page = 1;
   renderJournalIndex();
 });
+
+const searchControl = document.querySelector('#journal-search');
+if (searchControl) {
+  searchControl.addEventListener('input', event => {
+    journalState.query = event.target.value || '';
+    journalState.page = 1;
+    renderJournalIndex();
+  });
+  searchControl.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && searchControl.value) {
+      searchControl.value = '';
+      journalState.query = '';
+      journalState.page = 1;
+      renderJournalIndex();
+    }
+  });
+}
 
 const pageSizeControl = document.querySelector('#journal-page-size');
 if (pageSizeControl) {
