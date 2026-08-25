@@ -44,6 +44,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-29"
   },
   {
+    "inclusion_date": "2026-08-25",
+    "article": "Integrative cross-tissue transcriptome-wide association and metabolomic analysis reveals novel genetic risk loci for aortic aneurysm",
+    "journal": "Frontiers in Nutrition",
+    "doi": "10.3389/fnut.2026.1795141",
+    "score": 40.0,
+    "impact_factor": 5.5,
+    "impact_factor_label": "5.5",
+    "published": "2026-08-24",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-25"
+  },
+  {
     "inclusion_date": "2026-08-21",
     "article": "Potential mitochondria-associated pathogenic genes in sepsis: a multi-omics Mendelian randomization study",
     "journal": "Frontiers in Immunology",
@@ -75,6 +86,17 @@
     "impact_factor_label": "5.7",
     "published": "2026-08-04",
     "brief_url": "/statgen-radar/article.html?date=2026-08-05"
+  },
+  {
+    "inclusion_date": "2026-08-25",
+    "article": "SNPannotator: Automated Functional Annotation of Genetic Variants and Linked Proxies",
+    "journal": "Bioinformatics",
+    "doi": "10.1093/bioinformatics/btag603",
+    "score": 36.0,
+    "impact_factor": 5.5,
+    "impact_factor_label": "5.5",
+    "published": "2026-08-24",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-25"
   },
   {
     "inclusion_date": "2026-08-17",
@@ -539,6 +561,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-15"
   },
   {
+    "inclusion_date": "2026-08-25",
+    "article": "Evaluation of population-specific polygenic risk scores for blood lipids: insights from Taiwanese cohorts and multiancestry meta-analysis",
+    "journal": "Frontiers in Bioinformatics",
+    "doi": "10.3389/fbinf.2026.1823599",
+    "score": 25.0,
+    "impact_factor": 3.6,
+    "impact_factor_label": "3.6",
+    "published": "2026-08-24",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-25"
+  },
+  {
     "inclusion_date": "2026-08-06",
     "article": "A compendium of next-generation patient-derived models for diverse cancers",
     "journal": "Nature",
@@ -801,6 +834,17 @@
     "impact_factor_label": "3.6",
     "published": "2026-07-20",
     "brief_url": "/statgen-radar/article.html?date=2026-07-21"
+  },
+  {
+    "inclusion_date": "2026-08-25",
+    "article": "GWAS Fine-Mapping for Soybean First Pod Insertion Height Identifies Candidate Genomic Regions Involved in Plant Development",
+    "journal": "Genes",
+    "doi": "10.3390/genes17090994",
+    "score": 22.0,
+    "impact_factor": 3.1,
+    "impact_factor_label": "3.1",
+    "published": "2026-08-24",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-25"
   },
   {
     "inclusion_date": "2026-08-12",
@@ -1109,6 +1153,17 @@
     "impact_factor_label": "5.5",
     "published": "2026-08-07",
     "brief_url": "/statgen-radar/article.html?date=2026-08-08"
+  },
+  {
+    "inclusion_date": "2026-08-25",
+    "article": "Multimodal artificial intelligence and machine learning in oncology: from data integration to precision cancer care",
+    "journal": "Frontiers in Digital Health",
+    "doi": "10.3389/fdgth.2026.1872286",
+    "score": 20.0,
+    "impact_factor": 5.2,
+    "impact_factor_label": "5.2",
+    "published": "2026-08-24",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-25"
   },
   {
     "inclusion_date": "2026-08-05",
@@ -1903,6 +1958,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-08-06"
   },
   {
+    "inclusion_date": "2026-08-25",
+    "article": "Mitochondrial resilience: a convergent framework for pathogenesis and neuroprotection in Parkinson’s disease",
+    "journal": "Frontiers in Pharmacology",
+    "doi": "10.3389/fphar.2026.1886917",
+    "score": 16.0,
+    "impact_factor": 5.4,
+    "impact_factor_label": "5.4",
+    "published": "2026-08-24",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-25"
+  },
+  {
     "inclusion_date": "2026-08-21",
     "article": "Early-Onset Colorectal Cancer: From Epidemiologic Shift to Life-Course Carcinogenesis and Age-Attuned Care",
     "journal": "Current Oncology Reports",
@@ -2374,6 +2440,17 @@
     "impact_factor_label": "4.8",
     "published": "2026-07-28",
     "brief_url": "/statgen-radar/article.html?date=2026-07-29"
+  },
+  {
+    "inclusion_date": "2026-08-25",
+    "article": "Multi-task deep learning for risk stratification and shared molecular architecture of cardiometabolic multimorbidity under fragmented multi-omics",
+    "journal": "BMC Bioinformatics",
+    "doi": "10.1186/s12859-026-06614-w",
+    "score": 14.0,
+    "impact_factor": 4.4,
+    "impact_factor_label": "4.4",
+    "published": "2026-08-24",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-25"
   },
   {
     "inclusion_date": "2026-08-09",
