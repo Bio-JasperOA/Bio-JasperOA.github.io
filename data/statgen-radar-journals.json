@@ -1,5 +1,16 @@
 [
   {
+    "inclusion_date": "2026-08-28",
+    "article": "MOCR-DB: The Multi-Omics Causal Resource Database for Genetic Correlation, Causal Inference, and Functional Interpretation",
+    "journal": "Phenomics",
+    "doi": "10.1007/s43657-026-00338-w",
+    "score": 63.0,
+    "impact_factor": 5.5,
+    "impact_factor_label": "5.5",
+    "published": "2026-08-28",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-28"
+  },
+  {
     "inclusion_date": "2026-08-21",
     "article": "Genetic Evidence for Unified Airway Disease: Shared Epithelial and Immune Architecture Across Major Airway Diseases",
     "journal": "International Journal of Molecular Sciences",
@@ -462,6 +473,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-31"
   },
   {
+    "inclusion_date": "2026-08-28",
+    "article": "Clonal hematopoiesis of indeterminate potential and metabolic dysfunction-associated steatotic liver disease: Korean biopsy cohort",
+    "journal": "Hepatology International",
+    "doi": "10.1007/s12072-026-11143-y",
+    "score": 26.0,
+    "impact_factor": 7.8,
+    "impact_factor_label": "7.8",
+    "published": "2026-08-27",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-28"
+  },
+  {
     "inclusion_date": "2026-07-31",
     "article": "CDH13 Is Associated with Cellular Viability After Exposure to Ionizing Radiation Using Genome-Wide Screening",
     "journal": "International Journal of Molecular Sciences",
@@ -715,6 +737,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-08-06"
   },
   {
+    "inclusion_date": "2026-08-28",
+    "article": "Immune-Related Mendelian Randomization Signals for Anxiety Disorders Highlight the CD40 Locus on Chromosome 20 (chr20:46118–46130 Mb, GRCh38)",
+    "journal": "Genes",
+    "doi": "10.3390/genes17091018",
+    "score": 24.0,
+    "impact_factor": 3.1,
+    "impact_factor_label": "3.1",
+    "published": "2026-08-27",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-28"
+  },
+  {
     "inclusion_date": "2026-08-06",
     "article": "A multi-ancestry polygenic risk score for body mass index predicts longitudinal weight change",
     "journal": "Genome Medicine",
@@ -869,6 +902,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-22"
   },
   {
+    "inclusion_date": "2026-08-28",
+    "article": "nf-core/pacsomatic: a scalable somatic analytic pipeline using PacBio HiFi data",
+    "journal": "Bioinformatics",
+    "doi": "10.1093/bioinformatics/btag647",
+    "score": 22.0,
+    "impact_factor": 5.5,
+    "impact_factor_label": "5.5",
+    "published": "2026-08-27",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-28"
+  },
+  {
     "inclusion_date": "2026-08-10",
     "article": "Linking ruminal microbial diversity with production traits and host genetics in dairy cattle",
     "journal": "Scientific Reports",
@@ -922,6 +966,17 @@
     "impact_factor_label": "3.1",
     "published": "2026-08-24",
     "brief_url": "/statgen-radar/article.html?date=2026-08-25"
+  },
+  {
+    "inclusion_date": "2026-08-28",
+    "article": "From polygenic risk to functional genomics: a framework for precision gynecological disease modeling",
+    "journal": "Nature Communications",
+    "doi": "10.1038/s41467-026-77342-1",
+    "score": 21.0,
+    "impact_factor": 18.1,
+    "impact_factor_label": "18.1",
+    "published": "2026-08-27",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-28"
   },
   {
     "inclusion_date": "2026-08-12",
@@ -1043,6 +1098,17 @@
     "impact_factor_label": "4.2",
     "published": "2026-07-28",
     "brief_url": "/statgen-radar/article.html?date=2026-07-29"
+  },
+  {
+    "inclusion_date": "2026-08-28",
+    "article": "Virtual single‐cell perturbation and genetic causal inference reveal CSF1R ‐dependent immunometabolic communication in iron metabolism‐associated osteoarthritis",
+    "journal": "Journal of Cell Communication and Signaling",
+    "doi": "10.1002/ccs3.70107",
+    "score": 21.0,
+    "impact_factor": 4.0,
+    "impact_factor_label": "4",
+    "published": "2026-08-27",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-28"
   },
   {
     "inclusion_date": "2026-08-17",
@@ -1936,6 +2002,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-21"
   },
   {
+    "inclusion_date": "2026-08-28",
+    "article": "Stigmatizing Language in Gender-Expansive Patient Records: Corpus Development, Disparity Analysis, and Natural Language Processing–Based Detection Study",
+    "journal": "Journal of Medical Internet Research",
+    "doi": "10.2196/91089",
+    "score": 16.0,
+    "impact_factor": 8.2,
+    "impact_factor_label": "8.2",
+    "published": "2026-08-27",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-28"
+  },
+  {
     "inclusion_date": "2026-08-27",
     "article": "The Performance of Large Language Models in Extracting Intestinal Symptoms From Electronic Health Records: Retrospective Observational Study",
     "journal": "Journal of Medical Internet Research",
@@ -2002,6 +2079,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-07-26"
   },
   {
+    "inclusion_date": "2026-08-28",
+    "article": "Toward a Deeper Understanding of Predicting Risk of Cardiovascular Disease Events for 10‐Year Atherosclerotic Cardiovascular Risk: Subgroup Fairness and Predictive Value of Social Determinants of Health",
+    "journal": "Journal of the American Heart Association",
+    "doi": "10.1161/jaha.125.046186",
+    "score": 16.0,
+    "impact_factor": 6.0,
+    "impact_factor_label": "6",
+    "published": "2026-08-27",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-28"
+  },
+  {
     "inclusion_date": "2026-08-17",
     "article": "Joint associations of recovery capital and polygenic risk with electronic health record observed remission and relapse in substance use disorder: Longitudinal evidence from the All of Us research program",
     "journal": "Addiction",
@@ -2022,6 +2110,17 @@
     "impact_factor_label": "5.9",
     "published": "2026-08-21",
     "brief_url": "/statgen-radar/article.html?date=2026-08-22"
+  },
+  {
+    "inclusion_date": "2026-08-28",
+    "article": "Integrative haplotype and SNP-based GWAS supports the identification of stable genomic loci controlling yield-related traits in soybean",
+    "journal": "Frontiers in Plant Science",
+    "doi": "10.3389/fpls.2026.1929722",
+    "score": 16.0,
+    "impact_factor": 5.9,
+    "impact_factor_label": "5.9",
+    "published": "2026-08-28",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-28"
   },
   {
     "inclusion_date": "2026-08-05",
@@ -2099,6 +2198,17 @@
     "impact_factor_label": "5.4",
     "published": "2026-08-24",
     "brief_url": "/statgen-radar/article.html?date=2026-08-25"
+  },
+  {
+    "inclusion_date": "2026-08-28",
+    "article": "Multi-omics approaches in idiopathic pulmonary fibrosis: from molecular mechanisms to therapeutic targets and precision medicine",
+    "journal": "Frontiers in Pharmacology",
+    "doi": "10.3389/fphar.2026.1899849",
+    "score": 16.0,
+    "impact_factor": 5.4,
+    "impact_factor_label": "5.4",
+    "published": "2026-08-28",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-28"
   },
   {
     "inclusion_date": "2026-08-21",
@@ -2231,6 +2341,17 @@
     "impact_factor_label": "3.9",
     "published": "2026-08-13",
     "brief_url": "/statgen-radar/article.html?date=2026-08-14"
+  },
+  {
+    "inclusion_date": "2026-08-28",
+    "article": "Pervasive context-dependent effects in the genetic architecture of complex and quantitative traits revealed by a powerful multiparent mapping population in yeast",
+    "journal": "PLOS Genetics",
+    "doi": "10.1371/journal.pgen.1012288",
+    "score": 16.0,
+    "impact_factor": 3.9,
+    "impact_factor_label": "3.9",
+    "published": "2026-08-27",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-28"
   },
   {
     "inclusion_date": "2026-07-15",
@@ -2671,6 +2792,17 @@
     "impact_factor_label": "3.6",
     "published": "2026-08-11",
     "brief_url": "/statgen-radar/article.html?date=2026-08-12"
+  },
+  {
+    "inclusion_date": "2026-08-28",
+    "article": "The proteomic architecture of clonal hematopoiesis: a systematic review of niche remodeling and multi-compartment predictors of malignant transformation",
+    "journal": "Frontiers in Medicine",
+    "doi": "10.3389/fmed.2026.1818220",
+    "score": 14.0,
+    "impact_factor": 3.6,
+    "impact_factor_label": "3.6",
+    "published": "2026-08-27",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-28"
   },
   {
     "inclusion_date": "2026-08-11",
