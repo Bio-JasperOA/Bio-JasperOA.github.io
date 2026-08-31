@@ -385,6 +385,17 @@
     "brief_url": "/statgen-radar/article.html?date=2026-08-24"
   },
   {
+    "inclusion_date": "2026-08-31",
+    "article": "Clonal haematopoiesis and cardiovascular-kidney-metabolic syndrome: a cohort study",
+    "journal": "European Heart Journal",
+    "doi": "10.1093/eurheartj/ehag655",
+    "score": 28.0,
+    "impact_factor": 45.3,
+    "impact_factor_label": "45.3",
+    "published": "2026-08-30",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-31"
+  },
+  {
     "inclusion_date": "2026-08-27",
     "article": "Dissecting pleiotropy between major depressive disorder and physical disease comorbidities",
     "journal": "Nature Genetics",
@@ -1340,6 +1351,17 @@
     "impact_factor_label": "4.9",
     "published": "2026-08-04",
     "brief_url": "/statgen-radar/article.html?date=2026-08-05"
+  },
+  {
+    "inclusion_date": "2026-08-31",
+    "article": "Genetic and molecular analyses of HDAC11 in diabetes and its complications",
+    "journal": "Scientific Reports",
+    "doi": "10.1038/s41598-026-67787-1",
+    "score": 20.0,
+    "impact_factor": 4.9,
+    "impact_factor_label": "4.9",
+    "published": "2026-08-30",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-31"
   },
   {
     "inclusion_date": "2026-08-21",
@@ -2473,6 +2495,17 @@
     "impact_factor_label": "3.1",
     "published": "2026-07-30",
     "brief_url": "/statgen-radar/article.html?date=2026-07-31"
+  },
+  {
+    "inclusion_date": "2026-08-31",
+    "article": "Integrating machine learning and GWAS for variant prioritization in the INCIPE cohort highlights ABC transporter genes in chronic kidney disease",
+    "journal": "Frontiers in Genetics",
+    "doi": "10.3389/fgene.2026.1902866",
+    "score": 16.0,
+    "impact_factor": 3.0,
+    "impact_factor_label": "3",
+    "published": "2026-08-31",
+    "brief_url": "/statgen-radar/article.html?date=2026-08-31"
   },
   {
     "inclusion_date": "2026-07-18",
