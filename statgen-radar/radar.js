@@ -9,10 +9,13 @@ const StatGenStars = (() => {
   }
 
   function normalizeDoi(value) {
-    return normalizeText(value)
+    const normalized = normalizeText(value)
       .replace(/^doi:\s*/i, '')
       .replace(/^https?:\/\/(?:dx\.)?doi\.org\//i, '')
       .replace(/[?#].*$/, '');
+    return /^(?:not provided|unavailable|na|n\/a|none|unknown|—|-)$/i.test(normalized)
+      ? ''
+      : normalized;
   }
 
   function key(record) {
@@ -63,7 +66,7 @@ const StatGenStars = (() => {
     return stars.has(recordKey);
   }
 
-  return { storageKey, key, score, keys: read, isPinned, toggle };
+  return { storageKey, key, score, normalizeDoi, keys: read, isPinned, toggle };
 })();
 
 window.StatGenStars = StatGenStars;
@@ -186,8 +189,8 @@ function injectSummaryGrid(root, stats) {
 }
 
 function linkDoi(value) {
-  const text = String(value || '').trim();
-  if (!text || text === '—' || text === '-') return '<span class="radar-record-doi">DOI unavailable</span>';
+  const text = StatGenStars.normalizeDoi(value);
+  if (!text) return '<span class="radar-record-doi">DOI unavailable</span>';
   return `<a class="radar-record-doi" href="https://doi.org/${encodeURI(text)}" target="_blank" rel="noreferrer">${escapeHtml(text)} ↗</a>`;
 }
 
@@ -289,7 +292,7 @@ function tidyBriefMeta(root) {
   while (node && node.tagName === 'P') {
     const next = node.nextElementSibling;
     const text = node.textContent.trim();
-    if (/^(Generated|Window|Raw relevant hits|Included records(?: after quality control)?|Collected records|Scored unique candidates|Passed threshold|Filtered out|Journal articles(?: with configured JIF)?|Preprints|JIF edition):/i.test(text)) {
+    if (/^(Generated|Window|Profile|Raw relevant hits|Included records(?: after quality control)?|Collected records|Scored unique candidates|Eligible before limit|Passed threshold|Filtered out|Omitted by report limit|Journal articles(?: with configured JIF)?|Top-journal articles|Preprints|Report limit|JIF edition):/i.test(text)) {
       node.remove();
       node = next;
     } else {

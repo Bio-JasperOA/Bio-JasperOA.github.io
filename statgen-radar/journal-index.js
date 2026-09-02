@@ -15,10 +15,11 @@ function journalEscape(value) {
 }
 
 function journalDoi(record) {
-  if (!record.doi || record.doi === '—' || record.doi === '-') {
+  const doi = journalStars.normalizeDoi(record.doi);
+  if (!doi) {
     return '<span class="journal-doi-missing">Unavailable</span>';
   }
-  return `<a href="https://doi.org/${encodeURI(record.doi)}" target="_blank" rel="noreferrer">${journalEscape(record.doi)} ↗</a>`;
+  return `<a href="https://doi.org/${encodeURI(doi)}" target="_blank" rel="noreferrer">${journalEscape(doi)} ↗</a>`;
 }
 
 function validNumber(value) {
