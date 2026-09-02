@@ -27,6 +27,23 @@ function validNumber(value) {
   return Number.isFinite(number) ? number : null;
 }
 
+function journalSource(record) {
+  return record.journal ?? record.platform ?? record.source ?? '';
+}
+
+function journalRecordType(record) {
+  return String(record.record_type ?? record.type ?? '').trim();
+}
+
+function journalIsPreprint(record) {
+  const type = journalRecordType(record).toLowerCase();
+  const label = String(record.impact_factor_label ?? '').toLowerCase();
+  const source = String(journalSource(record)).toLowerCase().replace(/\s+/g, '');
+  return type.includes('preprint')
+    || label.includes('preprint')
+    || ['biorxiv', 'medrxiv', 'arxiv'].includes(source);
+}
+
 function journalBaseCompare(a, b) {
   const scoreA = validNumber(a.score);
   const scoreB = validNumber(b.score);
@@ -40,7 +57,7 @@ function journalBaseCompare(a, b) {
   if (jifA !== null && jifB === null) return -1;
   if (jifA !== jifB) return (jifB ?? -1) - (jifA ?? -1);
 
-  return String(a.journal || '').localeCompare(String(b.journal || ''));
+  return String(journalSource(a)).localeCompare(String(journalSource(b)));
 }
 
 function normalizeJournalSearch(value) {
@@ -57,7 +74,8 @@ function journalSearchText(record) {
     record.inclusion_date,
     record.published,
     record.article,
-    record.journal,
+    journalSource(record),
+    journalRecordType(record),
     record.doi,
     record.score,
     record.impact_factor,
@@ -87,10 +105,13 @@ function sortedJournalRows() {
 function journalStarButton(record, pinnedKeys) {
   const pinned = pinnedKeys.has(journalStars.key(record));
   const action = pinned ? 'Unpin' : 'Pin';
-  return `<button class="journal-star-button" type="button" data-star-key="${journalEscape(journalStars.key(record))}" aria-pressed="${pinned}" aria-label="${action} ${journalEscape(record.article)}" title="${pinned ? 'Remove from pinned articles' : 'Pin this article'}"><span aria-hidden="true">${pinned ? '★' : '☆'}</span></button>`;
+  return `<button class="journal-star-button" type="button" data-star-key="${journalEscape(journalStars.key(record))}" aria-pressed="${pinned}" aria-label="${action} ${journalEscape(record.article)}" title="${pinned ? 'Remove from pinned papers' : 'Pin this paper'}"><span aria-hidden="true">${pinned ? '★' : '☆'}</span></button>`;
 }
 
 function journalJif(record) {
+  if (journalIsPreprint(record)) {
+    return '<span class="journal-jif-value journal-jif-missing">Preprint</span>';
+  }
   const value = validNumber(record.impact_factor);
   return value === null
     ? '<span class="journal-jif-value journal-jif-missing">NA</span>'
@@ -118,8 +139,8 @@ function renderJournalIndex() {
 
   if (!visible.length) {
     body.innerHTML = journalState.query
-      ? `<tr><td colspan="6">No indexed articles match “${journalEscape(journalState.query)}”.</td></tr>`
-      : '<tr><td colspan="6">No indexed journal articles are available yet.</td></tr>';
+      ? `<tr><td colspan="6">No indexed papers match “${journalEscape(journalState.query)}”.</td></tr>`
+      : '<tr><td colspan="6">The first AI for Life Science papers are being prepared.</td></tr>';
   } else {
     body.innerHTML = visible.map(record => {
       const pinned = pinnedKeys.has(journalStars.key(record));
@@ -127,7 +148,7 @@ function renderJournalIndex() {
       <tr${pinned ? ' class="is-pinned"' : ''}>
         <td><a class="journal-brief-link" href="${journalEscape(record.brief_url)}">${journalEscape(record.inclusion_date)}</a></td>
         <td><div class="journal-article-cell"><span class="journal-article-title">${journalEscape(record.article)}</span>${journalStarButton(record, pinnedKeys)}</div></td>
-        <td>${journalEscape(record.journal)}</td>
+        <td>${journalEscape(journalSource(record))}</td>
         <td class="journal-doi">${journalDoi(record)}</td>
         <td class="numeric"><span class="journal-score">${validNumber(record.score) ?? 'NA'}</span></td>
         <td class="numeric">${journalJif(record)}</td>
@@ -139,12 +160,12 @@ function renderJournalIndex() {
     const pinText = pinnedCount ? `${pinnedCount} pinned · ` : '';
     const rangeText = `Showing ${start + 1}–${end} of ${total}`;
     summary.textContent = journalState.query
-      ? `${pinText}${rangeText} matching articles · ${overallTotal} total indexed`
-      : `${pinText}${rangeText} indexed articles`;
+      ? `${pinText}${rangeText} matching papers · ${overallTotal} total indexed`
+      : `${pinText}${rangeText} indexed papers`;
   } else {
     summary.textContent = journalState.query
       ? `0 matches · ${overallTotal} total indexed`
-      : '0 indexed articles';
+      : '0 indexed papers';
   }
 
   number.textContent = `Page ${journalState.page} of ${pages}`;
@@ -157,15 +178,15 @@ async function loadJournalIndex() {
   if (!body) return;
   try {
     const response = await fetch(`${JOURNAL_INDEX_URL}?v=${Date.now()}`);
-    if (!response.ok) throw new Error(`Journal index request failed: ${response.status}`);
+    if (!response.ok) throw new Error(`Literature index request failed: ${response.status}`);
     const rows = await response.json();
-    if (!Array.isArray(rows)) throw new Error('Journal index has an invalid format.');
+    if (!Array.isArray(rows)) throw new Error('Literature index has an invalid format.');
     journalState.rows = rows.sort(journalBaseCompare);
     renderJournalIndex();
   } catch (error) {
     body.innerHTML = `<tr><td colspan="6">${journalEscape(error.message)}</td></tr>`;
     const summary = document.querySelector('#journal-page-summary');
-    if (summary) summary.textContent = 'Unable to load journal index';
+    if (summary) summary.textContent = 'Unable to load literature index';
   }
 }
 

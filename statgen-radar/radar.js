@@ -20,7 +20,7 @@ const StatGenStars = (() => {
     if (doi && doi !== '—' && doi !== '-') return `doi:${doi}`;
 
     const article = normalizeText(record?.article ?? record?.title ?? record?.Article ?? 'untitled');
-    const source = normalizeText(record?.journal ?? record?.source ?? record?.Journal ?? 'unknown');
+    const source = normalizeText(record?.journal ?? record?.Journal ?? record?.platform ?? record?.Platform ?? record?.source ?? 'unknown');
     return `article:${article}|source:${source}`;
   }
 
@@ -87,7 +87,7 @@ async function loadArchive() {
   const response = await fetch(`${ARCHIVE_URL}?v=${Date.now()}`);
   if (!response.ok) throw new Error(`Archive request failed: ${response.status}`);
   const items = await response.json();
-  if (!Array.isArray(items) || !items.length) throw new Error('No Radar briefs are available.');
+  if (!Array.isArray(items)) throw new Error('The brief archive has an invalid format.');
   return items.sort((a, b) => String(b.date).localeCompare(String(a.date)));
 }
 
@@ -98,10 +98,15 @@ async function renderIndex() {
 
   try {
     const items = await loadArchive();
+    if (!items.length) {
+      latestRoot.innerHTML = '<p class="notice-label">The first AI for Life Science brief is being prepared.</p><p>Top-journal articles and bioRxiv/arXiv preprints will appear here after the first daily run.</p>';
+      archiveRoot.innerHTML = '<p class="notice-label">No daily briefs have been published yet.</p>';
+      return;
+    }
     const latest = items[0];
     latestRoot.innerHTML = `
       <p class="eyebrow">Latest Brief · ${escapeHtml(latest.date)}</p>
-      <h2>${escapeHtml(latest.title || 'StatGen Radar — Daily Brief')}</h2>
+      <h2>${escapeHtml(latest.title || 'AI for Life Science Radar — Daily Brief')}</h2>
       <p>${escapeHtml(latest.summary || '')}</p>
       <div class="radar-meta">${summaryChips(latest)}</div>
       <a class="radar-primary-link" href="${escapeHtml(latest.url)}">Read the full brief →</a>`;
@@ -147,7 +152,7 @@ async function renderIndex() {
 function parseBriefStats(markdown) {
   const patterns = {
     hits: /Raw relevant hits:\s*(\d+)/i,
-    records: /Included records after quality control:\s*(\d+)/i,
+    records: /(?:Included records after quality control|Passed threshold):\s*(\d+)/i,
     journals: /Journal articles:\s*(\d+)/i,
     preprints: /Preprints:\s*(\d+)/i,
     jif: /JIF edition:\s*(\d{4})/i
@@ -284,7 +289,7 @@ function tidyBriefMeta(root) {
   while (node && node.tagName === 'P') {
     const next = node.nextElementSibling;
     const text = node.textContent.trim();
-    if (/^(Generated|Window|Raw relevant hits|Included records|Journal articles|Preprints|JIF edition):/i.test(text)) {
+    if (/^(Generated|Window|Raw relevant hits|Included records(?: after quality control)?|Collected records|Scored unique candidates|Passed threshold|Filtered out|Journal articles(?: with configured JIF)?|Preprints|JIF edition):/i.test(text)) {
       node.remove();
       node = next;
     } else {
@@ -313,7 +318,7 @@ async function renderArticle() {
     tidyBriefMeta(root);
     injectSummaryGrid(root, stats);
     transformInclusionTable(root);
-    document.title = `StatGen Radar — ${date} | Song Jie`;
+    document.title = `AI for Life Science Radar — ${date} | Song Jie`;
   } catch (error) {
     root.innerHTML = `<h1>Brief unavailable</h1><p>${escapeHtml(error.message)}</p>`;
   }

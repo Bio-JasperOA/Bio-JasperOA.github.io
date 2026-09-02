@@ -82,7 +82,7 @@ def full_navigation() -> str:
         <a class="nav-tutorial" href="/tutorial/">Tutorial</a>
         <a class="nav-gallery" href="/gallery/">Gallery</a>
         <a class="nav-journal-club" href="/journal-club/" aria-current="page">Journal Club</a>
-        <a href="/statgen-radar/">StatGen Radar</a>
+        <a href="/statgen-radar/">AI4Life Radar</a>
       </nav>'''
 
 
