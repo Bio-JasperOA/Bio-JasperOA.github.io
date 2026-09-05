@@ -114,6 +114,25 @@
     "brief_url": "/statgen-radar/article.html?date=2026-09-03"
   },
   {
+    "inclusion_date": "2026-09-05",
+    "article": "Embedding AI in biology — part 2",
+    "journal": "Nature Methods",
+    "source": "Nature Methods",
+    "record_type": "Journal article",
+    "doi": "10.1038/s41592-026-03234-3",
+    "score": 28.0,
+    "relevance_score": 18.0,
+    "ai_score": 11.0,
+    "life_science_score": 7.0,
+    "priority_score": 0.0,
+    "publication_score": 10.0,
+    "impact_factor": 28.3,
+    "impact_factor_label": "28.3",
+    "published": "2026-09-04",
+    "profile": "ai-for-life-science",
+    "brief_url": "/statgen-radar/article.html?date=2026-09-05"
+  },
+  {
     "inclusion_date": "2026-09-04",
     "article": "Atlantis: An integrative database for human proteome structural and functional sites",
     "journal": "bioRxiv",
@@ -209,6 +228,25 @@
     "brief_url": "/statgen-radar/article.html?date=2026-09-04"
   },
   {
+    "inclusion_date": "2026-09-05",
+    "article": "Gene function prediction from bulk coexpression is bounded by cell-type-level signal",
+    "journal": "bioRxiv",
+    "source": "bioRxiv",
+    "record_type": "Preprint",
+    "doi": "10.64898/2026.08.31.748380",
+    "score": 23.0,
+    "relevance_score": 19.0,
+    "ai_score": 5.0,
+    "life_science_score": 14.0,
+    "priority_score": 0.0,
+    "publication_score": 4.0,
+    "impact_factor": null,
+    "impact_factor_label": "Preprint",
+    "published": "2026-09-04",
+    "profile": "ai-for-life-science",
+    "brief_url": "/statgen-radar/article.html?date=2026-09-05"
+  },
+  {
     "inclusion_date": "2026-09-04",
     "article": "Scalable, generalizable and uncertainty-aware integration of spatial multiomics across diverse modalities and platforms with SCIGMA",
     "journal": "Nature Genetics",
@@ -226,6 +264,25 @@
     "published": "2026-09-03",
     "profile": "ai-for-life-science",
     "brief_url": "/statgen-radar/article.html?date=2026-09-04"
+  },
+  {
+    "inclusion_date": "2026-09-05",
+    "article": "Systematic discovery of circular permutations across the protein universe using CIRPIN",
+    "journal": "Proceedings of the National Academy of Sciences",
+    "source": "Proceedings of the National Academy of Sciences",
+    "record_type": "Journal article",
+    "doi": "10.1073/pnas.2605178123",
+    "score": 22.0,
+    "relevance_score": 22.0,
+    "ai_score": 16.0,
+    "life_science_score": 6.0,
+    "priority_score": 0.0,
+    "publication_score": 0.0,
+    "impact_factor": null,
+    "impact_factor_label": "NA",
+    "published": "2026-09-04",
+    "profile": "ai-for-life-science",
+    "brief_url": "/statgen-radar/article.html?date=2026-09-05"
   },
   {
     "inclusion_date": "2026-09-02",
