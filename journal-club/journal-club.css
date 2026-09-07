@@ -27,6 +27,8 @@
 }
 
 .jc-filters button:focus-visible,
+.jc-card h2 a:focus-visible,
+.jc-card-read:focus-visible,
 .jc-resource-link:focus-visible,
 .jc-pdf-preview summary:focus-visible,
 .jc-image-link:focus-visible {
@@ -58,16 +60,18 @@
 
 .jc-card {
   border-bottom: 1px solid var(--line);
-  padding: 26px 0;
+  min-width: 0;
+  padding: 24px 0 26px;
 }
 
 .jc-card-meta {
-  align-items: center;
+  align-items: baseline;
   color: var(--muted);
   display: flex;
   flex-wrap: wrap;
   font-size: 11px;
-  gap: 12px;
+  gap: 6px 16px;
+  line-height: 1.6;
   margin-bottom: 10px;
 }
 
@@ -76,8 +80,22 @@
   font-weight: 700;
 }
 
+.jc-card-meta .jc-category {
+  background: none;
+  border: 0;
+  color: #8d541d;
+  font-size: inherit;
+  font-weight: 600;
+  padding: 0;
+}
+
+.jc-card-meta .jc-category-note {
+  font-size: inherit;
+}
+
 .jc-card h2 {
   font-size: 20px;
+  line-height: 1.35;
   margin: 0;
   overflow-wrap: anywhere;
 }
@@ -92,16 +110,49 @@
   line-height: 1.65;
   margin: 10px 0 0;
   max-width: 760px;
+  overflow-wrap: anywhere;
 }
 
 .jc-card-footer {
-  align-items: flex-end;
+  align-items: baseline;
   color: var(--muted);
   display: flex;
+  flex-wrap: wrap;
   font-size: 11px;
-  gap: 20px;
-  justify-content: space-between;
-  margin-top: 16px;
+  gap: 8px 24px;
+  justify-content: flex-start;
+  line-height: 1.65;
+  margin-top: 14px;
+}
+
+.jc-card-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.jc-card-topic {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.jc-card-topic:not(:last-child)::after {
+  color: #adb5c1;
+  content: "\00b7";
+  padding-left: 10px;
+}
+
+.jc-card-read {
+  color: #8d541d;
+  flex-shrink: 0;
+  font-weight: 600;
+  text-underline-offset: 3px;
+}
+
+.jc-card-read:hover {
+  text-decoration: underline;
 }
 
 .jc-tags {
@@ -337,7 +388,9 @@
 @media (max-width: 760px) {
   .jc-article-shell { padding: 54px 22px 76px; }
   .jc-article-body { font-size: 16px; }
-  .jc-card-footer { align-items: flex-start; flex-direction: column; }
+  .jc-card { padding: 22px 0; }
+  .jc-card-meta { gap: 4px 12px; }
+  .jc-card-footer { row-gap: 10px; }
   .jc-filters { gap: 7px; }
   .jc-filters button { min-height: 44px; }
   .jc-pdf-frame { height: 60vh; min-height: 320px; }

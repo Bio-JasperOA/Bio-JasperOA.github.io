@@ -24,7 +24,7 @@ ARTICLES_DIR = ROOT / "journal-club" / "articles"
 INDEX_FILE = ROOT / "journal-club" / "index.html"
 START_MARKER = "<!-- JOURNAL_POSTS_START -->"
 END_MARKER = "<!-- JOURNAL_POSTS_END -->"
-VERSION = "20260907-publishing"
+VERSION = "20260907-compact-cards"
 SITE_HOST = "bio-jasperoa.github.io"
 CATEGORY_NAMES = {
     "development-virtual-embryos": "Development & Virtual Embryos",
@@ -474,17 +474,16 @@ def build_card(meta: dict, slug: str) -> str:
     title = esc(meta.get("short_title") or meta.get("title") or slug.replace("-", " ").title())
     published = esc(date_text(meta.get("date")))
     journal = f'<span>{esc(meta["journal"])}</span>' if text(meta.get("journal")) else ""
-    tags = "".join(f'<span class="jc-tag">{esc(topic)}</span>' for topic in meta.get("topics", [])[:4])
+    tags = "".join(f'<span class="jc-card-topic">{esc(topic)}</span>' for topic in meta.get("topics", []))
     # Legacy cards retain the full paper title. Never truncate rich body text.
     intro = meta.get("summary") or meta.get("title")
     intro_html = f'<p class="jc-card-summary">{esc(intro)}</p>' if intro else ""
-    authors = f'<span>{esc(meta["authors"])}</span>' if text(meta.get("authors")) else ""
+    topics_html = f'<div class="jc-card-topics" aria-label="Topics">{tags}</div>' if tags else ""
     return f'''<article class="jc-card" data-jc-card data-category="{esc(meta.get('category', ''))}">
-  <div class="jc-card-meta"><time>{published}</time>{journal}</div>
+  <div class="jc-card-meta"><time>{published}</time>{journal}{category_markup(meta)}</div>
   <h2><a href="/journal-club/articles/{slug}/">{title}</a></h2>
   {intro_html}
-  <div class="jc-tags">{category_markup(meta)}</div>
-  <div class="jc-card-footer">{authors}<div class="jc-tags">{tags}</div></div>
+  <div class="jc-card-footer">{topics_html}<a class="jc-card-read" href="/journal-club/articles/{slug}/" aria-label="Read discussion: {title}">Read discussion →</a></div>
 </article>'''
 
 
