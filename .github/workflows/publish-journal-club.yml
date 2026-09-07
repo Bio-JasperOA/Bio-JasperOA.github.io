@@ -5,19 +5,40 @@ on:
     branches: [main]
     paths:
       - "journal-club/posts/**"
+      - "journal-club/assets/**"
+      - "journal-club/templates/**"
+      - "journal-club/index.html"
+      - "journal-club/journal-club.css"
+      - "journal-club/journal-club.js"
       - "scripts/build_journal_club.py"
+      - "scripts/stage_pages.py"
+      - "scripts/requirements-journal-club.txt"
+      - "tests/test_journal_club.py"
+      - "CONTENT_GUIDE.md"
       - ".github/workflows/publish-journal-club.yml"
   workflow_dispatch:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -25,19 +46,44 @@ jobs:
           python-version: "3.12"
 
       - name: Install renderer
-        run: pip install markdown PyYAML
+        run: pip install -r scripts/requirements-journal-club.txt
+
+      - name: Test publishing modes and attachment validation
+        run: python -m unittest discover -s tests -v
 
       - name: Build Journal Club pages
         run: python scripts/build_journal_club.py
 
       - name: Commit generated pages
         run: |
-          if git diff --quiet -- journal-club/index.html journal-club/articles; then
+          git add -A -- journal-club
+          if git diff --cached --quiet; then
             echo "No generated changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add journal-club/index.html journal-club/articles
           git commit -m "Publish Journal Club posts"
-          git push
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            git fetch origin main
+            git rebase origin/main
+          done
+          echo "Failed to push generated pages after three attempts."
+          exit 1
+
+      # GITHUB_TOKEN commits do not trigger a second Pages build. Deploy the
+      # rendered site explicitly; generated commits cannot loop this workflow.
+      - name: Stage static website and durable assets
+        run: python scripts/stage_pages.py "$RUNNER_TEMP/journal-club-pages"
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ${{ runner.temp }}/journal-club-pages
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

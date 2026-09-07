@@ -1,7 +1,59 @@
+.jc-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 34px;
+}
+
+.jc-filters button {
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  line-height: 1.45;
+  max-width: 100%;
+  padding: 8px 11px;
+  text-align: left;
+}
+
+.jc-filters button:hover,
+.jc-filters button[aria-pressed="true"] {
+  background: var(--soft);
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.jc-filters button:focus-visible,
+.jc-resource-link:focus-visible,
+.jc-pdf-preview summary:focus-visible,
+.jc-image-link:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 4px;
+}
+
+.jc-filter-status,
+.jc-filter-empty,
+.jc-category-note {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.jc-filter-status { margin: 14px 0 0; }
+.jc-filter-status:empty { display: none; }
+.jc-filter-empty { margin: 28px 0; }
+
+.jc-filters[hidden],
+.jc-card[hidden],
+.jc-filter-empty[hidden] { display: none !important; }
+
 .jc-list {
   border-top: 1px solid var(--line);
   display: grid;
-  margin-top: 58px;
+  margin-top: 30px;
 }
 
 .jc-card {
@@ -13,6 +65,7 @@
   align-items: center;
   color: var(--muted);
   display: flex;
+  flex-wrap: wrap;
   font-size: 11px;
   gap: 12px;
   margin-bottom: 10px;
@@ -26,6 +79,7 @@
 .jc-card h2 {
   font-size: 20px;
   margin: 0;
+  overflow-wrap: anywhere;
 }
 
 .jc-card h2 a:hover {
@@ -75,6 +129,7 @@
   font-size: clamp(40px, 5.4vw, 60px);
   line-height: 1.08;
   max-width: 900px;
+  overflow-wrap: anywhere;
 }
 
 .jc-paper-meta {
@@ -86,6 +141,7 @@
   gap: 10px 20px;
   margin: 26px 0 16px;
   padding-bottom: 20px;
+  overflow-wrap: anywhere;
 }
 
 .jc-paper-meta a {
@@ -99,10 +155,14 @@
   line-height: 1.82;
   margin-top: 52px;
   max-width: 780px;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .jc-article-body h1 {
-  display: none;
+  font-size: 32px;
+  line-height: 1.25;
+  margin: 46px 0 22px;
 }
 
 .jc-article-body h2 {
@@ -130,9 +190,101 @@
 }
 
 .jc-article-body img {
+  display: block;
   height: auto;
   margin: 28px 0;
   max-width: 100%;
+  object-fit: contain;
+  width: auto;
+}
+
+.jc-article-body figure {
+  margin: 30px 0;
+  max-width: 100%;
+}
+
+.jc-article-body figure img {
+  margin: 0 auto;
+}
+
+.jc-article-body figcaption {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+  margin-top: 12px;
+}
+
+.jc-image-link {
+  display: block;
+  max-width: 100%;
+}
+
+.jc-image-link img { cursor: zoom-in; }
+
+.jc-article-summary {
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.75;
+  margin: 24px 0;
+  max-width: 780px;
+  overflow-wrap: anywhere;
+}
+
+.jc-resources {
+  margin: 22px 0;
+  max-width: 780px;
+}
+
+.jc-resource-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.jc-resource-link {
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 650;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.jc-resource-link:hover { text-decoration: underline; }
+
+.jc-pdf-preview {
+  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  margin: 34px 0;
+  max-width: 100%;
+  padding: 16px 0;
+}
+
+.jc-pdf-preview summary {
+  color: var(--blue);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.6;
+}
+
+.jc-pdf-frame {
+  background: var(--soft);
+  border: 1px solid var(--line);
+  display: block;
+  height: clamp(360px, 72vh, 840px);
+  margin-top: 18px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.jc-pdf-help {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 14px 0 0;
 }
 
 .jc-article-body blockquote {
@@ -153,6 +305,8 @@
   border-radius: 4px;
   color: #f3f5f8;
   overflow-x: auto;
+  max-width: 100%;
+  overflow-wrap: normal;
   padding: 20px;
 }
 
@@ -184,4 +338,7 @@
   .jc-article-shell { padding: 54px 22px 76px; }
   .jc-article-body { font-size: 16px; }
   .jc-card-footer { align-items: flex-start; flex-direction: column; }
+  .jc-filters { gap: 7px; }
+  .jc-filters button { min-height: 44px; }
+  .jc-pdf-frame { height: 60vh; min-height: 320px; }
 }
