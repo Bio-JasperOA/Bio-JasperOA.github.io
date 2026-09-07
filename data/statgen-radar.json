@@ -2,11 +2,11 @@
   {
     "date": "2026-09-07",
     "title": "AI for Life Science Radar — Daily Brief",
-    "summary": "No top-journal article or arXiv/bioRxiv preprint passed both the AI and life-science gates in this window.",
-    "records": 0,
+    "summary": "This brief retained 0 top-journal article(s) and 2 arXiv/bioRxiv preprint(s) after independent AI and life-science screening.",
+    "records": 2,
     "journal_articles": 0,
     "top_journal_articles": 0,
-    "preprints": 0,
+    "preprints": 2,
     "jif_edition": "2025",
     "profile": "ai-for-life-science",
     "url": "/statgen-radar/article.html?date=2026-09-07"
