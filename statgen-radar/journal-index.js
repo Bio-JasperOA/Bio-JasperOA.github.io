@@ -45,12 +45,30 @@ function journalIsPreprint(record) {
     || ['biorxiv', 'medrxiv', 'arxiv'].includes(source);
 }
 
+function journalDateValue(value) {
+  const parsed = Date.parse(String(value ?? '').trim());
+  return Number.isFinite(parsed) ? parsed : Number.NEGATIVE_INFINITY;
+}
+
+function journalNewestFirst(aValue, bValue) {
+  const dateA = journalDateValue(aValue);
+  const dateB = journalDateValue(bValue);
+  if (dateA === dateB) return 0;
+  return dateB > dateA ? 1 : -1;
+}
+
 function journalBaseCompare(a, b) {
   const scoreA = validNumber(a.score);
   const scoreB = validNumber(b.score);
   if (scoreA === null && scoreB !== null) return 1;
   if (scoreA !== null && scoreB === null) return -1;
   if (scoreA !== scoreB) return (scoreB ?? -1) - (scoreA ?? -1);
+
+  const included = journalNewestFirst(a.inclusion_date, b.inclusion_date);
+  if (included !== 0) return included;
+
+  const published = journalNewestFirst(a.published, b.published);
+  if (published !== 0) return published;
 
   const jifA = validNumber(a.impact_factor);
   const jifB = validNumber(b.impact_factor);
@@ -62,10 +80,10 @@ function journalBaseCompare(a, b) {
 }
 
 function journalChronologyCompare(a, b) {
-  const included = String(b.inclusion_date ?? '').localeCompare(String(a.inclusion_date ?? ''));
+  const included = journalNewestFirst(a.inclusion_date, b.inclusion_date);
   if (included !== 0) return included;
 
-  const published = String(b.published ?? '').localeCompare(String(a.published ?? ''));
+  const published = journalNewestFirst(a.published, b.published);
   if (published !== 0) return published;
 
   return journalBaseCompare(a, b);
