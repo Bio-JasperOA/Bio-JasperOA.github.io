@@ -323,6 +323,25 @@
     "brief_url": "/statgen-radar/article.html?date=2026-09-02"
   },
   {
+    "inclusion_date": "2026-09-07",
+    "article": "Trustworthy ML/AI for Aging Clocks: Preventing Systematic Prediction Bias in Biological Age Estimation",
+    "journal": "bioRxiv",
+    "source": "bioRxiv",
+    "record_type": "Preprint",
+    "doi": "10.64898/2026.05.27.728155",
+    "score": 21.0,
+    "relevance_score": 17.0,
+    "ai_score": 12.0,
+    "life_science_score": 5.0,
+    "priority_score": 0.0,
+    "publication_score": 4.0,
+    "impact_factor": null,
+    "impact_factor_label": "Preprint",
+    "published": "2026-09-06",
+    "profile": "ai-for-life-science",
+    "brief_url": "/statgen-radar/article.html?date=2026-09-07"
+  },
+  {
     "inclusion_date": "2026-09-02",
     "article": "A Token-Pruning Framework Enables Efficient Representation of the Human Genome for RNA Modification Analysis",
     "journal": "Bioinformatics",
