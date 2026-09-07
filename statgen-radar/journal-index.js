@@ -61,6 +61,16 @@ function journalBaseCompare(a, b) {
   return String(journalSource(a)).localeCompare(String(journalSource(b)));
 }
 
+function journalChronologyCompare(a, b) {
+  const included = String(b.inclusion_date ?? '').localeCompare(String(a.inclusion_date ?? ''));
+  if (included !== 0) return included;
+
+  const published = String(b.published ?? '').localeCompare(String(a.published ?? ''));
+  if (published !== 0) return published;
+
+  return journalBaseCompare(a, b);
+}
+
 function normalizeJournalSearch(value) {
   return String(value ?? '')
     .normalize('NFKD')
@@ -99,7 +109,9 @@ function sortedJournalRows() {
     const pinnedA = pinnedKeys.has(journalStars.key(a));
     const pinnedB = pinnedKeys.has(journalStars.key(b));
     if (pinnedA !== pinnedB) return pinnedA ? -1 : 1;
-    return journalBaseCompare(a, b);
+    return pinnedA
+      ? journalBaseCompare(a, b)
+      : journalChronologyCompare(a, b);
   });
 }
 
@@ -182,7 +194,7 @@ async function loadJournalIndex() {
     if (!response.ok) throw new Error(`Literature index request failed: ${response.status}`);
     const rows = await response.json();
     if (!Array.isArray(rows)) throw new Error('Literature index has an invalid format.');
-    journalState.rows = rows.sort(journalBaseCompare);
+    journalState.rows = rows.sort(journalChronologyCompare);
     renderJournalIndex();
   } catch (error) {
     body.innerHTML = `<tr><td colspan="6">${journalEscape(error.message)}</td></tr>`;
