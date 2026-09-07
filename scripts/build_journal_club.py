@@ -138,7 +138,9 @@ def normalize_url(value: object, *, root: Path, source: Path, slug: str,
         raise error("unsupported resource URL protocol; use HTTPS or a site path")
     if scheme and (not host or parsed.username or parsed.password):
         raise error("invalid resource URL host")
-    if host == "github.com" and "/blob/" in parsed.path:
+    # GitHub's file viewer is a valid code/documentation citation, but cannot
+    # serve as the file itself for an image, main PDF, or attachment.
+    if kind in ("image", "pdf", "attachment") and host == "github.com" and "/blob/" in parsed.path:
         raise error("GitHub blob URLs are HTML pages; use a site asset path or a raw file URL")
     if kind == "pdf" and Path(parsed.path).suffix.casefold() in {".html", ".htm", ".png", ".jpg", ".jpeg", ".gif", ".svg"}:
         raise error("main PDF URL points to an HTML page or image")

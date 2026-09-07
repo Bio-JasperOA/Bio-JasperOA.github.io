@@ -344,6 +344,32 @@ if x < 3:
                     source = self.post(**{field: value})
                     self.assert_invalid(source, url)
 
+    def test_github_file_viewers_are_allowed_as_source_citations(self):
+        code_url = "https://github.com/example/fixture/blob/main/model/get_embedding.py"
+        docs_url = "https://github.com/example/fixture/blob/main/model/README.md"
+        paper_url = "https://github.com/example/fixture/blob/main/paper.md"
+        self.post(
+            paper_url=paper_url,
+            body=f'[Inference code]({code_url})\n\n<a href="{docs_url}">Model documentation</a>',
+        )
+        self.build()
+        document = Document(self.article())
+        for url in (code_url, docs_url, paper_url):
+            with self.subTest(url=url):
+                self.assertTrue(document.elements("a", "href", url))
+
+    def test_github_file_viewers_are_rejected_as_assets(self):
+        for kind, extension in (("image", "png"), ("pdf", "pdf"), ("attachment", "pdf")):
+            with self.subTest(kind=kind):
+                url = f"https://github.com/example/fixture/blob/main/notes.{extension}"
+                if kind == "image":
+                    source = self.post(body=f"![Fixture image]({url})")
+                elif kind == "pdf":
+                    source = self.post(content_mode="hybrid", pdf_url=url)
+                else:
+                    source = self.post(attachments=[{"title": "Fixture attachment", "url": url}])
+                self.assert_invalid(source, "GitHub blob URLs are HTML pages", url)
+
     def test_missing_local_image_and_attachment_are_reported(self):
         source = self.post(body="![Missing image](/journal-club/assets/missing-image.png)")
         self.assert_invalid(source, "missing-image.png")
