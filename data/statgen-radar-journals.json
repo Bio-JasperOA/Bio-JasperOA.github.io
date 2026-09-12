@@ -1,5 +1,24 @@
 [
   {
+    "inclusion_date": "2026-09-12",
+    "article": "SpectroVQ: Noise-Aware Compression of Proteomics Data via Vector-Quantized Deep Learning improves MS/MS data storage and Peptide Identification",
+    "journal": "bioRxiv",
+    "source": "bioRxiv",
+    "record_type": "Preprint",
+    "doi": "10.64898/2026.09.05.749393",
+    "score": 20.0,
+    "relevance_score": 16.0,
+    "ai_score": 11.0,
+    "life_science_score": 5.0,
+    "priority_score": 0.0,
+    "publication_score": 4.0,
+    "impact_factor": null,
+    "impact_factor_label": "Preprint",
+    "published": "2026-09-11",
+    "profile": "ai-for-life-science",
+    "brief_url": "/statgen-radar/article.html?date=2026-09-12"
+  },
+  {
     "inclusion_date": "2026-09-11",
     "article": "Learning stochastic dynamics and cell-fate landscapes from single-cell snapshots via optimal transport",
     "journal": "Science Advances",
