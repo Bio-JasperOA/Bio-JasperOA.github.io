@@ -1,5 +1,24 @@
 [
   {
+    "inclusion_date": "2026-09-14",
+    "article": "Agentic-AI-ready genome-wide poxvirus-host interaction screen refined by a protein language model",
+    "journal": "bioRxiv",
+    "source": "bioRxiv",
+    "record_type": "Preprint",
+    "doi": "10.64898/2026.09.10.750412",
+    "score": 26.0,
+    "relevance_score": 22.0,
+    "ai_score": 7.0,
+    "life_science_score": 15.0,
+    "priority_score": 0.0,
+    "publication_score": 4.0,
+    "impact_factor": null,
+    "impact_factor_label": "Preprint",
+    "published": "2026-09-13",
+    "profile": "ai-for-life-science",
+    "brief_url": "/statgen-radar/article.html?date=2026-09-14"
+  },
+  {
     "inclusion_date": "2026-09-12",
     "article": "SpectroVQ: Noise-Aware Compression of Proteomics Data via Vector-Quantized Deep Learning improves MS/MS data storage and Peptide Identification",
     "journal": "bioRxiv",
