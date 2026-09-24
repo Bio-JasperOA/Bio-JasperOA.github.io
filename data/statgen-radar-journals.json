@@ -1,5 +1,24 @@
 [
   {
+    "inclusion_date": "2026-09-24",
+    "article": "A spectral framework for measuring diversity in multiple sequence alignments",
+    "journal": "PLOS Computational Biology",
+    "source": "PLOS Computational Biology",
+    "record_type": "Journal article",
+    "doi": "10.1371/journal.pcbi.1014778",
+    "score": 15.0,
+    "relevance_score": 11.0,
+    "ai_score": 5.0,
+    "life_science_score": 6.0,
+    "priority_score": 0.0,
+    "publication_score": 4.0,
+    "impact_factor": 3.7,
+    "impact_factor_label": "3.7",
+    "published": "2026-09-23",
+    "profile": "ai-for-life-science",
+    "brief_url": "/statgen-radar/article.html?date=2026-09-24"
+  },
+  {
     "inclusion_date": "2026-09-23",
     "article": "Folate deficiency disrupts key metabolic transitions within the developing neural ectoderm",
     "journal": "bioRxiv",
