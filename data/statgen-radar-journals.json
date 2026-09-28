@@ -1,5 +1,24 @@
 [
   {
+    "inclusion_date": "2026-09-28",
+    "article": "A meta-interaction basis for cell-cell communication in tissues",
+    "journal": "bioRxiv",
+    "source": "bioRxiv",
+    "record_type": "Preprint",
+    "doi": "10.64898/2026.09.21.753369",
+    "score": 28.0,
+    "relevance_score": 24.0,
+    "ai_score": 5.0,
+    "life_science_score": 15.0,
+    "priority_score": 4.0,
+    "publication_score": 4.0,
+    "impact_factor": null,
+    "impact_factor_label": "Preprint",
+    "published": "2026-09-27",
+    "profile": "ai-for-life-science",
+    "brief_url": "/statgen-radar/article.html?date=2026-09-28"
+  },
+  {
     "inclusion_date": "2026-09-26",
     "article": "MultiSpaceNet: Graph-based Joint Representation Learning for Paired Spatial Transcriptome–Proteome Data",
     "journal": "Bioinformatics",
