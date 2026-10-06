@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-10-06",
+    "title": "AI for Life Science Radar — Daily Brief",
+    "summary": "This brief retained 2 top-journal article(s) and 3 arXiv/bioRxiv preprint(s) after independent AI and life-science screening. 2 record(s) directly matched Virtual Embryo, developmental-dynamics, single-cell or spatial-omics priorities.",
+    "records": 5,
+    "journal_articles": 2,
+    "top_journal_articles": 2,
+    "preprints": 3,
+    "jif_edition": "2025",
+    "profile": "ai-for-life-science",
+    "url": "/statgen-radar/article.html?date=2026-10-06"
+  },
+  {
     "date": "2026-10-05",
     "title": "AI for Life Science Radar — Daily Brief",
     "summary": "No top-journal article or arXiv/bioRxiv preprint passed both the AI and life-science gates in this window.",
